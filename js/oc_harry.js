@@ -5,6 +5,7 @@
  */
 /*! Main */
 jQuery(document).ready(function() {
+    setTimeout(function(){ 
     // Check if body height is higher than window height :)
     if (jQuery("body").height() > jQuery(window).height()) {
         alert("Vertical Scrollbar! D:");
@@ -21,4 +22,6 @@ jQuery(document).ready(function() {
     if (jQuery("body").width() > jQuery(window).width()) {
         //alert("Horizontal Scrollbar! D:<");
     }
+    }, 300);
+    
 });
