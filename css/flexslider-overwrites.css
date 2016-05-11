@@ -9,9 +9,7 @@ and open the template in the editor.
 */
 .flexslider .slides img{
     width: auto !important;
-    height: 100% !important;
 }
 .flexslider{
-    float:left;
-    margin-top: 135px;
+ 
 }
