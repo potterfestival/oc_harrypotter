@@ -17,6 +17,9 @@ body {
    color: goldenrod !important;
    background-color:black;
    min-height: 200px;
+   position:absolute;
+   bottom: 0px;
+   width: 100%;
 }
 /*
 * nav info header
