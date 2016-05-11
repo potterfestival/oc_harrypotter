@@ -82,7 +82,7 @@
         $window = $(window);
 
     $window.scroll(function() {
-        if ($window.scrollTop() >= distance + 60) {
+        if ($window.scrollTop() >= distance + 10) {
             navbar.removeClass('navbar-fixed-top').addClass('navbar-fixed-top');
           	//$("body").css("padding-top", "70px");
         } else {
@@ -158,7 +158,7 @@
     </nav>
      <!-- Navigation END -->
 <div id="site-content" class="container" style="">
-
+   
   <div class="row"  >
 
     <?php if (!empty($page['sidebar_first'])): ?>
@@ -199,7 +199,7 @@
 
   </div>
 </div>
-<footer id="footer" class="footer <?php echo drupal_is_front_page() ?  'footer-stick' :  'footer-stick' ?> ">
+<footer id="footer" class="footer <?php echo drupal_is_front_page() ?  'footer-stick' :  'footer-nonstick' ?> ">
     <div class="col-md-12">
         <div class="">
             <div class=" col-md-3"></div>
