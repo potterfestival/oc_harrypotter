@@ -1,0 +1,146 @@
+/**
+ * Place your custom styles here.
+ */
+html, 
+body {
+  height: 100%;
+  min-height: 100%;
+}
+#site-content
+{
+    width: 100%;
+}
+#site-content{
+    
+    padding-top: 10px;
+}
+.footer
+{
+   color: goldenrod !important;
+}
+.footer-stick {
+  position:absolute;
+  bottom:0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  min-height: 200px;
+  background-color: black !important;
+}
+.footer-nonstick {
+
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  min-height: 200px;
+  background-color: black !important;
+}
+/*
+* Carousel
+*/
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+#myCarousel {
+   margin-bottom: 25px;
+   margin-top: 0px;
+   height:94%;
+}
+/*
+* nav info header
+*/
+#nav-info-header{
+    border-bottom: 1px solid grey;
+    height: 40px !important;
+}
+/*
+* Navbar modifications
+*/
+.navbar{
+    margin-bottom:0px;
+    border-radius: 0 !important;
+    min-height: 72px;
+    color: goldenrod !important;
+    
+}
+.navbar a{
+    color: goldenrod !important;
+}
+
+#absolute_center {
+  transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+}
+
+.navbar-toggle {
+    z-index:0;
+}
+/*
+* Bootstrap carousel modifications
+*/
+.carousel-caption{
+    background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+    bottom: 40% !important;
+    height: 400px;
+}
+.carousel-indicators{
+    bottom: 40% !important;
+}
+.carousel-indicators .active
+{
+   background-color:red;
+}
+.carousel-control{
+    display:none;
+}
+.carousel-indicators li
+{
+    border: 1px solid red;
+}
+.carousel-control span
+{
+    color:red;
+    font-size: 53px !important;
+}
+/*
+* HP events styling
+*/
+.view-hp-news
+{
+     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+}
+.view-hp-news .view-content .views-row{
+    float:left;
+    margin: 10px;
+}
+.view-hp-news .view-content{
+    float:left;
+    background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+}
+.pane-title{
+    width: 100%;
+    text-align: center;
+     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+}
+.active-trail{
+    background: lightblue;
+}
+
