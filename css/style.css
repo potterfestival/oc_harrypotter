@@ -14,55 +14,13 @@ body {
 }
 #site-content{
     
-    padding-top: 10px;
+    padding-top: 90px;
 }
 .footer
 {
    color: goldenrod !important;
-}
-.footer-stick {
-  position:absolute;
-  bottom:0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  min-height: 200px;
-  background-color: black !important;
-}
-.footer-nonstick {
-
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  min-height: 200px;
-  background-color: black !important;
-}
-/*
-* Carousel
-*/
-.carousel,
-.item,
-.active {
-    height: 100%;
-}
-
-.carousel-inner {
-    height: 100%;
-}
-
-/* Background images are set within the HTML using inline CSS, not here */
-.fill {
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-#myCarousel {
-   margin-bottom: 25px;
-   margin-top: 0px;
-   height:94%;
+   background-color:black;
+   min-height: 200px;
 }
 /*
 * nav info header
@@ -93,33 +51,6 @@ body {
 
 .navbar-toggle {
     z-index:0;
-}
-/*
-* Bootstrap carousel modifications
-*/
-.carousel-caption{
-    background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
-    bottom: 40% !important;
-    height: 400px;
-}
-.carousel-indicators{
-    bottom: 40% !important;
-}
-.carousel-indicators .active
-{
-   background-color:red;
-}
-.carousel-control{
-    display:none;
-}
-.carousel-indicators li
-{
-    border: 1px solid red;
-}
-.carousel-control span
-{
-    color:red;
-    font-size: 53px !important;
 }
 /*
 * HP events styling
