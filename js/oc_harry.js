@@ -20,6 +20,6 @@ jQuery(document).ready(function() {
     if (jQuery("body").width() > jQuery(window).width()) {
         //alert("Horizontal Scrollbar! D:<");
     }
-    }, 300);
+    }, 800);
     
 });
