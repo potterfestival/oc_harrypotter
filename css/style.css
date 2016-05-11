@@ -4,15 +4,13 @@
 html, 
 body {
   height: 100%;
- 
-  
 }
 #site-content
 {
     width: 100%;
     min-height: 1000px;
     max-height: 100%;
-    margin-top: 95px;
+    margin-top: 100px;
 }
 #site-content{
     
