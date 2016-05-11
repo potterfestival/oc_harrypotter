@@ -74,17 +74,6 @@
  */
 ?>
 <script>
-
-jQuery(document).ready(function() {
-
-   var docHeight = jQuery(window).height();
-   var footerHeight = jQuery('#footer').height();
-   var footerTop = jQuery('#footer').position().top + footerHeight;
-
-   if (footerTop < docHeight) {
-    jQuery('#footer').css('margin-top', 10+ (docHeight - footerTop) + 'px');
-   }
-  });
   jQuery(document).ready(function($) {
   
     // Fixa navbar ao ultrapassa-lo
@@ -210,7 +199,7 @@ jQuery(document).ready(function() {
 
   </div>
 </div>
-<footer id="footer" class="footer <?php echo drupal_is_front_page() ?  'footer-nonstick' :  'footer-stick' ?> ">
+<footer id="footer" class="footer <?php echo drupal_is_front_page() ?  'footer-stick' :  'footer-stick' ?> ">
     <div class="col-md-12">
         <div class="">
             <div class=" col-md-3"></div>
