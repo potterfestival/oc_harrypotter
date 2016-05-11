@@ -3,19 +3,16 @@
  */
 html, 
 body {
-  min-height: 100%;
-  position: initial !important;
+  height: 100%;
+ 
   
 }
 #site-content
 {
-    
     width: 100%;
-    min-height: 500px;
+    min-height: 1000px;
     max-height: 100%;
-    display: flex;
-    align-items: stretch;
-
+    margin-top: 95px;
 }
 #site-content{
     

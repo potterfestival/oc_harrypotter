@@ -82,7 +82,7 @@
         $window = $(window);
 
     $window.scroll(function() {
-        if ($window.scrollTop() >= distance + 10) {
+        if ($window.scrollTop() >= distance ) {
             navbar.removeClass('navbar-fixed-top').addClass('navbar-fixed-top');
           	//$("body").css("padding-top", "70px");
         } else {
@@ -94,7 +94,7 @@
 </script>
     <!-- Navigation -->
 
-    <nav id="top-nav" class="navbar navbar-inverse" role="navigation">
+    <nav id="top-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div id="nav-info-header" class="hidden-xs col-md-12">
             <div class="col-md-6" style="padding-top:10px;font-size:15px;">
                 <?php
