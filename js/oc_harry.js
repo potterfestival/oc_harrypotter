@@ -8,12 +8,10 @@ jQuery(document).ready(function() {
     setTimeout(function(){ 
     // Check if body height is higher than window height :)
     if (jQuery("body").height() > jQuery(window).height()) {
-        alert("Vertical Scrollbar! D:");
         jQuery('#footer').addClass('footer-nonstick');
         jQuery('#footer').removeClass('footer-stick');
     }
     if (jQuery("body").height() < jQuery(window).height()) {
-        alert("Needs sticky footer!");
         jQuery('#footer').removeClass('footer-nonstick');
         jQuery('#footer').addClass('footer-stick');
         
