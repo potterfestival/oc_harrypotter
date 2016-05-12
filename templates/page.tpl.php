@@ -142,7 +142,7 @@
     </nav>
      <!-- Navigation END -->
 
-<div id="frontpage_carousel" style="min-height: 80%;">
+<div id="frontpage_carousel" style="min-height: 100%;">
 <div id="site-content" class="container" style="">
    <!-- Carousel -->
    <!-- Carousel END-->
@@ -189,6 +189,7 @@
 
     </div>
 </div>
+
 </div>
 <footer id="footer" class="footer <?php echo drupal_is_front_page() ?  'footer-nonstick' :  'footer-nonstick' ?> ">
     <div class="col-md-12">
