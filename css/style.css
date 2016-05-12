@@ -8,7 +8,7 @@ body {
 #site-content
 {
     width: 100%;
-    min-height: 1000px;
+    min-height: 0px;
     max-height: 100%;
     margin-top: 135px;
 }
@@ -17,8 +17,7 @@ body {
    color: goldenrod !important;
    background-color:black;
    min-height: 200px;
-   position:absolute;
-   bottom: 0px;
+ 
    width: 100%;
 }
 /*
@@ -74,4 +73,33 @@ body {
 .active-trail{
     background: lightblue;
 }
-
+/*
+* Owl carousel styling
+*/
+.owl-item div article
+{
+    text-align: center;
+    background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+    margin-left: 33%;
+    margin-right: 33%;
+    color: goldenrod !important;
+}
+.owl-item div article a{
+    color: goldenrod !important;
+}
+.owl-controls .owl-dots {
+    display: inline-block;
+}
+ .owl-controls .owl-dots span {
+    border: 1px solid #869791;
+    border-radius: 20px;
+    display: block;
+    height: 12px;
+    margin: 5px 7px;
+    opacity: 0.5;
+    width: 12px;
+}
+ .owl-controls .owl-dots .active span{
+    background: none repeat scroll 0 0 #869791;
+    
+ }

@@ -141,8 +141,11 @@
         <!-- /.container -->
     </nav>
      <!-- Navigation END -->
+
+<div id="frontpage_carousel" style="min-height: 80%;">
 <div id="site-content" class="container" style="">
-   
+   <!-- Carousel -->
+   <!-- Carousel END-->
   <div class="row"  >
 
     <?php if (!empty($page['sidebar_first'])): ?>
@@ -182,8 +185,12 @@
     <?php endif; ?>
 
   </div>
+    <div class="row"  >
+
+    </div>
 </div>
-<footer id="footer" class="footer <?php echo drupal_is_front_page() ?  'footer-stick' :  'footer-nonstick' ?> ">
+</div>
+<footer id="footer" class="footer <?php echo drupal_is_front_page() ?  'footer-nonstick' :  'footer-nonstick' ?> ">
     <div class="col-md-12">
         <div class="">
             <div class=" col-md-3"></div>
