@@ -92,7 +92,7 @@ body {
     display: inline-block;
 }
  .owl-controls .owl-dots span {
-    border: 1px solid #869791;
+    border: 1px solid red;
     border-radius: 20px;
     display: block;
     height: 12px;
@@ -101,6 +101,6 @@ body {
     width: 12px;
 }
  .owl-controls .owl-dots .active span{
-    background: none repeat scroll 0 0 #869791;
+    background: none repeat scroll 0 0 red;
     
  }
