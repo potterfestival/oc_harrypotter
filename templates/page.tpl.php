@@ -78,7 +78,7 @@
 </script>
     <!-- Navigation -->
 
-    <nav id="top-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav id="top-nav" class="navbar navbar-inverse navbar-static-top" role="navigation">
         <div id="nav-info-header" class="hidden-xs col-md-12">
             <div class="col-md-6" style="padding-top:10px;font-size:15px;">
                 <?php
@@ -99,7 +99,7 @@
             <!-- Brand and toggle get grouped for better mobile display -->
                 
         <?php if ($logo): ?>
-            <div id="absolute_center"  style="top:5px;"> 
+       <div id="absolute_center"  style="top:5px;"> 
       <a class="logo navbar-btn " href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
         <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
       </a>
@@ -142,7 +142,7 @@
     </nav>
      <!-- Navigation END -->
 
-<div id="frontpage_carousel" style="min-height: 100%;">
+<div id="frontpage_carousel" style="">
 <div id="site-content" class="container" style="">
    <!-- Carousel -->
    <!-- Carousel END-->
