@@ -9,17 +9,17 @@ body {
 #site-content
 {
     width: 100%;
-    min-height: 0px;
-    max-height: 100%;
-    margin-top: 135px;
+    min-height: 90vh;
+    margin-top:10px;
+    
 }
 .footer
 {
    color: goldenrod !important;
    background-color:black;
    min-height: 200px;
-   margin-top: 5px;
    width: 100%;
+   border-top: 0px solid black;
 }
 /*
 * nav info header
