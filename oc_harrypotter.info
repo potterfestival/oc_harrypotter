@@ -9,6 +9,7 @@ base theme = bootstrap
 ;;;;;;;;;;;;;;;;;;;;;
 
 regions[navigation]     = 'Navigation'
+regions[nav_right]      = 'Right Navigation'
 regions[jumbotron]      = 'Jumbotron'
 regions[top-left]       = 'Top Left'
 regions[top-right]      = 'Top Right'
