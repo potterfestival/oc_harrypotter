@@ -59,15 +59,15 @@ body {
 /*
 * HP events styling
 */
-.view-hp-news
+.view-hp-events
 {
      background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
 }
-.view-hp-news .view-content .views-row{
+.view-hp-events .view-content .views-row{
     float:left;
     margin: 10px;
 }
-.view-hp-news .view-content{
+.view-hp-events .view-content{
     float:left;
     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
 }
