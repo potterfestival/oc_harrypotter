@@ -23,6 +23,13 @@ body {
    border-top: 0px solid black;
 }
 /*
+* Panels with backgrounds
+*/
+.pane-hp-events
+{
+    background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+}
+/*
 * nav info header
 */
 #nav-info-header{
@@ -70,14 +77,23 @@ body {
 .view-hp-events .view-content{
     float:left;
     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+    width: 100%;
 }
 .pane-title{
-    width: 100%;
     text-align: center;
-     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+     color: goldenrod !important;
+     margin: 0px;
 }
 .active-trail{
     background: lightblue;
+}
+.view-hp-events div div .views-field-title{
+    background: red;
+}
+.pane-hp-events h2
+{
+    margin-left: 33%;
+    margin-right: 33%;
 }
 /*
 * Owl carousel styling
