@@ -5,14 +5,14 @@ html,
 body {
   height: 100%;
   position: relative;
-  overflow-x: hidden;
+  
+  
 }
 #site-content
 {
     width: 100%;
     min-height: 90vh;
     margin-top:10px;
-    
 }
 .footer
 {
@@ -52,6 +52,10 @@ body {
 .navbar-toggle {
     z-index:0;
 }
+#nav_menu_right{
+    float:right;
+    text-align: right;
+}
 /*
 * HP events styling
 */
@@ -78,19 +82,30 @@ body {
 /*
 * Owl carousel styling
 */
-.owl-item div article
+.node-frontpage-slide
 {
     text-align: center;
     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
-    margin-left: 33%;
-    margin-right: 33%;
+    margin-left: 20%;
+    margin-right: 20%;
+    color: goldenrod !important;
+    margin-top: 10vh;
+    height: 400px;
+    
+}
+.node-frontpage-slide{
     color: goldenrod !important;
 }
-.owl-item div article a{
-    color: goldenrod !important;
+.owl-controls{
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    bottom: 25px;
+    position: relative;
 }
 .owl-controls .owl-dots {
     display: inline-block;
+    
 }
  .owl-controls .owl-dots span {
     border: 1px solid red;
@@ -101,7 +116,46 @@ body {
     opacity: 0.5;
     width: 12px;
 }
+.owl-dot
+{
+    float:left;
+}
  .owl-controls .owl-dots .active span{
     background: none repeat scroll 0 0 red;
     
  }
+ #hp-read-news-frontpage-wrapper
+ {
+    margin-left: 33%;
+    margin-right: 33%;
+    text-align: center;
+    margin-top: 50px;
+
+    
+ }
+  #hp-read-news-block a
+  {
+      color: goldenrod !important;
+  }
+ #hp-read-news-block
+ {
+    background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+    padding-top: 10px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+     
+ }
+ 
+/*
+* Frontpage full page slide hacks.
+*/
+.bootstrap-twocol-stacked .row:nth-child(1)
+{
+    height: 90vh;
+}
+.bootstrap-twocol-stacked .row:nth-child(2)
+{
+    background-color: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+}
