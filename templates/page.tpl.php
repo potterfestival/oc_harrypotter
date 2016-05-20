@@ -74,7 +74,6 @@
  */
 ?>
 <script>
- 
 </script>
     <!-- Navigation -->
 
@@ -134,6 +133,11 @@
             <?php print render($page['navigation']); ?>
           <?php endif; ?>
         </nav>
+          <nav id="nav_menu_right" role="navigation">
+           <?php if (!empty($page['nav_right'])): ?>
+            <?php print render($page['nav_right']); ?>
+          <?php endif; ?>
+          </nav>
       </div>
     <?php endif; ?>
             <!-- /.navbar-collapse -->

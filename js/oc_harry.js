@@ -5,6 +5,9 @@
  */
 /*! Main */
 jQuery(document).scroll(function(e){
+    /*
+     * Keep navnbar on top while scrolling
+     */
     var scrollTop = jQuery(document).scrollTop();
     if(scrollTop > 0){
         console.log(scrollTop);
