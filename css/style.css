@@ -26,7 +26,7 @@ body {
    width: 100%;
    border-top: 0px solid black;
 }
-.region.region-top-left{
+.region.region-top-left,.region.region-top-right{
     padding-top:10px;
 }
 /*
