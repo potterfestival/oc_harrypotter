@@ -29,6 +29,10 @@ body {
 .region.region-top-left,.region.region-top-right{
     padding-top:10px;
 }
+.region.region-top-left
+{
+    font-size: 20px;
+}
 /*
 * Panels with backgrounds
 */
