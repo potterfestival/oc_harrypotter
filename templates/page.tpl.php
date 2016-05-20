@@ -78,7 +78,7 @@
     <!-- Navigation -->
 
     <nav id="top-nav" class="navbar navbar-inverse navbar-static-top" role="navigation">
-        <div id="nav-info-header" class="hidden-xs col-md-12">
+        <div id="nav-info-header" class="col-md-12">
             <div class="col-md-6" style="padding-top:10px;font-size:15px;">
                 <?php
              if (!empty($page['top-left'])):
