@@ -195,7 +195,7 @@
 </div>
 
 </div>
-<footer id="footer" class="footer <?php echo drupal_is_front_page() ?  'footer-nonstick' :  'footer-nonstick' ?> ">
+<footer id="footer" class="footer <?php echo drupal_is_front_page() ?  'footer-nonstick' :  'footer-nonstick' ?> col-md-12">
     <div class="col-md-12">
         <div class="">
             <div class=" col-md-3"></div>
