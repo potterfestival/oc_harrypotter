@@ -1,11 +1,15 @@
 /**
  * Place your custom styles here.
  */
+@font-face {
+    font-family: Caslon Antique Regular;
+    src: url('/sites/all/fonts/CaslonAntique.ttf');
+}
 html, 
 body {
   height: 100%;
   position: relative;
-  
+   font-family: Caslon Antique Regular;
   
 }
 #site-content
@@ -16,11 +20,14 @@ body {
 }
 .footer
 {
-   color: goldenrod !important;
-   background-color:black;
+   color: #B4A486  !important;
+   background-color: #000000;
    min-height: 200px;
    width: 100%;
    border-top: 0px solid black;
+}
+.region.region-top-left{
+    padding-top:10px;
 }
 /*
 * Panels with backgrounds
@@ -34,7 +41,7 @@ body {
 */
 #nav-info-header{
     border-bottom: 1px solid grey;
-    height: 40px !important;
+    height: 60px !important;
 }
 /*
 * Navbar modifications
@@ -42,12 +49,23 @@ body {
 .navbar{
     margin-bottom:0px;
     border-radius: 0 !important;
-    min-height: 72px;
-    color: goldenrod !important;
-    
+    min-height: 130px;
+    color: #B4A486  !important;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #000000 !important;
+}
+.navbar-nav li
+{
+    padding-top: 10px;
+}
+.active-trail
+{
+    background-color: #000000 !important;
+     text-decoration: underline;
 }
 .navbar a{
-    color: goldenrod !important;
+    color: #B4A486  !important;
 }
 
 #absolute_center {
@@ -81,7 +99,7 @@ body {
 }
 .pane-title{
     text-align: center;
-     color: goldenrod !important;
+     color: #B4A486  !important;
      margin: 0px;
 }
 .active-trail{
@@ -104,13 +122,14 @@ body {
     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
     margin-left: 20%;
     margin-right: 20%;
-    color: goldenrod !important;
+    color: #B4A486 !important;
     margin-top: 10vh;
     height: 400px;
-    
+    font-size: 70px;
+    font-weight: bold;
 }
 .node-frontpage-slide{
-    color: goldenrod !important;
+    color: #B4A486 !important;
 }
 .owl-controls{
     text-align: center;
@@ -151,17 +170,18 @@ body {
  }
   #hp-read-news-block a
   {
-      color: goldenrod !important;
+      color: #B4A486  !important;
   }
  #hp-read-news-block
  {
     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
     padding-top: 10px;
-    width: 100px;
+    width: 195px;
     height: 50px;
     text-align: center;
     display: inline-block;
-     
+    font-size: 25px;
+    
  }
  
 /*
