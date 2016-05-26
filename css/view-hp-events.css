@@ -10,9 +10,10 @@
      margin: auto;
 }
 .view-hp-events .view-content .views-row{
-    float:left;
+    
     margin-right: 5%;
     margin-bottom: 50px;
+    display: inline-block;
 }
 .view-hp-events .view-content .views-row .views-field
 {
@@ -20,14 +21,12 @@
     max-width: 350px;
 }
 .view-hp-events .view-content{
-    float:left;
+    
     //background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
     width: 100%;
     font-family: Verdana Regular;
-
-    padding-left:16%;
+    padding-left:25%;
     padding-top: 25px;
-    
 }
 .pane-title{
     text-align: center;
