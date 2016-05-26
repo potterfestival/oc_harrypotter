@@ -4,6 +4,7 @@
  */
 function oc_harrypotter_preprocess_html(&$vars) { 
  oc_harrypotter_oc_custom_backgrounds();
+ drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-events.css');
 }
 
 /*
