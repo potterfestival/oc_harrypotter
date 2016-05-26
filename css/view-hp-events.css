@@ -22,7 +22,9 @@
     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
     width: 100%;
     font-family: Verdana Regular;
-     padding: 25px;
+     padding-right:10%;
+     padding-left:10%;
+     padding-top: 25px;
     
 }
 .pane-title{
