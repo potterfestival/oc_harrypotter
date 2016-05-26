@@ -12,6 +12,10 @@ body {
    font-family: Caslon Antique Regular;
   
 }
+.icon-margin {
+    margin-right: 1em;
+    color: red;
+}
 #site-content
 {
     width: 100%;
