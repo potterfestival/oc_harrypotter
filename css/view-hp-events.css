@@ -3,15 +3,16 @@
 */
 .view-hp-events
 {
-     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+     //background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
      color:black;
-    
+     display:inline-block;
+     width: 100%;
+     margin: auto;
 }
 .view-hp-events .view-content .views-row{
     float:left;
     margin-right: 5%;
     margin-bottom: 50px;
-    
 }
 .view-hp-events .view-content .views-row .views-field
 {
@@ -20,12 +21,12 @@
 }
 .view-hp-events .view-content{
     float:left;
-    background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+    //background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
     width: 100%;
     font-family: Verdana Regular;
-     padding-right:10%;
-     padding-left:10%;
-     padding-top: 25px;
+    padding-right:25%;
+    padding-left:25%;
+    padding-top: 25px;
     
 }
 .pane-title{
@@ -41,7 +42,6 @@
     padding: 10px;
     height: 40px;
     overflow-y: hidden;
-    
 }
 .view-hp-events div div .views-field-title a{
     color:black;
@@ -65,6 +65,9 @@
     font-size: 15px;
     width: 350px;
     overflow-y: hidden;
+}
+.pane-hp-events{
+   
 }
 .pane-hp-events h2
 {
