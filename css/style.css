@@ -12,6 +12,9 @@ body {
    font-family: Caslon Antique Regular;
   
 }
+.well {
+    background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_brown.png');
+}
 .icon-margin {
     margin-right: 1em;
     color: red;
