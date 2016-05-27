@@ -20,6 +20,23 @@ function oc_harrypotter_preprocess_html(&$vars) {
     }
 }
 
+/**
+ * Helper function; Load node by title
+ */
+function node_load_by_title($title, $node_type) {
+  $query = new EntityFieldQuery();
+  $entities = $query->entityCondition('entity_type', 'node')
+      ->propertyCondition('type', $node_type)
+      ->propertyCondition('title', $title)
+      ->propertyCondition('status', 1)
+      ->range(0, 1)
+      ->execute();
+  if (!empty($entities)) {
+    $load = array_keys($entities['node']);
+    return node_load(array_shift($load));
+  }
+}
+
 /*
  * Helpers
  */
@@ -52,19 +69,6 @@ function oc_harrypotter_oc_custom_backgrounds()
         '@media screen and (min-width: 1200px) { body { -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover;
   background-size: cover; background-repeat: no-repeat; background-position:center center; background-attachment: fixed; background-image:url(' . $bg1600 . ');} }', 'inline'
     );
-  }
-}
-function node_load_by_title($title, $node_type) {
-  $query = new EntityFieldQuery();
-  $entities = $query->entityCondition('entity_type', 'node')
-      ->propertyCondition('type', $node_type)
-      ->propertyCondition('title', $title)
-      ->propertyCondition('status', 1)
-      ->range(0, 1)
-      ->execute();
-  if (!empty($entities)) {
-    $load = array_keys($entities['node']);
-    return node_load(array_shift($load));
   }
 }
 
