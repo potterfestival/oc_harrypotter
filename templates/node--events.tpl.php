@@ -131,15 +131,12 @@
                 <?php if ($oc_harrypotter_place2book_tickets): ?>
                   <p><?php print render($content['field_place2book_tickets'][0]); ?><p>
                     <?php endif; ?>
-                    <?php if ($field_vis_mere['und'][0] == true): ?>
-                  <div class="showmore"><?php print ('<a target="_blank" href="http://www.kultunaut.dk/perl/arrmore/type-nynaut?ArrNr=' . $nid . '">Se mere</a>'); ?></div>
-                <?php endif; ?>
             </div>
 
             <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
                 <div class="lead">
-                    <span class="btn btn-info">
+                    <span class="btn btn-event">
                         <?php print render($content['field_event_category']); ?>
                     </span>
                     <br><br>

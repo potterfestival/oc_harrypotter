@@ -17,7 +17,12 @@ body {
 }
 .icon-margin {
     margin-right: 1em;
-    color: red;
+    color: #be1e2d;
+}
+.btn-event {
+  background-color: #be1e2d;
+  border-color: #be1e2d;
+  color: #ffffff;
 }
 #site-content
 {
