@@ -83,7 +83,7 @@
 <div class="container-fluid">
     <div class="row well">
 
-        <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 col-xs-height col-full-height">
+        <div>
             <?php print $user_picture; ?>
 
             <h2><?php print $title ?></h2>
