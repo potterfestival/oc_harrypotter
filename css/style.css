@@ -24,6 +24,11 @@ body {
   border-color: #be1e2d;
   color: #ffffff;
 }
+.btn-event .field-item.even > a {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
 #site-content
 {
     width: 100%;
