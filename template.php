@@ -5,6 +5,19 @@
 function oc_harrypotter_preprocess_html(&$vars) { 
  oc_harrypotter_oc_custom_backgrounds();
  drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-events.css');
+ 
+  if(drupal_is_front_page())
+    {
+    $meta_description = array(
+    '#type' => 'html_tag',
+    '#tag' => 'meta',
+    '#attributes' => array(     
+      'content' => 'Harry potter festival er byens kulturelle legeplads, med fantastiske muligheder for kulturelle arrangementer indendørs og udendørs", der er specialindrettet til udendørs kulturbegivenheder.',
+      'name' =>  'description',
+    )
+  );
+      drupal_add_html_head($meta_description, 'meta_description');  
+    }
 }
 
 /*
@@ -13,10 +26,20 @@ function oc_harrypotter_preprocess_html(&$vars) {
 function oc_harrypotter_oc_custom_backgrounds()
 {
   $path = drupal_get_path_alias();
-  $front = "<front>";
+  $front = "*";
+  $events = "arrangementer/*";
+  $news = "nyheder/*";
+  
   if (drupal_match_path($path, $front)) {
     $node = node_load_by_title('forside baggrund', 'background');
   }
+  if (drupal_match_path($path, $events)) {
+    $node = node_load_by_title('arrangementer baggrund', 'background');
+  }
+  elseif (drupal_match_path($path, $news)) {
+    $node = node_load_by_title('nyheder baggrund', 'background');
+  }
+  
   if (!empty($node) && !empty($node->field_min_1600px) && !empty($node->field_min_1200px)) {
     $bg1200 = file_create_url($node->field_min_1200px[LANGUAGE_NONE][0]['uri']);
     $bg1600 = file_create_url($node->field_min_1600px[LANGUAGE_NONE][0]['uri']);
