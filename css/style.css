@@ -9,7 +9,7 @@ html,
 body {
   height: 100%;
   position: relative;
-   font-family: Caslon Antique Regular;
+   font-family: Verdana, Geneva, sans-serif;
   
 }
 .well {
@@ -119,6 +119,7 @@ body {
     height: 400px;
     font-size: 70px;
     font-weight: bold;
+    font-family: Caslon Antique Regular;
 }
 .node-frontpage-slide{
     color: #B4A486 !important;
