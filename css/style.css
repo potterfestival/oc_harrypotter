@@ -12,6 +12,14 @@ body {
    font-family: Verdana, Geneva, sans-serif;
   
 }
+
+.fa-map-marker::before {
+    margin-left: 5px!important;
+}
+.fa-2x {
+    float: left;
+    font-size: 1.5em!important;
+}
 .well {
     border: none;
     background-color: transparent;
