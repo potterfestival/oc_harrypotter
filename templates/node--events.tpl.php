@@ -137,7 +137,7 @@
 
                 <div class="lead">
                     <span class="btn btn-event">
-                        <?php print render($content['field_event_category']); ?>
+                        <?php print render($content['field_grupperings_lokation']); ?>
                     </span>
                     <br><br>
                     <p>
