@@ -26,7 +26,7 @@
     width: 100%;
     font-family: Verdana Regular;
     padding-left:15%;
-    padding-top: 25px;
+    padding-top: 20px;
 }
 .pane-title{
     text-align: center;
@@ -94,4 +94,19 @@
 {
     color: red;
     display: inline-block;
+}
+.view-display-id-hp_event_date_group_view div form div .views-exposed-widgets
+{
+    color: #B4A486  !important;
+    padding-left: 5%;
+}
+/*
+* view-display-id-hp_event_date_group_view
+*/
+.view-display-id-hp_event_date_group_view h3
+{
+     color: #B4A486  !important;
+}
+.view-display-id-hp_event_date_group_view  .view-content{
+    padding-left:5% !important;
 }

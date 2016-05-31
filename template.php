@@ -5,7 +5,7 @@
 function oc_harrypotter_preprocess_html(&$vars) { 
  oc_harrypotter_oc_custom_backgrounds();
  drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-events.css');
- 
+ drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-events/view-hp-events.media.css');
   if(drupal_is_front_page())
     {
     $meta_description = array(
@@ -35,7 +35,7 @@ function node_load_by_title($title, $node_type) {
     $load = array_keys($entities['node']);
     return node_load(array_shift($load));
   }
- drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-events/view-hp-events.media.css');
+ 
 }
 
 /*

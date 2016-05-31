@@ -12,7 +12,14 @@ body {
    font-family: Verdana, Geneva, sans-serif;
   
 }
-
+.breadcrumb{
+    background-color: #000000 !important;
+    
+}
+.breadcrumb li a
+{
+    color: #B4A486  !important;
+}
 .fa-map-marker::before {
     margin-left: 5px!important;
 }
@@ -112,7 +119,14 @@ body {
     float:right;
     text-align: right;
 }
-
+.dropdown-menu
+{
+    background-color: #000000 !important;
+}
+.dropdown-menu > li > a:hover {
+    background-color: #000000 !important;
+    background-image: none;
+}
 /*
 * Owl carousel styling
 */
