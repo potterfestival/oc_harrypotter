@@ -48,6 +48,9 @@ body {
     display: block;
     padding: 10px 15px;
 }
+.pane-glokationer .field-content > a:hover {
+    background-color: lightgrey;
+}
 .pane-glokationer .field-content > a::after {
     color: #96291d;
     content: "";
