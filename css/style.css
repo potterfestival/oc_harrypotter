@@ -36,12 +36,13 @@ body {
     border: none;
     background-color: transparent;
     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+    padding-bottom: 2%;
 }
 .pane-glokationer .field-content > a {
     background-color: #b3a485;
     color: #000;
     font-weight: bold;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     margin-left: 5%;
     margin-right: 5%;
     display: block;
