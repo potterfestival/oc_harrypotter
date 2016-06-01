@@ -45,7 +45,7 @@ body {
     margin-left: 5%;
     margin-right: 5%;
 }
-.menu-block-wrapper .field-content > a::after {
+.pane-glokationer .field-content > a::after {
     color: #96291d;
     content: "";
     float: right;
