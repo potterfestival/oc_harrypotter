@@ -20,6 +20,14 @@ body {
 {
     color: #B4A486  !important;
 }
+.language-switcher-locale-url li {
+    float: right;
+    list-style: outside none none;
+    margin-left: 0.3em;
+}
+#block-locale-language .block-title {
+    display: none;
+}
 .fa-map-marker::before {
     margin-left: 5px!important;
 }
