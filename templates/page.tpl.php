@@ -231,14 +231,14 @@
             <div class="col-md-4 "></div>
         </div>
         
-        <div class="col-md-6 footer_logos" >
+        <div class="col-xs-12 col-sm-12 col-md-6 footer_logos" >
              <?php
              if (!empty($page['bottom-left'])):
              echo render($page['bottom-left']); 
              endif;
              ?>
         </div>
-        <div class="col-md-6 footer_social_logos text-right">
+        <div class="col-xs-12 col-sm-12 col-md-6 footer_social_logos text-right">
             <?php
              if (!empty($page['bottom-right'])):
              echo render($page['bottom-right']); 

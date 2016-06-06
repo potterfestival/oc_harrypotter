@@ -12,13 +12,13 @@
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
     .view-hp-events .view-content{
-        padding-left:12%;
+        padding-left:5%;
     }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
         .view-hp-events .view-content{
-        padding-left:15%;
+       padding-left:5%;
     }
 }
