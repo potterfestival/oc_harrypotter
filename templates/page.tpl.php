@@ -123,9 +123,15 @@
                <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="navbar-collapse collapse">
         <nav role="navigation">
+            <div class="col-md-5">
           <?php if (!empty($primary_nav)): ?>
             <?php print render($primary_nav); ?>
           <?php endif; ?>
+            </div>
+            <div class="col-md-2">
+                
+            </div>
+             <div class="col-md-5">
           <?php if (!empty($secondary_nav)): ?>
             <?php
             /*
@@ -134,7 +140,7 @@
              */
             print render($secondary_nav); 
             ?>
-            
+            </div>
           <?php endif; ?>
           <?php if (!empty($page['navigation'])): ?>
             <?php print render($page['navigation']); ?>
