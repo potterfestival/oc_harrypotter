@@ -197,10 +197,25 @@
 </div>
 <footer id="footer" class="footer <?php echo drupal_is_front_page() ?  'footer-nonstick' :  'footer-nonstick' ?> col-md-12">
     <div class="col-md-12">
-        <div class="">
-            <div class=" col-md-3"></div>
-            <div class="footer_menu col-md-6 " style="min-height: 134px;">Mor<br/>Far<br/><?php print render($page['footer']); ?></div>
-            <div class="col-md-3 "></div>
+        <div class="col-md-12">
+            <div class=" col-md-4"></div>
+            <div class=" col-md-4 " style="min-height: 134px;">
+                <div class=" col-md-4">
+                     <?php if (!empty($page['footer-left'])): ?>
+                        <?php print render($page['footer-left']); ?>
+                     <?php endif; ?>
+                </div>
+                <div class=" col-md-4">                   
+                     <?php if (!empty($page['footer-middle'])): ?>
+                        <?php print render($page['footer-middle']); ?>
+                     <?php endif; ?></div>
+                <div class=" col-md-4">
+                     <?php if (!empty($page['footer-rigth'])): ?>
+                        <?php print render($page['footer-rigth']); ?>
+                     <?php endif; ?>
+                </div>
+            </div>
+            <div class="col-md-4 "></div>
         </div>
         
         <div class="col-md-6 footer_logos" >
