@@ -127,7 +127,15 @@
             <?php print render($primary_nav); ?>
           <?php endif; ?>
           <?php if (!empty($secondary_nav)): ?>
-            <?php print render($secondary_nav); ?>
+            <?php
+            /*
+             * Overwrite bootstrap default side menu
+             * so it does not display user-menu
+             */
+           // $variables['secondary_nav'] = menu_tree('menu-menu-right');
+            print render($secondary_nav); 
+            ?>
+            
           <?php endif; ?>
           <?php if (!empty($page['navigation'])): ?>
             <?php print render($page['navigation']); ?>

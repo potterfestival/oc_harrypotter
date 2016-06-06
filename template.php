@@ -19,7 +19,13 @@ function oc_harrypotter_preprocess_html(&$vars) {
       drupal_add_html_head($meta_description, 'meta_description');  
     }
 }
-
+/*
+ * Modify page variables
+ */
+function oc_harrypotter_preprocess_page(&$variables) {
+     $variables['secondary_nav'] = menu_tree('menu-menu-right');
+     $variables['secondary_nav']['#theme_wrappers'] = array('menu_tree__secondary');
+}
 /**
  * Helper function; Load node by title
  */
