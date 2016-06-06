@@ -132,7 +132,6 @@
              * Overwrite bootstrap default side menu
              * so it does not display user-menu
              */
-           // $variables['secondary_nav'] = menu_tree('menu-menu-right');
             print render($secondary_nav); 
             ?>
             
