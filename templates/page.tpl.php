@@ -77,8 +77,8 @@
 </script>
     <!-- Navigation -->
 
-    <nav id="top-nav" class="navbar navbar-inverse navbar-static-top" role="navigation">
-        <div id="nav-info-header" class="">
+    <nav id="top-nav" class="navbar navbar-inverse navbar-static-top hidden-print" role="navigation">
+        <div id="nav-info-header" class="hidden-xs">
             <div class="col-md-6" style="padding-top:10px;font-size:15px;">
                 <?php
              if (!empty($page['top-left'])):
@@ -123,15 +123,15 @@
                <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="navbar-collapse collapse">
         <nav role="navigation">
-            <div class="col-md-5">
+            <div class="col-xs-2 col-sm-5 col-md-5">
           <?php if (!empty($primary_nav)): ?>
             <?php print render($primary_nav); ?>
           <?php endif; ?>
             </div>
-            <div class="col-md-2">
+            <div class="col-xs-2 col-sm-2 col-md-2">
                 
             </div>
-             <div class="col-md-5">
+             <div class="col-xs-2 col-sm-5 col-md-5 pull-right">
           <?php if (!empty($secondary_nav)): ?>
             <?php
             /*
