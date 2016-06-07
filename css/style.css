@@ -124,9 +124,14 @@ body {
 /*
 * Panels with backgrounds
 */
-.pane-hp-events
+.pane-hp-events, .pane-view-galleries
 {
     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+}
+.pane-view-galleries
+{
+    min-height: 100vh;
+    height:auto
 }
 /*
 * nav info header
