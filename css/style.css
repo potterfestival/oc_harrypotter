@@ -131,7 +131,15 @@ body {
 .pane-view-galleries
 {
     min-height: 100vh;
-    height:auto
+    height:auto;
+    color: #B4A486;
+    text-align: center;
+    text-transform: uppercase;
+}
+.pane-view-galleries h2
+{
+    font-size: 34px;
+    font-weight: bold;
 }
 /*
 * nav info header
