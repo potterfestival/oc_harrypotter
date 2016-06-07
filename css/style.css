@@ -113,6 +113,14 @@ body {
 {
     font-size: 20px;
 }
+.region-footer-left section ul li a,.region-footer-middle section ul li a,.region-footer-rigth section ul li a{
+    color: #B4A486;
+    text-align: center;
+}
+.region-footer-left section ul li a:hover,.region-footer-middle section ul li a:hover,.region-footer-rigth section ul li a:hover
+{
+    background-color: #000000 !important;
+}
 /*
 * Panels with backgrounds
 */

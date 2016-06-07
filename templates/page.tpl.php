@@ -77,8 +77,8 @@
 </script>
     <!-- Navigation -->
 
-    <nav id="top-nav" class="navbar navbar-inverse navbar-static-top" role="navigation">
-        <div id="nav-info-header" class="">
+    <nav id="top-nav" class="navbar navbar-inverse navbar-static-top hidden-print" role="navigation">
+        <div id="nav-info-header" class="hidden-xs">
             <div class="col-md-6" style="padding-top:10px;font-size:15px;">
                 <?php
              if (!empty($page['top-left'])):
@@ -123,11 +123,24 @@
                <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="navbar-collapse collapse">
         <nav role="navigation">
+            <div class="col-xs-2 col-sm-5 col-md-5">
           <?php if (!empty($primary_nav)): ?>
             <?php print render($primary_nav); ?>
           <?php endif; ?>
+            </div>
+            <div class="col-xs-2 col-sm-2 col-md-2">
+                
+            </div>
+             <div class="col-xs-2 col-sm-5 col-md-5 pull-right">
           <?php if (!empty($secondary_nav)): ?>
-            <?php print render($secondary_nav); ?>
+            <?php
+            /*
+             * Overwrite bootstrap default side menu
+             * so it does not display user-menu
+             */
+            print render($secondary_nav); 
+            ?>
+            </div>
           <?php endif; ?>
           <?php if (!empty($page['navigation'])): ?>
             <?php print render($page['navigation']); ?>
@@ -197,20 +210,35 @@
 </div>
 <footer id="footer" class="footer <?php echo drupal_is_front_page() ?  'footer-nonstick' :  'footer-nonstick' ?> col-md-12">
     <div class="col-md-12">
-        <div class="">
-            <div class=" col-md-3"></div>
-            <div class="footer_menu col-md-6 " style="min-height: 134px;">Mor<br/>Far<br/><?php print render($page['footer']); ?></div>
-            <div class="col-md-3 "></div>
+        <div class="col-md-12">
+            <div class=" col-md-4"></div>
+            <div class=" col-md-4 " style="min-height: 134px;">
+                <div class=" col-md-4">
+                     <?php if (!empty($page['footer-left'])): ?>
+                        <?php print render($page['footer-left']); ?>
+                     <?php endif; ?>
+                </div>
+                <div class=" col-md-4">                   
+                     <?php if (!empty($page['footer-middle'])): ?>
+                        <?php print render($page['footer-middle']); ?>
+                     <?php endif; ?></div>
+                <div class=" col-md-4">
+                     <?php if (!empty($page['footer-rigth'])): ?>
+                        <?php print render($page['footer-rigth']); ?>
+                     <?php endif; ?>
+                </div>
+            </div>
+            <div class="col-md-4 "></div>
         </div>
         
-        <div class="col-md-6 footer_logos" >
+        <div class="col-xs-12 col-sm-12 col-md-6 footer_logos" >
              <?php
              if (!empty($page['bottom-left'])):
              echo render($page['bottom-left']); 
              endif;
              ?>
         </div>
-        <div class="col-md-6 footer_social_logos text-right">
+        <div class="col-xs-12 col-sm-12 col-md-6 footer_social_logos text-right">
             <?php
              if (!empty($page['bottom-right'])):
              echo render($page['bottom-right']); 
