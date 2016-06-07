@@ -112,7 +112,6 @@
                     hide($content['field_title_image']);
                     hide($content['field_attachments']);
                     hide($content['field_tags']);
-                    hide($content['field_info']);
                     hide($content['field_galleria']);
                     print render($content);
                     ?>
@@ -149,7 +148,6 @@
             <?php print render($content['field_title_image']); ?>
             <div class="info-field">
                 <p><?php print render($content['field_attachments']); ?></p>
-                <p><?php print render($content['field_info']); ?></p>
             </div>
         </div>
     </div>
