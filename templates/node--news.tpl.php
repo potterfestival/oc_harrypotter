@@ -122,7 +122,7 @@
                     ?>
                 </div>
                   <p><?php print render($content['field_galleria']); ?></p>
-                <div class="page-footer footer">
+                <div class="page-footer">
                     <?php if (!$teaser) : ?>
                       <p><?php print render($content['field_tags']); ?></p>
                       <?php if ($display_submitted): ?>
@@ -149,11 +149,9 @@
 
         </div>
 
-        <div class="col-lg-2 col-md-4 col-sm-4 col-xs-12 col-sm-height col-md-height col-xs-height col-full-height col-top" style="background-color: #e5e5e5; padding-left:0;padding-right:0;">            
+        <div style="background-color: #e5e5e5; padding-left:0;padding-right:0;">            
             <?php print render($content['field_title_image']); ?>
-            <div class="info-field">
                 <p><?php print render($content['field_attachments']); ?></p>
-            </div>
         </div>
     </div>
 </div>
