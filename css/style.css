@@ -271,7 +271,7 @@ body {
 */
 .bootstrap-twocol-stacked .row:nth-child(1)
 {
-    height: 90vh;
+    //height: 90vh;
 }
 .bootstrap-twocol-stacked .row:nth-child(2)
 {
