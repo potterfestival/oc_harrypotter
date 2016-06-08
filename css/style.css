@@ -269,14 +269,3 @@ body {
     
  }
  
-/*
-* Frontpage full page slide hacks.
-*/
-.bootstrap-twocol-stacked .row:nth-child(1)
-{
-    height: 90vh;
-}
-.bootstrap-twocol-stacked .row:nth-child(2)
-{
-    background-color: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
-}
