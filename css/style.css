@@ -130,7 +130,7 @@ body {
 }
 .pane-view-galleries
 {
-    min-height: 100vh;
+    
     height:auto;
     color: #B4A486;
     text-align: center;
@@ -271,7 +271,7 @@ body {
 */
 .bootstrap-twocol-stacked .row:nth-child(1)
 {
-    //height: 90vh;
+    height: 90vh;
 }
 .bootstrap-twocol-stacked .row:nth-child(2)
 {
