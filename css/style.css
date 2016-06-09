@@ -269,3 +269,21 @@ body {
     
  }
  
+/*
+* Bootstrap modal styling
+*/
+.modal-header , .modal-footer , .modal-content
+{
+    background: #B4A486;
+    color:  black;
+    
+}
+.modal-header{
+     border-bottom: 1px solid black;
+}
+.modal-footer{
+    border-top: 1px solid black;
+}
+.modal-content{
+    
+}
