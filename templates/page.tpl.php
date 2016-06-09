@@ -123,26 +123,21 @@
                <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="navbar-collapse collapse">
         <nav role="navigation">
-            <div class="col-md-2"></div>
-            <div class="col-xs-2 col-sm-5 col-md-5">
-          <?php if (!empty($primary_nav)): ?>
-            <?php print render($primary_nav); ?>
-          <?php endif; ?>
+           <div id="main-left-top-nav" class="col-xs-2 col-sm-5 col-md-5">
+                <?php if (!empty($primary_nav)): ?>
+                  <?php print render($primary_nav); ?>
+                <?php endif; ?>
             </div>
-            <div class="col-xs-2 col-sm-2 col-md-2">
-                
+            <div id="main-right-top-nav" class="col-xs-2 col-sm-5 col-md-5 pull-right">
+                <?php if (!empty($secondary_nav)): ?>
+                  <?php
+                  /*
+                   * Overwrite bootstrap default side menu
+                   * so it does not display user-menu
+                   */
+                  print render($secondary_nav); 
+                  ?>
             </div>
-             <div class="col-xs-2 col-sm-5 col-md-5 pull-right">
-          <?php if (!empty($secondary_nav)): ?>
-            <?php
-            /*
-             * Overwrite bootstrap default side menu
-             * so it does not display user-menu
-             */
-            print render($secondary_nav); 
-            ?>
-            </div>
-            <div class="col-md-2 pull-right"></div>
           <?php endif; ?>
           <?php if (!empty($page['navigation'])): ?>
             <?php print render($page['navigation']); ?>
@@ -262,7 +257,7 @@ Dialogs
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title"><?php Translate ?></h4>
+        <h4 class="modal-title">Translate </h4>
       </div>
       <div class="modal-body">
         <?php
