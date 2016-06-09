@@ -16,3 +16,19 @@ jQuery(document).scroll(function(e){
         jQuery('.navbar').removeClass('navbar-fixed-top').addClass('navbar-static-top');
     }
 });
+/*
+ * Main ready
+ */
+jQuery(document).ready(function(){
+    /*
+     * Make translation dialog close on selection
+     */
+    jQuery('body').on('click','.gtflag',function(){
+        jQuery('#gtranslate').modal('hide');
+    })
+    jQuery('body').on('click','.nturl',function(){
+        jQuery('#gtranslate').modal('hide');
+    })
+    
+    
+});

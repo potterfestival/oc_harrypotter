@@ -80,6 +80,7 @@
     <nav id="top-nav" class="navbar navbar-inverse navbar-static-top hidden-print" role="navigation">
         <div id="nav-info-header" class="hidden-xs">
             <div class="col-md-6" style="padding-top:10px;font-size:15px;">
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#gtranslate">Open Modal</button>
                 <?php
              if (!empty($page['top-left'])):
              echo render($page['top-left']); 
@@ -247,3 +248,32 @@
         </div>
     </div>
 </footer>
+<!--- 
+Dialogs
+---!>
+<?php if(module_exists('gtranslate')){ ?>
+
+<!-- Modal -->
+<div id="gtranslate" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Oversæt</h4>
+      </div>
+      <div class="modal-body">
+        <?php
+        $block = module_invoke('gtranslate', 'block_view', 'gtranslate');
+        print render($block['content']);
+        ?>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"><?php echo t('Close') ?></button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<?php }?>
