@@ -123,23 +123,20 @@
                <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="navbar-collapse collapse">
         <nav role="navigation">
-            <div class="col-xs-2 col-sm-5 col-md-5">
-          <?php if (!empty($primary_nav)): ?>
-            <?php print render($primary_nav); ?>
-          <?php endif; ?>
+           <div id="main-left-top-nav" class="col-xs-2 col-sm-5 col-md-5">
+                <?php if (!empty($primary_nav)): ?>
+                  <?php print render($primary_nav); ?>
+                <?php endif; ?>
             </div>
-            <div class="col-xs-2 col-sm-2 col-md-2">
-                
-            </div>
-             <div class="col-xs-2 col-sm-5 col-md-5 pull-right">
-          <?php if (!empty($secondary_nav)): ?>
-            <?php
-            /*
-             * Overwrite bootstrap default side menu
-             * so it does not display user-menu
-             */
-            print render($secondary_nav); 
-            ?>
+            <div id="main-right-top-nav" class="col-xs-2 col-sm-5 col-md-5 pull-right">
+                <?php if (!empty($secondary_nav)): ?>
+                  <?php
+                  /*
+                   * Overwrite bootstrap default side menu
+                   * so it does not display user-menu
+                   */
+                  print render($secondary_nav); 
+                  ?>
             </div>
           <?php endif; ?>
           <?php if (!empty($page['navigation'])): ?>
@@ -247,3 +244,32 @@
         </div>
     </div>
 </footer>
+<!--- 
+Dialogs
+---!>
+<?php if(module_exists('gtranslate')){ ?>
+
+<!-- Modal -->
+<div id="gtranslate" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Translate </h4>
+      </div>
+      <div class="modal-body">
+        <?php
+        $block = module_invoke('gtranslate', 'block_view', 'gtranslate');
+        print render($block['content']);
+        ?>
+      </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+
+  </div>
+</div>
+<?php }?>

@@ -24,6 +24,11 @@ function oc_harrypotter_preprocess_html(&$vars) {
     )
   );
       drupal_add_html_head($meta_description, 'meta_description');  
+      
+    /*
+    * Frontpage full page slide hacks.
+    */
+        drupal_add_css('.bootstrap-twocol-stacked .row:nth-child(1) {height: 90vh !important;} .bootstrap-twocol-stacked .row:nth-child(2) {background-color: url("/sites/all/themes/oc_harrypotter/images/transparent_black.png"");}', 'inline');
     }
 }
 /*
