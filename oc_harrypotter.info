@@ -39,6 +39,7 @@ regions[bottom-right]   = 'bottom Right'
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/bootstrap-dropdown-fix.css
 stylesheets[all][] = css/flexslider-overwrites.css
+stylesheets[print][] = "css/print.css"
 ;;;;;;;;;;;;;;;;;;;;;
 ;; Scripts
 ;;;;;;;;;;;;;;;;;;;;;
