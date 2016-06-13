@@ -3,7 +3,7 @@
 */
 .view-hp-events
 {
-     //background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+     /*background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');*/
      color:black;
      display:inline-block;
      width: 100%;
@@ -22,7 +22,7 @@
 }
 .view-hp-events .view-content{
     
-    //background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+    /*background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');*/
     width: 100%;
     font-family: Verdana Regular;
     padding-left:15%;
