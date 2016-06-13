@@ -9,8 +9,8 @@ html,
 body {
   height: 100%;
   position: relative;
-   font-family: Verdana, Geneva, sans-serif;
-  
+  font-family: Verdana, Geneva, sans-serif;
+  color: #000;  
 }
 .breadcrumb{
     background-color: #000000 !important;
