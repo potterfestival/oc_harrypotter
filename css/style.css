@@ -46,6 +46,10 @@ body {
     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
     padding-bottom: 2%;
 }
+.pane-menu-tree li > a {
+    color: #b4a486 !important;
+    text-transform: uppercase;
+}
 .pane-glokationer .field-content > a {
     background-color: #b3a485;
     color: #000;
