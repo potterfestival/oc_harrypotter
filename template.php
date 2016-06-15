@@ -1,4 +1,11 @@
 <?php
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function oc_harrypotter_preprocess_print(&$variables) {
+  $node = $variables['node'];
+  $variables['content'] = strstr($node->content, '</h2>');
+}
 /*
  * In here we will handle custom backgrounds.
  */
