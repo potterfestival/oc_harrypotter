@@ -62,7 +62,7 @@ function node_load_by_title($title, $node_type) {
 function oc_harrypotter_oc_custom_backgrounds()
 {
   $path = drupal_get_path_alias();
-  $front = "/";
+  $front = "*";
   $events = "events/*";
   $news = "nyheder/*";
   $statisk = "statisk/*";
@@ -72,12 +72,9 @@ function oc_harrypotter_oc_custom_backgrounds()
   /* @var $path_parts type */
   if (isset($path_parts[1]) && $path_parts[0] == 'arrangementer') {
      $node = menu_get_object();
-  } elseif (drupal_match_path($path, $events)) {
+  } 
+  elseif (drupal_match_path($path, $events)) {
     $node = node_load_by_title('arrangementer baggrund', 'background');
-  }
-
-  if (drupal_match_path($path, $front)) {
-    $node = node_load_by_title('forside baggrund', 'background');
   }
   elseif (drupal_match_path($path, $news)) {
     $node = node_load_by_title('nyheder baggrund', 'background');
@@ -87,6 +84,9 @@ function oc_harrypotter_oc_custom_backgrounds()
   }
   elseif (drupal_match_path($path, $hpevents)) {
     $node = node_load_by_title('hp-events baggrund', 'background');
+  }
+  elseif (drupal_match_path($path, $front)) {
+    $node = node_load_by_title('forside baggrund', 'background');
   }
   
   if (!empty($node) && !empty($node->field_min_1600px) && !empty($node->field_min_1200px)) {
