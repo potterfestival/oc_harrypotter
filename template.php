@@ -62,23 +62,48 @@ function node_load_by_title($title, $node_type) {
 function oc_harrypotter_oc_custom_backgrounds()
 {
   $path = drupal_get_path_alias();
-  $front = "*";
-  $events = "arrangementer/*";
+  $front = "/";
+  $events = "events/*";
   $news = "nyheder/*";
+  $statisk = "statisk/*";
+  $hpevents = "hp-events";
   
+  $path_parts = explode('/', $path);
+  /* @var $path_parts type */
+  if (isset($path_parts[1]) && $path_parts[0] == 'arrangementer') {
+     $node = menu_get_object();
+  } elseif (drupal_match_path($path, $events)) {
+    $node = node_load_by_title('arrangementer baggrund', 'background');
+  }
+
   if (drupal_match_path($path, $front)) {
     $node = node_load_by_title('forside baggrund', 'background');
   }
-  if (drupal_match_path($path, $events)) {
-    $node = node_load_by_title('arrangementer baggrund', 'background');
-  }
   elseif (drupal_match_path($path, $news)) {
     $node = node_load_by_title('nyheder baggrund', 'background');
+  }
+  elseif (drupal_match_path($path, $statisk)) {
+    $node = node_load_by_title('statisk baggrund', 'background');
+  }
+  elseif (drupal_match_path($path, $hpevents)) {
+    $node = node_load_by_title('hp-events baggrund', 'background');
   }
   
   if (!empty($node) && !empty($node->field_min_1600px) && !empty($node->field_min_1200px)) {
     $bg1200 = file_create_url($node->field_min_1200px[LANGUAGE_NONE][0]['uri']);
     $bg1600 = file_create_url($node->field_min_1600px[LANGUAGE_NONE][0]['uri']);
+
+    drupal_add_css(
+        '@media screen and (max-width: 1200px) { body { -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover;
+  background-size: cover; background-repeat: no-repeat; background-position:center center; background-attachment: fixed; background-image:url(' . $bg1200 . ');} }', 'inline'
+    );
+    drupal_add_css(
+        '@media screen and (min-width: 1200px) { body { -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover;
+  background-size: cover; background-repeat: no-repeat; background-position:center center; background-attachment: fixed; background-image:url(' . $bg1600 . ');} }', 'inline'
+    );
+  }elseif (!empty($node) && !empty($node->field_title_image) && !empty($node->field_title_image_1200_px_)) {
+    $bg1200 = file_create_url($node->field_title_image_1200_px_[LANGUAGE_NONE][0]['uri']);
+    $bg1600 = file_create_url($node->field_title_image[LANGUAGE_NONE][0]['uri']);
 
     drupal_add_css(
         '@media screen and (max-width: 1200px) { body { -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover;
