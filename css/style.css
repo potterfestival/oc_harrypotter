@@ -141,6 +141,7 @@ body {
 #user-login , .profile{
     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
     color: #B4A486;
+    padding:10px;
 }
 /*
 * Panels with backgrounds
