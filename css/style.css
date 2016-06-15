@@ -136,7 +136,11 @@ body {
 */
 .tabs--primary
 {
-    background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+    background-color: #b3a485;
+}
+.tabs--primary a
+{
+    color: black;
 }
 #user-login , .profile{
     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
