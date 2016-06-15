@@ -131,13 +131,14 @@ body {
     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
 }
 /*
-* Drupal default styling of tabs.
+* Drupal style tabs and user informaton.
+* write if more stylings applied.
 */
 .tabs--primary
 {
     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
 }
-#user-login{
+#user-login , .profile{
     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
     color: #B4A486;
 }
