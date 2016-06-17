@@ -1,105 +1,63 @@
-/*
-* HP events styling
-*/
-.view-hp-events
-{
-     /*background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');*/
-     color:black;
-     display:inline-block;
-     width: 100%;
-     margin: auto;
-}
-.view-hp-events .view-content .views-row{
-    
-    margin-right: 5%;
-    margin-bottom: 50px;
-    display: inline-block;
-}
-.view-hp-events .view-content .views-row .views-field
-{
-    min-width: 350px;
-    max-width: 350px;
-}
-.view-hp-events .view-content{
-    
-    /*background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');*/
-    width: 100%;
-    font-family: Verdana Regular;
-    padding-left:15%;
-    padding-top: 20px;
-    text-align: center;
-}
-.pane-title{
-    text-align: center;
-     color: #B4A486  !important;
-     margin: 0px;
-}
-.active-trail{
-    background: lightblue;
-}
-.view-hp-events div div .views-field-title{
-    background: #b4a486;
-    padding: 10px;
-    height: 40px;
-    overflow-y: hidden;
-}
-.view-hp-events div div .views-field-title a{
-    color:black;
-}
-.view-hp-events div div .views-field-title h2
-{
-    margin: 0px;
-    font-size: 25px;
-    font-weight: bold;
-    overflow-y: hidden;
-}
-.view-hp-events div div .read-more
-{
-     background: #b4a486;
-     text-align: right;
-}
-.view-hp-events div div .views-field-body{
-    height: 100px;
-    background: #b4a486;
-    padding: 10px;
-    font-size: 15px;
-    width: 350px;
-    overflow-y: hidden;
-}
-.pane-hp-events{
-   
-}
-.pane-hp-events h2
-{
-    margin-left: 33%;
-    margin-right: 33%;
-}
-.view-hp-events div div .views-field-view-node
-{
-    text-align: right;
-    background: #b4a486;
-    padding-right: 10px;
-    font-weight: bold;
-    
-}
-.view-hp-events div div .views-field-view-node a{
-    color: black;
-}
-#view_node_more_link
-{
-    margin-right: 10px;
-     padding-bottom: 5px;
-    display: inline-block;
+#view_node_more_link {
+    float: left;
+    margin-right: 5px;
 }
 #view_node_more_icon
 {
     color: red;
     display: inline-block;
 }
-.view-display-id-hp_event_date_group_view div form div .views-exposed-widgets
-{
-    color: #B4A486  !important;
-    padding-left: 5%;
+.view-hp-events .field-content img {
+    float: left;
+}
+.view-hp-events .field-content img {
+    padding-right: 1em;
+    padding-top: 0.5em;
+}
+img {
+    border: 0 none;
+}
+.view-hp-events .views-row, .view-Nyheder .views-row {
+    height: auto;
+    min-height: 135px;
+}
+.view-hp-events .views-row, .view-Nyheder .views-row {
+    height: auto;
+    min-height: 135px;
+}
+.view-hp-events .views-row, .view-Nyheder .views-row {
+    height: 122px;
+}
+.view-hp-events .views-row, .view-Nyheder .views-row {
+    height: 122px;
+}
+.view-hp-events .views-row, .view-Nyheder .views-row {
+    height: auto;
+    min-height: 155px;
+}
+.view-hp-events .views-row, .view-Nyheder .views-row {
+    height: auto;
+    min-height: 145px;
+}
+.view-hp-events .views-row, .view-Nyheder .views-row {
+    height: 135px;
+}
+.view-hp-events .views-row, .view-Nyheder .views-row {
+    height: auto;
+    min-height: 165px;
+}
+.view-hp-events, .view-hp-events .view-content, .views-row {
+    float: left;
+    width: 100%;
+}
+.views-row {
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    margin-bottom: 1em;
+    min-width: 25px;
+    padding: 2px;
 }
 /*
 * view-display-id-hp_event_date_group_view
