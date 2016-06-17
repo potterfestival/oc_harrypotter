@@ -5,7 +5,6 @@
 #view_node_more_icon
 {
     color: red;
-    display: inline-block;
 }
 .view-hp-events {
     color:black;
@@ -57,22 +56,54 @@ img {
     float: left;
     width: 100%;
 }
+.view-hp-events .view-content{
+    
+    /*background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');*/
+    width: 100%;
+    font-family: Verdana Regular;
+    padding-left:15%;
+    padding-top: 20px;
+}
+.pane-title{
+    text-align: center;
+     color: #B4A486  !important;
+     margin: 0px;
+}
 .views-row {
-    background-color: #f5f5f5;
-    border: 1px solid #e3e3e3;
+    background-color: #B4A486;
+    border: 1px solid #B4A486;
     border-radius: 4px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
     margin-bottom: 1em;
     min-width: 25px;
     padding: 2px;
 }
+.active-trail{
+    background: lightblue;
+}
+.view-hp-events div div .views-field-title{
+    padding-top: 5px;
+    height: 40px;
+    overflow-y: hidden;
+}
+.view-hp-events div div .views-field-title a{
+    color:black;
+}
+.view-hp-events div div .views-field-title h2
+{
+    margin: 0px;
+    font-size: 25px;
+    font-weight: bold;
+    overflow-y: hidden;
+}
+.view-hp-events div div .read-more
+{
+     background: #b4a486;
+     text-align: right;
+}
 /*
 * view-display-id-hp_event_date_group_view
 */
-.view-display-id-hp_event_date_group_view h3
-{
-     color: #B4A486  !important;
-}
 .view-display-id-hp_event_date_group_view  .view-content{
     padding-left:5% !important;
 }
