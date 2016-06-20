@@ -11,7 +11,16 @@ function oc_harrypotter_preprocess_print(&$variables) {
  */
 function oc_harrypotter_preprocess_html(&$vars) { 
  oc_harrypotter_oc_custom_backgrounds();
- drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-events.css');
+ $path = drupal_get_path_alias();
+ 
+  $path_parts = explode('/', $path);
+  /* @var $path_parts type */
+  if (isset($path_parts[0]) && $path_parts[0] == 'hp-events') {
+     drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-events.css');
+  } elseif ($path_parts[0] == 'events' && $path_parts[1] == 'aktiviteter') {
+    drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-events-glokationer.css'); 
+}
+ 
  drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-events/view-hp-events.media.css');
   if(drupal_is_front_page())
     {
