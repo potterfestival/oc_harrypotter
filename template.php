@@ -15,7 +15,7 @@ function oc_harrypotter_preprocess_html(&$vars) {
  
   $path_parts = explode('/', $path);
   /* @var $path_parts type */
-  if ($path_parts[0] == 'events' && $path_parts[1] == 'tidsplan') {
+  if (isset($path_parts[0]) && $path_parts[0] == 'hp-lokationer') {
      drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-events.css');
   } elseif ($path_parts[0] == 'events' && $path_parts[1] == 'aktiviteter') {
     drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-events-glokationer.css'); 
