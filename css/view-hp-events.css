@@ -6,57 +6,57 @@
 {
     color: red;
 }
-.view-glokationer {
+.view-event-termer {
     color:black;
     display:inline-block;
     width: 100%;
     margin: auto;  
     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png'); 
 }
-.view-glokationer .field-content img {
+.view-event-termer .field-content img {
     float: left;
 }
-.view-glokationer .field-content img {
+.view-event-termer .field-content img {
     padding-right: 1em;
     padding-top: 0.5em;
 }
 img {
     border: 0 none;
 }
-.view-glokationer .views-row, .view-Nyheder .views-row {
+.view-event-termer .views-row, .view-Nyheder .views-row {
     height: auto;
     min-height: 135px;
 }
-.view-glokationer .views-row, .view-Nyheder .views-row {
+.view-event-termer .views-row, .view-Nyheder .views-row {
     height: auto;
     min-height: 135px;
 }
-.view-glokationer .views-row, .view-Nyheder .views-row {
+.view-event-termer .views-row, .view-Nyheder .views-row {
     height: 122px;
 }
-.view-glokationer .views-row, .view-Nyheder .views-row {
+.view-event-termer .views-row, .view-Nyheder .views-row {
     height: 122px;
 }
-.view-glokationer .views-row, .view-Nyheder .views-row {
+.view-event-termer .views-row, .view-Nyheder .views-row {
     height: auto;
     min-height: 155px;
 }
-.view-glokationer .views-row, .view-Nyheder .views-row {
+.view-event-termer .views-row, .view-Nyheder .views-row {
     height: auto;
     min-height: 145px;
 }
-.view-glokationer .views-row, .view-Nyheder .views-row {
+.view-event-termer .views-row, .view-Nyheder .views-row {
     height: 135px;
 }
-.view-glokationer .views-row, .view-Nyheder .views-row {
+.view-event-termer .views-row, .view-Nyheder .views-row {
     height: auto;
     min-height: 165px;
 }
-.view-glokationer, .view-glokationer .view-content, .views-row {
+.view-event-termer, .view-event-termer .view-content, .views-row {
     float: left;
     width: 100%;
 }
-.view-glokationer .view-content{    
+.view-event-termer .view-content{    
     font-family: Verdana Regular;
     padding-right: 5%;
     padding-left: 5%;
@@ -85,22 +85,22 @@ img {
 .active-trail{
     background: lightblue;
 }
-.view-glokationer div div .views-field-title{
+.view-event-termer div div .views-field-title{
     padding-top: 5px;
     height: 40px;
     overflow-y: hidden;
 }
-.view-glokationer div div .views-field-title a{
+.view-event-termer div div .views-field-title a{
     color:black;
 }
-.view-glokationer div div .views-field-title h2
+.view-event-termer div div .views-field-title h2
 {
     margin: 0px;
     font-size: 25px;
     font-weight: bold;
     overflow-y: hidden;
 }
-.view-glokationer div div .read-more
+.view-event-termer div div .read-more
 {
      background: #b4a486;
      text-align: right;
