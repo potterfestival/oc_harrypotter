@@ -10,10 +10,8 @@
     color:black;
     display:inline-block;
     width: 100%;
-    margin: auto;    
-}
-.view-hp-events .panels-flexible-region {
-   background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png'); 
+    margin: auto;  
+    background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png'); 
 }
 .view-hp-events .field-content img {
     float: left;
