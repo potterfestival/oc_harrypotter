@@ -22,12 +22,6 @@ jQuery(document).scroll(function(e){
  * Main ready
  */
 jQuery(document).ready(function(){
-        /*
-         * Make a redirect to the first node
-         */
-        if (window.location.pathname.match("^/hp-lokationer/")) {
-            jQuery(".field-content > a:first-child")[0].click();
-        }
 
     /*
      * Make translation dialog close on selection
