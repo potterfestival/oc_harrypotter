@@ -10,8 +10,10 @@
     color:black;
     display:inline-block;
     width: 100%;
-    margin: auto;
-    background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+    margin: auto;    
+}
+.view-hp-events .panels-flexible-region {
+   background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png'); 
 }
 .view-hp-events .field-content img {
     float: left;
@@ -56,13 +58,11 @@ img {
     float: left;
     width: 100%;
 }
-.view-hp-events .view-content{
-    
-    /*background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');*/
-    width: 100%;
+.view-hp-events .view-content{    
     font-family: Verdana Regular;
-    padding-left:15%;
-    padding-top: 20px;
+}
+.date-display-single {
+    color: #b4a486;
 }
 .pane-title{
     text-align: center;
@@ -100,10 +100,4 @@ img {
 {
      background: #b4a486;
      text-align: right;
-}
-/*
-* view-display-id-hp_event_date_group_view
-*/
-.view-display-id-hp_event_date_group_view  .view-content{
-    padding-left:5% !important;
 }
