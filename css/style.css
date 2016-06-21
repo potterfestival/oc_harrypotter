@@ -220,10 +220,10 @@ body {
 {
     padding-top: 10px;
 }
-.active-trail
-{
-    background-color: #000000 !important;
-     text-decoration: underline;
+.active-trail.active {
+    background-color: #b4a486 !important;
+    color: black !important;
+    text-decoration: none;
 }
 .navbar a{
     color: #B4A486  !important;
