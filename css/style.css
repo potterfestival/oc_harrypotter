@@ -345,3 +345,6 @@ body {
     margin-top: 2.3em;
     width: 25%;
 }
+.views-exposed-widgets {
+    float: left;
+}
