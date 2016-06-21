@@ -88,7 +88,9 @@ body {
 }
 .icon-aktiviteter {
     color: #b4a486;
-    margin-left: 93.5%;
+}
+.icon-font {
+    color: #b4a486;
 }
 .btn-event {
   background-color: #be1e2d;
