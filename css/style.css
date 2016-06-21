@@ -105,6 +105,15 @@ body {
     font-weight: bold;
     text-transform: uppercase;
 }
+.views-field.views-field-field-grupperings-lokation.btn.btn-event {
+    float: left;
+    margin-right: 1em;
+}
+.date-display-single {
+    display: flex;
+    margin-bottom: 1.5em;
+    margin-top: 0.5em;
+}
 #site-content
 {
     width: 100%;
