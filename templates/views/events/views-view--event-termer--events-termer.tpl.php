@@ -30,8 +30,7 @@
 
 
 <div class="<?php print $classes; ?>">
-  <?php if (!$is_front) : ?>
-    <div id="search_input_wrapper"><input id="search_input" class="form-control" placeholder="Søg" /></div>
+  <?php if (!$is_front) : ?>    
   <?php endif; ?>    
       <?php print render($title_prefix);?>
   <?php if ($title): ?>
@@ -47,6 +46,7 @@
   <?php if ($exposed): ?>
     <div class="view-filters">
       <?php print $exposed; ?>
+      <div id="search_input_wrapper"><input id="search_input" class="form-control" placeholder="Søg" /></div>
     </div>
   <?php endif; ?>
 
@@ -57,7 +57,7 @@
   <?php endif; ?>
 
   <?php if ($rows): ?>
-    <div class="view-content">
+    <div class="view-content fastfilter">
       <?php print $rows; ?>
     </div>
   <?php elseif ($empty): ?>
