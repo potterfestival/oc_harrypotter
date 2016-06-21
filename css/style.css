@@ -89,6 +89,7 @@ body {
 .btn-event {
   background-color: #be1e2d;
   border-color: #be1e2d;
+  margin-bottom: 0.3em;
 }
 .btn-event .field-item.even > a, .btn.btn-event > div > a {
     color: #fff;
