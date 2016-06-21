@@ -22,7 +22,11 @@ jQuery(document).scroll(function(e){
  * Main ready
  */
 jQuery(document).ready(function(){
-
+    
+    if (window.location.pathname.match("^/hp-lokationer/")) {
+            jQuery('#search_input').fastLiveFilter('.fastfilter');
+        }
+        
     /*
      * Make translation dialog close on selection
      */
