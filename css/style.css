@@ -50,25 +50,6 @@ body {
     color: #b4a486 !important;
     text-transform: uppercase;
 }
-.pane-menu-tree li > a::after {
-    color: #96291d;
-    content: "";
-    margin-left: 1em;
-    display: inline-block;
-    font-family: FontAwesome;
-    font-feature-settings: normal;
-    font-kerning: auto;
-    font-language-override: normal;
-    font-size: inherit;
-    font-size-adjust: none;
-    font-stretch: normal;
-    font-style: normal;
-    font-synthesis: weight style;
-    font-variant: normal;
-    font-weight: normal;
-    line-height: 1;
-    text-rendering: auto;    
-}
 .pane-glokationer .field-content > a {
     background-color: #b3a485;
     color: #000;
