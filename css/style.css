@@ -92,6 +92,9 @@ body {
 .icon-font {
     color: #b4a486;
 }
+.view-header {
+    margin-left: 6em;
+}
 .btn-event {
   background-color: #be1e2d;
   border-color: #be1e2d;
