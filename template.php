@@ -9,31 +9,35 @@ function oc_harrypotter_preprocess_print(&$variables) {
 /*
  * In here we will handle custom backgrounds.
  */
-function oc_harrypotter_preprocess_html(&$vars) { 
+function oc_harrypotter_preprocess_html(&$vars) {
  oc_harrypotter_oc_custom_backgrounds();
  $path = drupal_get_path_alias();
- 
+
   $path_parts = explode('/', $path);
   /* @var $path_parts type */
   if (isset($path_parts[0]) && $path_parts[0] == 'hp-lokationer') {
      drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-events.css');
   } elseif ($path_parts[0] == 'events' && $path_parts[1] == 'aktiviteter') {
-    drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-events-glokationer.css'); 
+    drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-events-glokationer.css');
 }
- 
- drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-events/view-hp-events.media.css');
+
+ if (isset($path_parts[0]) && $path_parts[0] == 'hp-lokationer') {
+    drupal_add_js(drupal_get_path('theme', 'oc_harrypotter') . '/js/jquery.fastLiveFilter.min.js', array('weight' => 999));
+  }
+
+  drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-events/view-hp-events.media.css');
   if(drupal_is_front_page())
     {
     $meta_description = array(
     '#type' => 'html_tag',
     '#tag' => 'meta',
-    '#attributes' => array(     
+    '#attributes' => array(
       'content' => 'Harry potter festival er byens kulturelle legeplads, med fantastiske muligheder for kulturelle arrangementer indendørs og udendørs", der er specialindrettet til udendørs kulturbegivenheder.',
       'name' =>  'description',
     )
   );
-      drupal_add_html_head($meta_description, 'meta_description');  
-      
+      drupal_add_html_head($meta_description, 'meta_description');
+
     /*
     * Frontpage full page slide hacks.
     */
@@ -62,7 +66,7 @@ function node_load_by_title($title, $node_type) {
     $load = array_keys($entities['node']);
     return node_load(array_shift($load));
   }
- 
+
 }
 
 /*
@@ -76,12 +80,12 @@ function oc_harrypotter_oc_custom_backgrounds()
   $news = "nyheder/*";
   $statisk = "statisk/*";
   $hpevents = "hp-events";
-  
+
   $path_parts = explode('/', $path);
   /* @var $path_parts type */
   if (isset($path_parts[1]) && $path_parts[0] == 'arrangementer') {
      $node = menu_get_object();
-  } 
+  }
   elseif (drupal_match_path($path, $events)) {
     $node = node_load_by_title('arrangementer baggrund', 'background');
   }
@@ -97,7 +101,7 @@ function oc_harrypotter_oc_custom_backgrounds()
   elseif (drupal_match_path($path, $front)) {
     $node = node_load_by_title('forside baggrund', 'background');
   }
-  
+
   if (!empty($node) && !empty($node->field_min_1600px) && !empty($node->field_min_1200px)) {
     $bg1200 = file_create_url($node->field_min_1200px[LANGUAGE_NONE][0]['uri']);
     $bg1600 = file_create_url($node->field_min_1600px[LANGUAGE_NONE][0]['uri']);
