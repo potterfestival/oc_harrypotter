@@ -1,6 +1,7 @@
 #view_node_more_link {
     float: left;
     margin-right: 5px;
+    color: black;
 }
 #view_node_more_icon
 {
@@ -67,6 +68,9 @@ img {
 }
 .date-display-single {
     color: #b4a486;
+}
+#edit-field-dato-value-wrapper > label {
+    color: #B4A486;
 }
 .pane-title{
     text-align: center;
