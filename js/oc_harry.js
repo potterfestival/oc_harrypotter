@@ -18,14 +18,19 @@ jQuery(document).scroll(function(e){
         jQuery('.navbar').removeClass('navbar-fixed-top').addClass('navbar-static-top');
     }
 });
+
+    Drupal.behaviors.resetSearch = {
+        attach: function (context) {
+            if ($('#search_input').exists() && $.fn.fastLiveFilter !== undefined) {
+                $('#search_input').fastLiveFilter('.fastfilter');
+            }
+        }
+    };
+    
 /*
  * Main ready
  */
 jQuery(document).ready(function(){
-    
-    if (window.location.pathname.match("^/hp-lokationer/")) {
-            jQuery('#search_input').fastLiveFilter('.fastfilter');
-        }
         
     /*
      * Make translation dialog close on selection
