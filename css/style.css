@@ -106,14 +106,17 @@ body {
     text-transform: uppercase;
 }
 .views-field.views-field-field-grupperings-lokation.btn.btn-event {
-    float: left;
     margin-right: 1em;
 }
 .date-display-single {
-    display: flex;
+    color: black;
+    display: inline-block;
     margin-bottom: 1.5em;
     margin-top: 0.5em;
     color: black;
+}
+.views-field.views-field-field-dato {
+    display: inline-block;
 }
 #site-content
 {
