@@ -5,8 +5,11 @@
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
-    
+@media (max-width: 768px) { 
+    .view-event-termer div div .views-field-title h2
+    {
+        font-size: 1em;
+    }
 }
 
 /* Medium devices (desktops, 992px and up) */
