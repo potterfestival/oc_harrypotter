@@ -113,6 +113,7 @@ body {
     display: flex;
     margin-bottom: 1.5em;
     margin-top: 0.5em;
+    color: black;
 }
 #site-content
 {
