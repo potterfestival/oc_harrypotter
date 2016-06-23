@@ -87,6 +87,7 @@ img {
     background: lightblue;
 }
 .view-event-termer div div .views-field-title{
+    display: inline-block;
     padding-top: 5px;
     height: 40px;
     overflow-y: hidden;
