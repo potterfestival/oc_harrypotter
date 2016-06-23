@@ -87,16 +87,16 @@ img {
     background: lightblue;
 }
 .view-event-termer div div .views-field-title{
-    display: inline-block;
-    padding-top: 5px;
-    height: 40px;
-    overflow-y: hidden;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 35%;
 }
 .view-event-termer div div .views-field-title a{
     color:black;
 }
 .view-event-termer div div .views-field-title h2
 {
+    display: inline-block;
     margin: 0px;
     font-size: 25px;
     font-weight: bold;
