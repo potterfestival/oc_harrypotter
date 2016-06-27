@@ -26,12 +26,26 @@ jQuery(document).scroll(function(e){
             }
         }
     };
-    
+
 /*
  * Main ready
  */
 jQuery(document).ready(function(){
-        
+    var isiOS = (navigator.userAgent.match('iPad') || navigator.userAgent.match('iPhone'));
+    var isAndroid = navigator.userAgent.match('Android');
+    var isWP = navigator.userAgent.match('Windows Phone') || navigator.userAgent.match('IEMobile');
+    var map = $('#map').html();
+    $('#map').remove();
+    if (isiOS) {
+
+        $('.icon-margin.fa.fa-map-marker.fa-2x').after('<a href="http://maps.google.com/?saddr=Current%20Location&daddr=' + map + '">' + map + '</a> ');
+
+    } else if ((isAndroid) || (isWP)) {
+        $('.icon-margin.fa.fa-map-marker.fa-2x').after('<a href="geo:' + map + '">' + map + '</a> '); 
+
+    } else {    // if (isOtherPlatform)
+        $('.icon-margin.fa.fa-map-marker.fa-2x').after('<a href="http://maps.google.com/?saddr=Current%20Location&daddr=' + map + '">' + map + '</a> ');
+    }
     /*
      * Make translation dialog close on selection
      */

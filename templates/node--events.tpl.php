@@ -102,7 +102,9 @@
                 <p>
                     <i class="icon-margin fa fa-map-marker fa-2x"></i>
                     <?php if ($oc_harrypotter_event_location): ?>
+                    <span id="map" >
                       <?php print $oc_harrypotter_event_location; ?>
+                    </span>
                     <?php else: ?>
                       <?php print t('See event info'); ?>
                     <?php endif; ?>
