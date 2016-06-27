@@ -40,10 +40,13 @@ jQuery(document).ready(function(){
 
         $('.icon-margin.fa.fa-map-marker.fa-2x').after('<a href="http://maps.google.com/?saddr=Current%20Location&daddr=' + map + '">' + map + '</a> ');
 
-    } else if ((isAndroid) || (isWP)) {
+    } else if (isAndroid) {
         $('.icon-margin.fa.fa-map-marker.fa-2x').after('<a href="geo:' + map + '">' + map + '</a> '); 
 
-    } else {    // if (isOtherPlatform)
+    } else if (isWP) {
+        $('.icon-margin.fa.fa-map-marker.fa-2x').after('<a href="maps:' + map + '">' + map + '</a> ');
+    }
+    else {    // if (isOtherPlatform)
         $('.icon-margin.fa.fa-map-marker.fa-2x').after('<a href="http://maps.google.com/?saddr=Current%20Location&daddr=' + map + '">' + map + '</a> ');
     }
     /*
