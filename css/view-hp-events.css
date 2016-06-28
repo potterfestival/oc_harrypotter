@@ -7,57 +7,57 @@
 {
     color: red;
 }
-view-hp-events {
+.view-hp-events {
     color:black;
     display:inline-block;
     width: 100%;
     margin: auto;  
     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png'); 
 }
-view-hp-events .field-content img {
+.view-hp-events .field-content img {
     float: left;
 }
-view-hp-events .field-content img {
+.view-hp-events .field-content img {
     padding-right: 1em;
     padding-top: 0.5em;
 }
 img {
     border: 0 none;
 }
-view-hp-events .views-row, .view-Nyheder .views-row {
+.view-hp-events .views-row, .view-Nyheder .views-row {
     height: auto;
     min-height: 135px;
 }
-view-hp-events .views-row, .view-Nyheder .views-row {
+.view-hp-events .views-row, .view-Nyheder .views-row {
     height: auto;
     min-height: 135px;
 }
-view-hp-events .views-row, .view-Nyheder .views-row {
+.view-hp-events .views-row, .view-Nyheder .views-row {
     height: 122px;
 }
-view-hp-events .views-row, .view-Nyheder .views-row {
+.view-hp-events .views-row, .view-Nyheder .views-row {
     height: 122px;
 }
-view-hp-events .views-row, .view-Nyheder .views-row {
+.view-hp-events .views-row, .view-Nyheder .views-row {
     height: auto;
     min-height: 155px;
 }
-view-hp-events .views-row, .view-Nyheder .views-row {
+.view-hp-events .views-row, .view-Nyheder .views-row {
     height: auto;
     min-height: 145px;
 }
-view-hp-events .views-row, .view-Nyheder .views-row {
+.view-hp-events .views-row, .view-Nyheder .views-row {
     height: 135px;
 }
-view-hp-events .views-row, .view-Nyheder .views-row {
+.view-hp-events .views-row, .view-Nyheder .views-row {
     height: auto;
     min-height: 165px;
 }
-view-hp-events, view-hp-events .view-content, .views-row {
+.view-hp-events, .view-hp-events .view-content, .views-row {
     float: left;
     width: 100%;
 }
-view-hp-events .view-content{    
+.view-hp-events .view-content{    
     font-family: Verdana Regular;
     padding-right: 5%;
     padding-left: 5%;
@@ -86,14 +86,14 @@ view-hp-events .view-content{
 .active-trail{
     background: lightblue;
 }
-view-hp-events div div .views-field-title{
+.view-hp-events div div .views-field-title{
     font-size: 25px;
     font-weight: bold;
 }
-view-hp-events div div .views-field-title a{
+.view-hp-events div div .views-field-title a{
     color:black;
 }
-view-hp-events div div .views-field-title h2
+.view-hp-events div div .views-field-title h2
 {
     display: inline-block;
     margin: 0px;
@@ -101,7 +101,7 @@ view-hp-events div div .views-field-title h2
     font-weight: bold;
     overflow-y: hidden;
 }
-view-hp-events div div .read-more
+.view-hp-events div div .read-more
 {
      background: #b4a486;
      text-align: right;
