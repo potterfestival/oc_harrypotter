@@ -1,15 +1,18 @@
 /* Small devices (tablets, 768px and up) */
-@media (max-width: 768px) { 
+@media (max-width: 450px) { 
     .node-frontpage-slide
     {
         margin-left: 0px !important;
         margin-right: 0px !important;
+        font-size: 41px !important;
+       
     }
 }
-@media (min-width: 768px) { 
+@media (min-width: 450px) and (max-width: 768px) { 
     .node-frontpage-slide
     {
         margin-left: 0px !important;
         margin-right: 0px !important;
+        font-size: 57px !important;
     }
 }
