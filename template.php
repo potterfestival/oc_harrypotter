@@ -12,8 +12,9 @@ function oc_harrypotter_preprocess_print(&$variables) {
 function oc_harrypotter_preprocess_html(&$vars) {
  oc_harrypotter_oc_custom_backgrounds();
  $path = drupal_get_path_alias();
-
-  $path_parts = explode('/', $path);
+ $path_parts = explode('/', $path);
+ 
+ drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/responsive-sd.css');
   /* @var $path_parts type */
   if (isset($path_parts[0]) && $path_parts[0] == 'hp-lokationer' || $path_parts[0] == 'mit') {
      drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-events.css');
