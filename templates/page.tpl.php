@@ -120,24 +120,14 @@
       </button>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-               <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
+    <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="navbar-collapse collapse">
         <nav role="navigation">
-           <div id="main-left-top-nav" class="col-xs-2 col-sm-5 col-md-5">
-                <?php if (!empty($primary_nav)): ?>
-                  <?php print render($primary_nav); ?>
-                <?php endif; ?>
-            </div>
-            <div id="main-right-top-nav" class="col-xs-2 col-sm-5 col-md-5 pull-right">
-                <?php if (!empty($secondary_nav)): ?>
-                  <?php
-                  /*
-                   * Overwrite bootstrap default side menu
-                   * so it does not display user-menu
-                   */
-                  print render($secondary_nav); 
-                  ?>
-            </div>
+          <?php if (!empty($primary_nav)): ?>
+            <?php print render($primary_nav); ?>
+          <?php endif; ?>
+          <?php if (!empty($secondary_nav)): ?>
+            <?php print render($secondary_nav); ?>
           <?php endif; ?>
           <?php if (!empty($page['navigation'])): ?>
             <?php print render($page['navigation']); ?>
@@ -145,6 +135,7 @@
         </nav>
       </div>
     <?php endif; ?>
+  </div>
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container -->
