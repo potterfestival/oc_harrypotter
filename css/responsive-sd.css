@@ -9,7 +9,9 @@
     }
     .view-hp-events-glokationer .view-content .views-row .views-field
     {
-        min-width: auto !important;
+        min-width: 328px !important;
+        max-width: 328px !important;
+        word-break: break-all;
     }
 }
 @media (min-width: 450px) and (max-width: 768px) { 
