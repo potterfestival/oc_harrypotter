@@ -7,6 +7,10 @@
         font-size: 41px !important;
        
     }
+    .view-hp-events-glokationer .view-content .views-row .views-field
+    {
+        min-width: auto !important;
+    }
 }
 @media (min-width: 450px) and (max-width: 768px) { 
     .node-frontpage-slide
