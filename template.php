@@ -250,3 +250,14 @@ function oc_harrypotter_place2book_ticketsinfo($variables) {
 
   return $output;
 }
+/*
+ * Make pictures outputtet via views responsive
+ */
+function oc_harrypotter_preprocess_image(&$variables) {
+   if(isset($variables['style_name'])) {
+       // this is an image style used in drupal's image styles
+    if($variables['style_name'] == "hp_event_list_thumbnail")  {
+        $variables['attributes']['class'][] = "img-responsive";
+     }
+  }
+ }
