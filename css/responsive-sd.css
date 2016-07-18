@@ -13,6 +13,11 @@
         max-width: 296px !important;
         word-break: break-all;
     }
+   .site-content .row .col-sm-12
+   {
+       margin-left: 2px !important;
+       margin-right: 2px !important;
+   }
 }
 @media (min-width: 450px) and (max-width: 768px) { 
     .node-frontpage-slide
