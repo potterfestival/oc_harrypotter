@@ -368,3 +368,10 @@ body {
     float:right;
     
 }
+/*
+* oc_sidr_menu styling overwrites
+*/
+.sidr > * , .oc_my_program_cart_wrap > *
+{
+    color: #B4A486  !important;
+}
