@@ -371,7 +371,7 @@ body {
 /*
 * oc_sidr_menu styling overwrites
 */
-.sidr > * , .oc_my_program_cart_wrap > *
+.sidr > * , .oc_sidr_menu_footer > * , .oc_sidr_menu_header > *
 {
     color: #B4A486  !important;
 }
