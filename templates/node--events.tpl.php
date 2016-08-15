@@ -91,6 +91,10 @@
             <?php if (!$page): ?>
               <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
             <?php endif; ?>
+
+              <span class="btn btn-event">
+                  <?php print render($content['field_grupperings_lokation']); ?>
+              </span> <br>
             <!--<div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 col-xs-height col-full-height"> -->
                 <?php print render($content['field_title_image']); ?>
             <!-- </div> -->
@@ -138,12 +142,9 @@
             <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
                 <div class="lead">
-                    <span class="btn btn-event">
-                        <?php print render($content['field_grupperings_lokation']); ?>
-                    </span>
-                    <br><br>
+                    <br>
                     <p>
-                        <span style="color:#00b9be;">
+                        <span style="lead">
                             <?php print render($content['field_lead'][0]); ?>
                         </span>
                     </p>
