@@ -372,3 +372,10 @@ body {
     float:right;
     
 }
+/*
+* oc_sidr_menu styling overwrites
+*/
+.sidr > * , .oc_sidr_menu_footer > * , .oc_sidr_menu_header > * , .oc_sidr_child_menu li > * 
+{
+    color: #B4A486  !important;
+}
