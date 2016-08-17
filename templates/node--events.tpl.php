@@ -191,7 +191,7 @@
                       <?php endif; ?>
                     <?php endif; ?>
 
-                    <?php print render($content['links']); ?>
+                      <?php print render($content['links']); ?>
                     <?php print render($content['comments']); ?>
                 </div>
             </div>
