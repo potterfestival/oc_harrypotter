@@ -293,6 +293,12 @@ body {
 .node-frontpage-slide{
     color: #B4A486 !important;
 }
+.slide-link p {
+    color: #b4a486;
+}
+.slide-link h2 {
+    color: #b4a486;
+}
 .owl-controls{
     text-align: center;
     margin-left: 20%;
