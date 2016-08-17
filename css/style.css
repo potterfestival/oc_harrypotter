@@ -44,8 +44,7 @@ body {
     font-size: 1.5em!important;
 }
 .lead{
-    float: left;
-    font-size: 1em;
+    font-size: 1.3em;
 }
 .well {
     border: none;
