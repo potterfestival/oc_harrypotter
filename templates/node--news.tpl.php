@@ -96,7 +96,7 @@
                 <?php endif; ?>
 
                 <div class="lead">
-                    <span class="btn btn-news">
+                    <span class="btn btn-event">
                         <?php print render($content['field_nyhedskategori']); ?>
                     </span>
                     <br><br>
