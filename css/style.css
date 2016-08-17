@@ -57,7 +57,14 @@ body {
     background-color: transparent;
     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
     padding-bottom: 2%;
+    color: #d3d3d3;
 }
+.field_kilde
+{
+    font-size: 10px;
+    width:100%;
+    margin-bottom: 15px;
+} 
 .pane-menu-tree li > a {
     color: #b4a486 !important;
     text-transform: uppercase;
