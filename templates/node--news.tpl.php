@@ -97,11 +97,11 @@
 
                 <div class="lead">
                     <span class="btn btn-news">
-                        <?php print render($content['field_category']); ?>
+                        <?php print render($content['field_nyhedskategori']); ?>
                     </span>
                     <br><br>
                     <p>
-                        <span style="color:#D70A8C;">
+                        <span>
                         <?php print render($content['field_lead'][0]); ?>
                         </span>
                     </p>
@@ -110,7 +110,7 @@
                 <div class="content"<?php print $content_attributes; ?>>
                     <?php
 // We hide the comments and links now so that we can render them later.
-                    hide($content['field_category']);
+                    hide($content['field_nyhedskategori']);
                     hide($content['field_lead']);
                     hide($content['comments']);
                     hide($content['links']);
