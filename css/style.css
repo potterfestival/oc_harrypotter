@@ -350,6 +350,9 @@ body {
     font-size: 25px;
     
  }
+ .field-content.price {
+    font-weight: bold;
+}
  
 /*
 * Bootstrap modal styling
