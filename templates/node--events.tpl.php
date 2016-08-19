@@ -93,7 +93,7 @@
             <?php endif; ?>
 
               <span class="btn btn-event">
-                  <?php print render($content['field_grupperings_lokation']); ?>
+                  <?php print render($content['field_event_category']); ?>
               </span> <br>
             <!--<div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 col-xs-height col-full-height"> -->
                 <?php print render($content['field_title_image']); ?>

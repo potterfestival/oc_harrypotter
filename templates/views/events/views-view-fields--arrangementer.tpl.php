@@ -37,7 +37,7 @@ foreach ($fields as $id => $field) {
     if ($id == 'title') {
         print '<div class="subheading">';
     }
-    if ($id == 'field_grupperings_lokation') {
+    if ($id == 'field_event_category') {
         print $field->wrapper_prefix;
         print $field->label_html;
         print '<span class="view-btn btn btn-info">';
@@ -50,7 +50,7 @@ foreach ($fields as $id => $field) {
         print $field->separator;
     }
 
-    if ($id != 'field_grupperings_lokation') {
+    if ($id != 'field_event_category') {
         print $field->wrapper_prefix;
         print $field->label_html;
         if (isset($field->content)) {
