@@ -7,6 +7,7 @@
     
 jQuery(document).ready(function($){
     UpdatePlace2bookEventStatus();
+    $(document).ajaxSuccess(UpdatePlace2bookEventStatus);
 
 });
 
