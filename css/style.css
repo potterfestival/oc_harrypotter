@@ -403,6 +403,9 @@ body {
 .p2b_event_list_btn_wrap
 {
     float:right;
+    position:relative;
+    bottom:5px;
+    right: 15px;
 }
 .p2b_preloader
 {
