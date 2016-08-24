@@ -23,7 +23,7 @@ function UpdatePlace2bookEventStatus(event, xhr, settings)
     //Update Place2Book Status for list 
     var NodeArray = new Array();
     Place2BookEvents = [];
-    $('.list-item .views-field-field-place2book-tickets .field-content').each(function(index,val){
+    $('.views-field-field-place2book-tickets .field-content').each(function(index,val){
         var Nodeid = $(val.parentNode.parentNode).find(".views-field-nid .field-content").text();
         var PlaceHolder = $(val.parentNode.parentNode).find(".views-field-field-place2book-tickets .field-content").text();
         if(Nodeid != undefined && Nodeid != "" && Nodeid != -1)
@@ -64,7 +64,7 @@ function UpdatePlace2bookEventStatus(event, xhr, settings)
                     success: function(data){
                         $.each(data,function(index,obj){
 
-                          $('.list-item .views-field-nid .field-content').each(function(index,val){
+                          $('.views-field-nid .field-content').each(function(index,val){
                               if(obj.nid == val.innerHTML)
                               {
                                       $(val.parentNode.parentNode).find('.content').append("<div class='p2b_event_list_btn_wrap'>" + obj.markup + "</div>");
