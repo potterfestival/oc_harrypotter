@@ -411,6 +411,10 @@ body {
 {
     float:right;
 }
+.hp-clear-my-program-btn
+{
+    margin-bottom: 10px;
+}
 .btn-success
 {
     background-color: green;
