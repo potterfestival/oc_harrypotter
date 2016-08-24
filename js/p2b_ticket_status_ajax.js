@@ -3,10 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-jQuery(document).ready(function(){
+(function($) {
+    
+jQuery(document).ready(function($){
     UpdatePlace2bookEventStatus();
 
-})
+});
 
 
 function UpdatePlace2bookEventStatus(event, xhr, settings)
@@ -79,3 +81,4 @@ function UpdatePlace2bookEventStatus(event, xhr, settings)
   
     });
 }
+})(jQuery)
