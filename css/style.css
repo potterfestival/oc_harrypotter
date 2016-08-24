@@ -397,3 +397,10 @@ body {
 {
     color: #B4A486  !important;
 }
+/*
+* Place2book styling overwrites
+*/
+.p2b_event_list_btn_wrap
+{
+    float:right;
+}
