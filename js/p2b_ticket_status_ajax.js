@@ -68,7 +68,7 @@ function UpdatePlace2bookEventStatus(event, xhr, settings)
                               {
                                       $(val.parentNode.parentNode).append("<div class='p2b_event_list_btn_wrap'>" + obj.markup + "</div>");
                                       //$(val.parentNode).addClass('js-hide');
-                                      $(val.parentNode.parentNode).find("#preloader").addClass('js-hide');
+                                      $(val.parentNode.parentNode).find(".p2b_preloader").addClass('js-hide');
                                       //return;                  
                               }
                           });
