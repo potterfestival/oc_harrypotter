@@ -43,7 +43,7 @@ function UpdatePlace2bookEventStatus(event, xhr, settings)
      * Setup he spinner , while we retrive the status for the events.
      */
     $.each(Place2BookEvents,function(index,val){
-        $(val.parentNode.parentNode).append("<div id='preloader'><i class='fa fa-cog fa-spin fa-3x fa-fw'></i><div>");
+        $(val.parentNode.parentNode).append("<div id='p2b_preloader'><i class='fa fa-cog fa-spin fa-2x fa-fw'></i><div>");
         $(val.parentNode.parentNode).removeClass('js-hide');
     });
     /*
