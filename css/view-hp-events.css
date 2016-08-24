@@ -51,7 +51,7 @@ img {
 }
 .view .views-row, .view-Nyheder .views-row {
     height: auto;
-    min-height: 165px;
+    min-height: 174px;
 }
 .view, .view .view-content, .views-row {
     float: left;
