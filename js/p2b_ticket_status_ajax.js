@@ -42,9 +42,8 @@ function UpdatePlace2bookEventStatus(event, xhr, settings)
     /*
      * Setup he spinner , while we retrive the status for the events.
      */
-    var spinnerUrl = Drupal.settings.basePath + "files/362.GIF";
     $.each(Place2BookEvents,function(index,val){
-        $(val.parentNode.parentNode).append("<div id='preloader'><img style='float:right;width:20px;height;20px' src="+spinnerUrl+" /><div>");
+        $(val.parentNode.parentNode).append("<div id='preloader'><i class='fa fa-cog fa-spin fa-3x fa-fw'></i><div>");
         $(val.parentNode.parentNode).removeClass('js-hide');
     });
     /*
