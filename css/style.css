@@ -248,6 +248,10 @@ body {
     color: black !important;
     text-decoration: none;
 }
+.active-trail.active a:hover {
+    background-color: #b4a486 !important;
+    color: black !important;
+}
 .active-trail{
    border-color: #b4a486 !important;
    
@@ -274,7 +278,7 @@ body {
     background-color: #000000 !important;
 }
 .dropdown-menu > li > a:hover {
-    background-color: #000000 !important;
+    background-color: #000000;
     background-image: none;
 }
 /*
