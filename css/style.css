@@ -253,14 +253,14 @@ body {
    
 }
 .active-trail a{
-    color: black;
+    color: black !important;
 }
 .leaf
 {
-    color: #B4A486;
+    color: #B4A486 !important;
 }
 .navbar a{
-    color: #B4A486;
+    color: #B4A486 !important;
 }
 
 #absolute_center {
