@@ -249,15 +249,8 @@ body {
     text-decoration: none;
 }
 .active-trail{
-   background-color: #b4a486 !important;
+   border-color: #b4a486 !important;
    
-}
-.active-trail a{
-    color: black !important;
-}
-.leaf
-{
-    color: #B4A486 !important;
 }
 .navbar a{
     color: #B4A486 !important;
