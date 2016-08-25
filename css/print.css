@@ -7,6 +7,10 @@
   {
       display:none;
   }
+  .hidden-print
+  {
+      display:none;
+  }
 }
 body {
   margin: 1em;
