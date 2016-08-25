@@ -142,8 +142,8 @@
     </nav>
      <!-- Navigation END -->
 
-<div id="frontpage_carousel" style="">
-<div id="site-content" class="container" style="">
+<div id="frontpage_carousel" class="">
+<div id="site-content" class="container noSwipe" style="">
    <!-- Carousel -->
    <!-- Carousel END-->
   <div class="row"  >
@@ -191,7 +191,7 @@
 </div>
 
 </div>
-<footer id="footer" class="footer <?php echo drupal_is_front_page() ?  'footer-nonstick' :  'footer-nonstick' ?> col-md-12">
+<footer id="footer" class="hidden-print footer <?php echo drupal_is_front_page() ?  'footer-nonstick' :  'footer-nonstick' ?> col-md-12">
     <div class="col-md-12">
         <div class="col-md-12">
             <div class=" col-md-4"></div>
@@ -236,7 +236,7 @@ Dialogs
 <?php if(module_exists('gtranslate')){ ?>
 
 <!-- Modal -->
-<div id="gtranslate" class="modal fade" role="dialog">
+<div id="gtranslate" class="modal fade hidden-print" role="dialog">
   <div class="modal-dialog">
 
     <!-- Modal content-->
