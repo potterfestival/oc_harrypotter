@@ -250,6 +250,7 @@ body {
 }
 .active-trail{
    background-color: #b4a486 !important;
+   color: black !important;
 }
 .navbar a{
     color: #B4A486  !important;
