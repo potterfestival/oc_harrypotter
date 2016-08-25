@@ -243,6 +243,10 @@ body {
 {
     padding-top: 10px;
 }
+li.expanded.active-trail.dropdown
+{
+    text-decoration: underline
+}
 .active-trail.active {
     background-color: #b4a486 !important;
     color: black !important;
