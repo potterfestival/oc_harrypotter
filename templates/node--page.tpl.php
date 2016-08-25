@@ -83,7 +83,7 @@
 <div class="container-fluid">
     <div class="row well">
 
-        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 col-xs-height col-full-height">
+        <div class="col-lg-9 col-md-8 col-sm-8 col-xs-12 col-xs-height col-full-height">
 
             <div id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
@@ -144,7 +144,7 @@
 
         </div>
 
-        <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12 col-sm-height col-md-height col-xs-height col-full-height col-top hidden-print" style="padding-left:0;padding-right:0;text-align:center;">            
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 col-sm-height col-md-height col-xs-height col-full-height col-top hidden-print" style="padding-left:0;padding-right:0;text-align:center;">            
             <?php print render($content['field_title_image']); ?>
             <div class="info-field">
                 <p><?php print render($content['field_attachments']); ?></p>
