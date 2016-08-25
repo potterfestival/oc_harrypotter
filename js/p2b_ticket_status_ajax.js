@@ -14,7 +14,6 @@ jQuery(document).ready(function($){
 
 function UpdatePlace2bookEventStatus(event, xhr, settings)
 {
-    debugger;
     //Only execute if we are requesting TicketInfo throu ajax.
     if (settings != undefined && settings.url.indexOf("/ding/place2book/ticketinfo/ajax/") == 0) {
 
