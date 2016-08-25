@@ -3,6 +3,10 @@
   a[href]:after {
     content: none !important;
   }
+  .nav-tabs
+  {
+      display:none;
+  }
 }
 body {
   margin: 1em;
