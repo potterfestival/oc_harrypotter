@@ -288,6 +288,10 @@ li.expanded.active-trail.dropdown
 /*
 * Owl carousel styling
 */
+.node-frontpage-slide > a:hover
+{
+    text-decoration: none;
+}
 .node-frontpage-slide
 {
     text-align: center;
