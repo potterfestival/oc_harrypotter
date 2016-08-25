@@ -144,7 +144,7 @@
 
         </div>
 
-        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 col-sm-height col-md-height col-xs-height col-full-height col-top hidden-print" style="padding-left:0;padding-right:0;text-align:center;">            
+        <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 col-sm-height col-md-height col-xs-height col-full-height col-top hidden-print" style="padding-left:0;padding-right:0;border-left: 1 px solid grey;">            
             <?php print render($content['field_title_image']); ?>
             <div class="info-field">
                 <p><?php print render($content['field_attachments']); ?></p>

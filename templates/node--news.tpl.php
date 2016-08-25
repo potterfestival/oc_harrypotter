@@ -146,7 +146,7 @@
             </div>
 
         </div>
-<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 col-sm-height col-md-height col-xs-height col-full-height col-top hidden-print" style="background-color: transparent; padding-left:0;padding-right:0;text-align: center;"> 
+<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 col-sm-height col-md-height col-xs-height col-full-height col-top hidden-print" style="background-color: transparent; padding-left:0;padding-right:0;border-left: 1 px solid grey;"> 
         <div style="padding-left:0;padding-right:0;">            
             <?php print render($content['field_title_image']); ?>
                 <p><?php print render($content['field_attachments']); ?></p>
