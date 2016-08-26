@@ -152,6 +152,10 @@ body {
    width: 100%;
    border-top: 0px solid black;
 }
+.node-unpublished
+{
+    background-color: none;
+}
 .footer_social_logos .fa
 {
     color: white;
