@@ -154,7 +154,7 @@ body {
 }
 .node-unpublished
 {
-    background-color: none !important;
+    background-color: transparent;
 }
 .footer_social_logos .fa
 {
