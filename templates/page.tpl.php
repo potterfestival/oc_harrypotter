@@ -196,7 +196,7 @@
       <?php if (!empty($page['footer-left']) || !!empty($page['footer-middle']) || !empty($page['footer-rigth']) ) {?>
         <div class="col-md-12">
             <div class=" col-md-4"></div>
-            <div class=" col-md-4 " style="min-height: 134px;">
+            <div class=" col-md-4 ">
                 <div class=" col-md-4">
                      <?php if (!empty($page['footer-left'])): ?>
                         <?php print render($page['footer-left']); ?>
