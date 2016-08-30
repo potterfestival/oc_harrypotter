@@ -23,6 +23,7 @@
 {
     color: black;
     font-size: 20px;
+    padding-bottom: 5px;
 }
 #view_node_more_link {
     display: inline-block;
