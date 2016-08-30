@@ -21,5 +21,9 @@
 }
 .view-display-id-hp_news_frontpage .view-content .views-row a
 {
-    color: #B4A486;
+    color: black;
+}
+view-display-id-hp_news_frontpage .view-content .views-row .btn-event a
+{
+    color: white !important;
 }
