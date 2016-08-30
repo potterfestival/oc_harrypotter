@@ -19,11 +19,15 @@
 {
     display: inline-block !important;
 }
+.view-display-id-hp_news_frontpage .view-content .views-row .views-field-title
+{
+    margin-bottom: 5px;
+}
 .view-display-id-hp_news_frontpage .view-content .views-row .views-field-title .field-content a
 {
     color: black;
     font-size: 20px;
-    padding-bottom: 5px;
+    
 }
 #view_node_more_link {
     display: inline-block;
