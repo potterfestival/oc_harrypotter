@@ -25,10 +25,11 @@
     font-size: 20px;
 }
 #view_node_more_link {
-    float: left;
+    display: inline-block;
     margin-right: 5px;
     color: black;
 }
 #view_node_more_icon {
     color: red;
+    display: inline-block;
 }
