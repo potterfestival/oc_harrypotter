@@ -153,13 +153,23 @@ body {
    width: 100%;
    border-top: 0px solid black;
 }
+
 .node-unpublished
 {
     background-color: transparent;
 }
+.footer_social_logos , footer_logos
+{
+   heigth: 152px;
+}
 .footer_social_logos .fa
 {
     color: white;
+}
+.footer_logos img
+{
+    height: 55px;
+    max-height: 56px;
 }
 .region.region-top-left,.region.region-top-right{
     padding-top:10px;
