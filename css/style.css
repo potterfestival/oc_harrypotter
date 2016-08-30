@@ -168,7 +168,7 @@ body {
 }
 .footer_logos img
 {
-    height: 55px;
+    min-height: 55px;
     max-height: 56px;
 }
 .region.region-top-left,.region.region-top-right{
