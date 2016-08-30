@@ -15,7 +15,7 @@ function oc_harrypotter_preprocess_html(&$vars) {
  $path_parts = explode('/', $path);
  
  drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/responsive-sd.css');
- drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-news-frontpage.css');
+ //drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-news-frontpage.css');
   /* @var $path_parts type */
   if (isset($path_parts[0]) && $path_parts[0] == 'hp-lokationer' || $path_parts[0] == 'mit' || $path_parts[0] == 'nyheder') {
      drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-events.css');
