@@ -14,3 +14,7 @@
     display: inline-block;
     vertical-align: top
 }
+.view-display-id-hp_news_frontpage .view-content .views-row .img-responsive
+{
+    display: inline-block !important;
+}
