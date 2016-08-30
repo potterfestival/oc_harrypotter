@@ -19,11 +19,7 @@
 {
     display: inline-block !important;
 }
-.view-display-id-hp_news_frontpage .view-content .views-row a
+.view-display-id-hp_news_frontpage .view-content .views-row .views-field-title .field-content a
 {
     color: black;
-}
-view-display-id-hp_news_frontpage .view-content .views-row .btn-event a
-{
-    color: white !important;
 }
