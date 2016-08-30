@@ -39,7 +39,7 @@
     margin-right: 5px;
     color: black;
 }
-.view-display-id-hp_news_frontpage .view-content .views-row .views-field-view-node a:hover
+.view-display-id-hp_news_frontpage .view-content .views-row .views-field-view-node .field-content a:hover
 {
      text-decoration-color: black;
     text-decoration: underline;
