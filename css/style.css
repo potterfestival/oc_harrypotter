@@ -4,7 +4,9 @@
 
     box-shadow: -0.5em -0.5em #978769, -1em -1em #766648;
 }
-
+a{
+    color: red;
+}
 
 /**
  * Place your custom styles here.
@@ -356,8 +358,6 @@ li.expanded.active-trail.dropdown
     margin-right: 33%;
     text-align: center;
     margin-top: 50px;
-
-    
  }
   #hp-read-news-block a
   {
