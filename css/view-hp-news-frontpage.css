@@ -5,6 +5,10 @@
     text-align: center;
     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
 }
+.view-display-id-hp_news_frontpage .view-content 
+{
+    padding: 10px;
+}
 .view-display-id-hp_news_frontpage .view-content .views-row
 {
     background-color: #B4A486;
