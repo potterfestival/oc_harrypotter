@@ -1,6 +1,5 @@
 .view-display-id-hp_news_frontpage
 {
-    float:left;
     margin-left: 20%;
     margin-right: 20%;
 }
@@ -11,4 +10,5 @@
     padding: 5px;
     width: 334px;
     height: 400px;
+    display: inline-block;
 }
