@@ -169,7 +169,7 @@ body {
 .footer_logos img
 {
     min-height: 55px;
-    max-height: 56px;
+    max-height: 80px;
 }
 .region.region-top-left,.region.region-top-right{
     padding-top:10px;
