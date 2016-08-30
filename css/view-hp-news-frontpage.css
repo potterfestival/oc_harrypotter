@@ -23,6 +23,11 @@
 {
     margin-bottom: 5px;
 }
+.view-display-id-hp_news_frontpage .view-content .views-row a:hover
+{
+    text-decoration-color: black;
+    text-decoration: underline;
+}
 .view-display-id-hp_news_frontpage .view-content .views-row .views-field-title .field-content a
 {
     color: black;
