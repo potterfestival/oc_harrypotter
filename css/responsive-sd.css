@@ -20,7 +20,7 @@
     }
     .view-hp-events-glokationer .view-content .views-row
     {
-        margin-right: 0px;
+        margin-right: 0px !important;
     }
    #site-content .row .col-sm-12
    {
