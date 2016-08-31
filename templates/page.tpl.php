@@ -77,7 +77,7 @@
 </script>
     <!-- Navigation -->
 
-    <nav id="top-nav" class="navbar navbar-inverse navbar-static-top hidden-print" role="navigation">
+    <nav id="top-nav" class="navbar navbar-inverse hidden-print" role="navigation">
         <div id="nav-info-header" class="hidden-xs">
             <div class="col-md-6" style="padding-top:10px;font-size:15px;">
                 <?php

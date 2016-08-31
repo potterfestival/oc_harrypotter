@@ -11,12 +11,12 @@ jQuery(document).scroll(function(e){
     /*
      * Keep navnbar on top while scrolling
      */
-    var scrollTop = jQuery(document).scrollTop();
+    /*var scrollTop = jQuery(document).scrollTop();
     if(scrollTop > 0){
         jQuery('.navbar').removeClass('navbar-static-top').addClass('navbar-fixed-top');
     } else {
         jQuery('.navbar').removeClass('navbar-fixed-top').addClass('navbar-static-top');
-    }
+    }*/
 });
 
     Drupal.behaviors.resetSearch = {
@@ -63,10 +63,10 @@ jQuery(document).ready(function(){
             $('iframe').parent().attr('style', 'position: relative; width: 100%; height: 0px; padding-bottom: 60%;');
         }
 
-        checkSize();
-        // run test on resize of the window
-        $(window).resize(checkSize);
-
+    checkSize();
+    // run test on resize of the window
+    $(window).resize(checkSize);
+        
 });
 
 
