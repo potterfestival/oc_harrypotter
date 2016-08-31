@@ -469,7 +469,7 @@ li.expanded.active-trail.dropdown
 }
 .gm-style-iw div
 {
-    
+    overflow: visible;
 }
 .gmap-popup .views-row
 {
