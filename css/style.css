@@ -517,3 +517,8 @@ li.expanded.active-trail.dropdown
 {
     width: 80%;
 }
+.gmap-popup .views-field .views-field-field-dato .date-display-single
+{
+    display:block;
+    margin-left: 5px;
+}
