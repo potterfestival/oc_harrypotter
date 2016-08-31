@@ -460,11 +460,31 @@ li.expanded.active-trail.dropdown
 /*
 * Gmap popup style overwrites
 */
-.gm-style div:nth-child(4)
+.gm-style-iw
 {
     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
 }
 .gmap-popup .views-row
 {
     background: #b4a486;
+    padding: 10px;
+    margin: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.gmap-popup .view-content .views-field
+{
+    float: left;
+}
+.gmap-popup .view-content .views-field-title
+{
+    width: 100%;
+}
+.gmap-popup .view-content .views-field-title h2
+{
+    font-size: 15px;
+}
+.gmap-popup .view-content .views-field-nothing
+{
+    float: right;
 }
