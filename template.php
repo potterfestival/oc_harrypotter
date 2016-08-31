@@ -99,7 +99,7 @@ function oc_harrypotter_oc_custom_backgrounds()
     $node = node_load_by_title('statisk baggrund', 'background');
   }
   elseif (drupal_match_path($path, $hpevents)) {
-    $node = node_load_by_title('min 1200px', 'background');
+    $node = node_load_by_title('hp-events baggrund', 'background');
   }
   elseif (drupal_match_path($path, $front)) {
     $node = node_load_by_title('forside baggrund', 'background');
