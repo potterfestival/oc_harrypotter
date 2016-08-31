@@ -464,13 +464,13 @@ li.expanded.active-trail.dropdown
 {
     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
     padding:10px;
-    overflow-y:scroll;
+    overflow-y:auto;
     max-height:96%;
     min-height: 486px;
 }
 .gm-style-iw div
 {
-    overflow: visible !important;
+    overflow: auto !important;
 }
 .gmap-popup .views-row
 {
@@ -480,6 +480,11 @@ li.expanded.active-trail.dropdown
     margin-left: 10px;
     margin-bottom: 5px;
     display: inline-block;
+}
+.gmap-popup .view-content
+{
+    float:left;
+    overflow-y: scroll;
 }
 .gmap-popup .view-content .views-field
 {
