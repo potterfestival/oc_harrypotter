@@ -509,3 +509,7 @@ li.expanded.active-trail.dropdown
     margin-right: 5px;
     color: black;
 }
+.gmap-popup .view-event-termer .view-content
+{
+    padding-left: 0px;
+}
