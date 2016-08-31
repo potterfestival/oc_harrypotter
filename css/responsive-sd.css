@@ -31,9 +31,13 @@
        margin-left:0px !important;
        margin-right: 0px !important;
    }
-   .footer
+   .nav-bar
    {
-       text-align: center;
+       min-height: 63px !important;
+   }
+   #absolute_center img
+   {
+       height: 50px !important;
    }
 }
 @media (min-width: 450px) and (max-width: 768px) { 
@@ -48,8 +52,12 @@
         margin-left:0px !important;
         margin-right: 0px !important;
     }
-    .footer
-    {
-        text-align: center;
-    }
+    .nav-bar
+   {
+       min-height: 63px !important;
+   }
+   #absolute_center img
+   {
+       height: 50px !important;
+   }
 }
