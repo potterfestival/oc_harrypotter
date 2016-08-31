@@ -88,6 +88,13 @@ function oc_harrypotter_oc_custom_backgrounds()
   if (isset($path_parts[1]) && $path_parts[0] == 'hp-lokationer') {
      drupal_set_message('Getting node for background!');
      $node = menu_get_object();
+     if($node == null)
+     {
+         //we might be viewing a term ?
+         $node = menu_get_object('taxonomy_term', 2);
+         var_dump($node);
+         exit(1);
+     }
   }
   elseif (drupal_match_path($path, $events)) {
     $node = node_load_by_title('arrangementer baggrund', 'background');
