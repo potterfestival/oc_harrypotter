@@ -464,8 +464,9 @@ li.expanded.active-trail.dropdown
 {
     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
     padding:10px;
-    overflow:auto;
-    height:96%;
+    overflow:scroll;
+    max-height:96%;
+    min-height: 486px;
 }
 .gm-style-iw div
 {
