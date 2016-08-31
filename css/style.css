@@ -513,3 +513,7 @@ li.expanded.active-trail.dropdown
 {
     padding-left: 0px;
 }
+.gmap-popup views-field views-field-field-dato
+{
+    width: 80%;
+}
