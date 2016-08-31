@@ -35,6 +35,10 @@
    {
        min-height: 63px !important;
    }
+   #absolute_center
+   {
+       top: 0px !important;
+   }
    #absolute_center img
    {
        height: 80px !important;
@@ -59,5 +63,9 @@
    #absolute_center img
    {
        height: 80px !important;
+   }
+      #absolute_center
+   {
+       top: 0px !important;
    }
 }
