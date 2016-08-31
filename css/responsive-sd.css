@@ -26,7 +26,7 @@
        margin-left: 0px !important;
        margin-right: 0px !important;
    }
-   .hp-read-news-frontpage-wrapper
+   #hp-read-news-block
    {
        margin-left:0px;
        margin-right: 0px;
@@ -39,7 +39,7 @@
         margin-right: 28px !important;
         font-size: 57px !important;
     }
-    .hp-read-news-frontpage-wrapper
+    #hp-read-news-block
     {
         margin-left:0px;
         margin-right: 0px;
