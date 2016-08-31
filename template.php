@@ -136,6 +136,19 @@ function oc_harrypotter_oc_custom_backgrounds()
         '@media screen and (min-width: 1200px) { body { -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover;
   background-size: cover; background-repeat: no-repeat; background-position:center center; background-attachment: fixed; background-image:url(' . $bg1600 . ');} }', 'inline'
     );
+  }elseif(!empty(node) && !empty($node->field_min_1200px))
+  {
+        $bg1200 = file_create_url($node->field_min_1200px[LANGUAGE_NONE][0]['uri']);
+        $bg1600 = file_create_url($node->field_min_1200px[LANGUAGE_NONE][0]['uri']);
+        drupal_set_message('Found taxonomy 1200px');
+        drupal_add_css(
+            '@media screen and (max-width: 1200px) { body { -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover;
+      background-size: cover; background-repeat: no-repeat; background-position:center center; background-attachment: fixed; background-image:url(' . $bg1200 . ');} }', 'inline'
+        );
+        drupal_add_css(
+            '@media screen and (min-width: 1200px) { body { -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover;
+      background-size: cover; background-repeat: no-repeat; background-position:center center; background-attachment: fixed; background-image:url(' . $bg1600 . ');} }', 'inline'
+        );
   }
 }
 
