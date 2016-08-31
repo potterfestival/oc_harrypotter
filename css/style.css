@@ -498,3 +498,12 @@ li.expanded.active-trail.dropdown
 {
     width: 100%;
 }
+.gmap-popup .view-content #view_node_more_icon {
+    color: red;
+    display: inline-block;
+}
+.gmap-popup .view-content #view_node_more_link {
+    display: inline-block;
+    margin-right: 5px;
+    color: black;
+}
