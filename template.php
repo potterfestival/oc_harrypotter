@@ -92,8 +92,6 @@ function oc_harrypotter_oc_custom_backgrounds()
      {
          //we might be viewing a term ?
          $node = menu_get_object('taxonomy_term', 2);
-         var_dump($node);
-         exit(1);
      }
   }
   elseif (drupal_match_path($path, $events)) {
