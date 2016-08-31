@@ -460,15 +460,16 @@ li.expanded.active-trail.dropdown
 /*
 * Gmap popup style overwrites
 */
-.gm-style-iw
+.gm-style .gm-style-iw
 {
     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
     padding:10px;
-    overflow-y:scroll;
+    overflow:scroll;
+    height:98%;
 }
 .gm-style-iw div
 {
-    overflow: visible;
+    
 }
 .gmap-popup .views-row
 {
