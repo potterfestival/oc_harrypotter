@@ -482,6 +482,10 @@ li.expanded.active-trail.dropdown
     width: 80%;
     margin-left: 5px;
 }
+.gmap-popup .view-content .views-field-field-event-category
+{
+    margin-left: 5px;
+}
 .gmap-popup .view-content .views-field-title h2
 {
     font-size: 15px;
@@ -489,4 +493,8 @@ li.expanded.active-trail.dropdown
 .gmap-popup .view-content .views-field-nothing
 {
     float: right;
+}
+.gmap-popup .view-content .views-field-field-price
+{
+    width: 100%;
 }
