@@ -37,7 +37,7 @@
    }
    #absolute_center img
    {
-       height: 50px !important;
+       height: 80px !important;
    }
 }
 @media (min-width: 450px) and (max-width: 768px) { 
@@ -58,6 +58,6 @@
    }
    #absolute_center img
    {
-       height: 50px !important;
+       height: 80px !important;
    }
 }
