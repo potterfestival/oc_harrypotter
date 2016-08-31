@@ -489,6 +489,7 @@ li.expanded.active-trail.dropdown
 .gmap-popup .view-content .views-field-title h2
 {
     font-size: 15px;
+    margin: 5px;
 }
 .gmap-popup .view-content .views-field-nothing
 {
