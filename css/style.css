@@ -193,6 +193,7 @@ body {
     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
     padding-left: 5px;
     padding-top:2px;
+    border-radius: 25px;
 }
 /*
 * Drupal style tabs and user informaton.
