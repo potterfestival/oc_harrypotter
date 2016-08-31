@@ -54,8 +54,8 @@
    }
    .pane-hp-events h2
    {
-       padding-left: 0px !important;
-       padding-right: 0px !important;
+       margin-left: 0px !important;
+       marginright: 0px !important;
    }
 }
 @media (min-width: 450px) and (max-width: 768px) { 
