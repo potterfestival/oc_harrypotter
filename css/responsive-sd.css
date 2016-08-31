@@ -18,6 +18,10 @@
         max-width: 264px !important;
         word-break: break-word;
     }
+    .view-hp-events-glokationer .view-content .views-row
+    {
+        margin-right: 0px;
+    }
    #site-content .row .col-sm-12
    {
        padding-left: 2px !important;
