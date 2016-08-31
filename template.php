@@ -82,11 +82,10 @@ function oc_harrypotter_oc_custom_backgrounds()
   $events = "events/*";
   $news = "nyheder/*";
   $statisk = "statisk/*";
-  $hpevents = "hp-lokationer/*";
 
   $path_parts = explode('/', $path);
   /* @var $path_parts type */
-  if (isset($path_parts[1]) && $path_parts[0] == 'arrangementer') {
+  if (isset($path_parts[1]) && $path_parts[0] == 'hp-lokationer') {
      $node = menu_get_object();
   }
   elseif (drupal_match_path($path, $events)) {
