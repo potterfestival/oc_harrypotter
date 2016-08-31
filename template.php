@@ -86,7 +86,6 @@ function oc_harrypotter_oc_custom_backgrounds()
   $path_parts = explode('/', $path);
   /* @var $path_parts type */
   if (isset($path_parts[1]) && $path_parts[0] == 'hp-lokationer') {
-     drupal_set_message('Getting node for background!');
      $node = menu_get_object();
      if($node == null)
      {
@@ -113,7 +112,6 @@ function oc_harrypotter_oc_custom_backgrounds()
   if (!empty($node) && !empty($node->field_min_1600px) && !empty($node->field_min_1200px)) {
     $bg1200 = file_create_url($node->field_min_1200px[LANGUAGE_NONE][0]['uri']);
     $bg1600 = file_create_url($node->field_min_1600px[LANGUAGE_NONE][0]['uri']);
-     drupal_set_message('Found 1600px');
     drupal_add_css(
         '@media screen and (max-width: 1200px) { body { -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover;
   background-size: cover; background-repeat: no-repeat; background-position:center center; background-attachment: fixed; background-image:url(' . $bg1200 . ');} }', 'inline'
@@ -125,7 +123,6 @@ function oc_harrypotter_oc_custom_backgrounds()
   }elseif (!empty($node) && !empty($node->field_title_image) && !empty($node->field_title_image_1200_px_)) {
     $bg1200 = file_create_url($node->field_title_image_1200_px_[LANGUAGE_NONE][0]['uri']);
     $bg1600 = file_create_url($node->field_title_image[LANGUAGE_NONE][0]['uri']);
-    drupal_set_message('Found 1200px');
     drupal_add_css(
         '@media screen and (max-width: 1200px) { body { -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover;
   background-size: cover; background-repeat: no-repeat; background-position:center center; background-attachment: fixed; background-image:url(' . $bg1200 . ');} }', 'inline'
@@ -138,7 +135,6 @@ function oc_harrypotter_oc_custom_backgrounds()
   {
         $bg1200 = file_create_url($node->field_min_1200px[LANGUAGE_NONE][0]['uri']);
         $bg1600 = file_create_url($node->field_location_min_1600px[LANGUAGE_NONE][0]['uri']);
-        drupal_set_message('Found taxonomy 1200px');
         drupal_add_css(
             '@media screen and (max-width: 1200px) { body { -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover;
       background-size: cover; background-repeat: no-repeat; background-position:center center; background-attachment: fixed; background-image:url(' . $bg1200 . ');} }', 'inline'
