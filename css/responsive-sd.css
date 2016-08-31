@@ -28,8 +28,8 @@
    }
    #hp-read-news-frontpage-wrapper
    {
-       margin-left:0px;
-       margin-right: 0px;
+       margin-left:0px !important;
+       margin-right: 0px !important;
    }
 }
 @media (min-width: 450px) and (max-width: 768px) { 
@@ -41,7 +41,7 @@
     }
     #hp-read-news-frontpage-wrapper
     {
-        margin-left:0px;
-        margin-right: 0px;
+        margin-left:0px !important;
+        margin-right: 0px !important;
     }
 }
