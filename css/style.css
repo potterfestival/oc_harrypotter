@@ -466,7 +466,7 @@ li.expanded.active-trail.dropdown
     padding:10px;
     overflow-y:scroll;
     max-height:96%;
-    min-height: 486px;
+    //min-height: 486px;
 }
 .gm-style-iw div
 {
