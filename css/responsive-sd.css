@@ -52,6 +52,11 @@
    {
        height: 80px !important;
    }
+   .pane-hp-events h2
+   {
+       padding-left: 0px !important;
+       padding-right: 0px !important;
+   }
 }
 @media (min-width: 450px) and (max-width: 768px) { 
     .node-frontpage-slide
@@ -76,5 +81,10 @@
       #absolute_center
    {
        top: 0px !important;
+   }
+   .pane-hp-events h2
+   {
+       padding-left: 0px !important;
+       padding-right: 0px !important;
    }
 }
