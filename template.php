@@ -160,7 +160,7 @@ function oc_harrypotter_preprocess_node(&$variables, $hook) {
 
   if (isset($variables['content']['field_place2book_tickets']['#bundle']) && $variables['content']['field_place2book_tickets']['#bundle'] == 'events') {
 
-    $event_location = $variables['content']['field_location'][0]['#address']['name_line'] . ',' . $variables['content']['field_location'][0]['#address']['thoroughfare'];
+    $event_location = $variables['content']['field_location'][0]['#address']['name_line'] . ', ' . $variables['content']['field_location'][0]['#address']['thoroughfare'];
     $event_location_no_name = $variables['content']['field_location'][0]['#address']['thoroughfare'];
 
 
