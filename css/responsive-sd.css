@@ -74,6 +74,11 @@
    {
        font-size: 25px !important;
    }
+   .footer_logos img
+   {
+       width: 100% !important;
+       margin-top:10px;
+   }
 }
 @media (min-width: 450px) and (max-width: 768px) { 
     .node-frontpage-slide
@@ -111,5 +116,10 @@
    .pane-menu-tree.pane-menu-tree
    {
        margin-bottom: 10px;
+   }
+   .footer_logos img
+   {
+       width: 100% !important;
+       margin-top:10px;
    }
 }
