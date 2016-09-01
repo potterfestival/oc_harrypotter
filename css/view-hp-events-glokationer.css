@@ -108,3 +108,9 @@
 .view-display-id-hp_event_date_group_view  .view-content{
     padding-left:5% !important;
 }
+.view-hp-events-glokationer .views-field-field-foto-kilde- {
+    background: #b4a486;
+    text-align: left;
+    padding-left: 5px;
+    font-size: 12px;
+}
