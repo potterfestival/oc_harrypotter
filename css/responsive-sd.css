@@ -66,6 +66,10 @@
        padding-right: 0px !important;
        padding-left: 0px !important;
    }
+   .menu-name-menu-nyhed-termer-menu
+   {
+       margin-bottom: 10px;
+   }
 }
 @media (min-width: 450px) and (max-width: 768px) { 
     .node-frontpage-slide
@@ -95,5 +99,13 @@
    {
        margin-left: 0px !important;
        margin-right: 0px !important;
+   }
+   .menu-name-menu-arrangement-menu
+   {
+       margin-top:10px;
+   }
+   .menu-name-menu-nyhed-termer-menu
+   {
+       margin-bottom: 10px;
    }
 }
