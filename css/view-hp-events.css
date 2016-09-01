@@ -59,8 +59,8 @@ img {
 }
 .view .view-content{    
     font-family: Verdana Regular;
-    padding-right: 5%;
-    padding-left: 5%;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 .view-filters {
     padding-left: 5%;
