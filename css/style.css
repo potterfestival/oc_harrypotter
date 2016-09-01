@@ -434,6 +434,11 @@ li.expanded.active-trail.dropdown
 {
     color: #B4A486  !important;
 }
+.oc_sidr_menu_header
+{
+    margin-top: 12px !important;
+    margin-bottom: 12px !important;
+}
 /*
 * Place2book styling overwrites
 */
