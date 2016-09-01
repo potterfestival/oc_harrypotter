@@ -14,8 +14,9 @@
     #search_input_wrapper {
         width: 100%;
     }
-    .view div div .views-field-title{
+    .view-event-termer div div .views-field-title{
         width: 100%;
+        display:inline-block;
     }
 }
 
