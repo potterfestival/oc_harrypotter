@@ -70,6 +70,10 @@
    {
        margin-bottom: 10px;
    }
+   .page-header h1
+   {
+       font-size: 30px !important;
+   }
 }
 @media (min-width: 450px) and (max-width: 768px) { 
     .node-frontpage-slide
