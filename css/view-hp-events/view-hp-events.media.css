@@ -15,7 +15,8 @@
         width: 100%;
     }
     .view div div .views-field-title{
-    width: 100%;
+        width: 100%;
+        display: inline-block;
     }
 }
 
