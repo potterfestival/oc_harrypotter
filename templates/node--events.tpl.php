@@ -109,6 +109,10 @@
                     <span id="map" >
                       <?php print $oc_harrypotter_event_location; ?>
                     </span>
+                    <span id="map_data" style="display:none;">
+                      <?php print $oc_harrypotter_event_location_no_name; ?>
+                    </span>
+                    $event_location_no_name
                     <?php else: ?>
                       <?php print t('See event info'); ?>
                     <?php endif; ?>

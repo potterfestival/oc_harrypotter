@@ -160,13 +160,18 @@ function oc_harrypotter_preprocess_node(&$variables, $hook) {
 
   if (isset($variables['content']['field_place2book_tickets']['#bundle']) && $variables['content']['field_place2book_tickets']['#bundle'] == 'events') {
 
-    $event_location = $variables['content']['field_location'][0]['#address']['name_line'] . ' ' . $variables['content']['field_location'][0]['#address']['thoroughfare'];
+    $event_location = $variables['content']['field_location'][0]['#address']['name_line'] . ',' . $variables['content']['field_location'][0]['#address']['thoroughfare'];
+    $event_location_no_name = $variables['content']['field_location'][0]['#address']['thoroughfare'];
 
 
     $variables['oc_harrypotter_event_location'] = $event_location;
-
+    /*
+     * Having name on breaks the links to external maps!!!!
+     */
+    $variables['oc_harrypotter_event_location_no_name'] = $event_location_no_name;
     // Set a flag for existence of field_place2book_tickets
     $variables['oc_harrypotter_place2book_tickets'] = (isset($variables['content']['field_place2book_tickets'])) ? 1 : 0;
+    
   }
 
   //added open graph meta tags for facebook.
