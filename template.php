@@ -85,7 +85,7 @@ function oc_harrypotter_oc_custom_backgrounds()
 
   $path_parts = explode('/', $path);
   /* @var $path_parts type */
-  if (isset($path_parts[1]) && $path_parts[0] == 'hp-lokationer') {
+  if (isset($path_parts[1]) && ($path_parts[0] == 'hp-lokationer' || $path_parts[0] == "arrangementer")) {
      $node = menu_get_object();
      if($node == null)
      {
