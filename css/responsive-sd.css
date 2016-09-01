@@ -78,6 +78,7 @@
    {
        width: 100% !important;
        margin-top:10px;
+       margin-left: 0px !important;
    }
 }
 @media (min-width: 450px) and (max-width: 768px) { 
@@ -121,5 +122,6 @@
    {
        width: 100% !important;
        margin-top:10px;
+       margin-left: 0px !important;
    }
 }
