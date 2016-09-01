@@ -171,6 +171,7 @@ body {
 {
     min-height: 55px;
     max-height: 80px;
+    margin-left: 5px;
 }
 .region.region-top-left,.region.region-top-right{
     padding-top:10px;
