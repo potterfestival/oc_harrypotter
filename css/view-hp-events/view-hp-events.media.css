@@ -14,6 +14,9 @@
     #search_input_wrapper {
         width: 100%;
     }
+    .view div div .views-field-title{
+    width: 100%;
+    }
 }
 
 /* Medium devices (desktops, 992px and up) */
