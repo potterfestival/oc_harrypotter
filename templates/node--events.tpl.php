@@ -126,7 +126,7 @@
                       <?php elseif (is_null($content['field_price']['#items'][0]['value'])) : ?>
                         <?php print t('Free registration'); ?>
                       <?php else: ?>
-                        <?php print render($content['field_price'][0]); ?>
+                        <?php print render($content['field_price'][0]) . " Kr" ; ?>
                       <?php endif; ?>
                   </p>
                 <?php endif; ?>
