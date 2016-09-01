@@ -542,3 +542,10 @@ li.expanded.active-trail.dropdown
     margin-left: 5px;
     margin-top:0px;
 }
+/*
+* Webform overwrites
+*/
+.node-webform header
+{
+    display:none;
+}
