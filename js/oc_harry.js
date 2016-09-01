@@ -34,7 +34,7 @@ jQuery(document).ready(function(){
     var isiOS = (navigator.userAgent.match('iPad') || navigator.userAgent.match('iPhone'));
     var isAndroid = navigator.userAgent.match('Android');
     var isWP = navigator.userAgent.match('Windows Phone') || navigator.userAgent.match('IEMobile');
-    var map = $('#map').html();
+    var map = $('#map_data').html();
     $('#map').remove();
     if (isiOS) {
 
