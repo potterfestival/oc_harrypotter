@@ -9,7 +9,7 @@
     .view-event-termer div div .views-field-title h2
     {
         font-size: 20px;
-        word-break: break-all;
+        word-wrap: break-word;
     }
     #search_input_wrapper {
         width: 100%;
