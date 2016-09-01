@@ -61,10 +61,11 @@
    {
        margin-top:10px;
    }
-   .view div div .views-field-title{
-    font-size: 20px;
-    font-weight: bold;
-}
+   .container-fluid
+   {
+       padding-right: 0px !important;
+       padding-left: 0px !important;
+   }
 }
 @media (min-width: 450px) and (max-width: 768px) { 
     .node-frontpage-slide
@@ -94,9 +95,5 @@
    {
        margin-left: 0px !important;
        margin-right: 0px !important;
-   }
-    .menu-name-menu-arrangement-menu
-   {
-       margin-top:10px;
    }
 }

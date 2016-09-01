@@ -8,7 +8,8 @@
 @media (max-width: 768px) { 
     .view-event-termer div div .views-field-title h2
     {
-        font-size: 1em;
+        font-size: 20px;
+        word-break: break-all;
     }
     #search_input_wrapper {
         width: 100%;
