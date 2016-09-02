@@ -9,7 +9,7 @@
 echo $output;
 if(isset($row->field_title_image[0]['raw']['field_kilde']['und'][0]['value']))
 {
-    echo "<span class='oc_photo_kilde'>Foto:".$row->field_title_image[0]['raw']['field_kilde']['und'][0]['value']."</span>";
+    echo "<span class='oc_photo_kilde'>Foto: ".$row->field_title_image[0]['raw']['field_kilde']['und'][0]['value']."</span>";
 }
 else
 {
