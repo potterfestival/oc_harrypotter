@@ -87,7 +87,7 @@
     }
     .view-hp-events-glokationer .view-header a
     {
-        float:right;
+        float:left !important;
     }
 }
 @media (min-width: 450px) and (max-width: 768px) { 
