@@ -114,11 +114,12 @@
     padding-left: 5px;
     font-size: 12px;
 }
-.view-hp-events-glokationer .view.header a
+.view-hp-events-glokationer .view-header
 {
     margin-right: 5px;
 }
-.view-hp-events-glokationer .view.header a
+.view-hp-events-glokationer .view-header a
 {
- float:right;    
+ float:right; 
+ padding-right: 5px;
 }
