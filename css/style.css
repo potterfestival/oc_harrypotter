@@ -542,6 +542,10 @@ li.expanded.active-trail.dropdown
     margin-left: 5px;
     margin-top:0px;
 }
+.gmap-popup .views-field .views-field-field-lead
+{
+    width: 100%;
+}
 .gmap-popup .views-field .views-field-field-title-image
 {
     max-width: 86px;
