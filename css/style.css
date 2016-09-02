@@ -430,6 +430,10 @@ li.expanded.active-trail.dropdown
     float:right;
     
 }
+.oc-my-hp-program-wrap a.oc-my-hp-program-button:hover
+ {
+     color: grey;
+ }
 /*
 * oc_sidr_menu styling overwrites
 */
