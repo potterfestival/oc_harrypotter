@@ -81,6 +81,10 @@
        display:block !important;
        margin: auto auto !important;
    }
+   .oc-my-hp-program-wrap a.oc-my-hp-program-button:hover
+    {
+        color: grey;
+    }
 }
 @media (min-width: 450px) and (max-width: 768px) { 
     .node-frontpage-slide
@@ -130,4 +134,8 @@
        float:left;
        width: 100%;
    }
+   .oc-my-hp-program-wrap a.oc-my-hp-program-button:hover
+    {
+        color: grey;
+    }
 }
