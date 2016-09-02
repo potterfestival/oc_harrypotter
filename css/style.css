@@ -497,9 +497,9 @@ li.expanded.active-trail.dropdown
     background: #b4a486;
     padding: 10px;
     margin: 5px;
-    margin-left: 10px;
     margin-bottom: 5px;
     display: inline-block;
+    width: 100%;
 }
 .gmap-popup .view-content .views-field
 {
