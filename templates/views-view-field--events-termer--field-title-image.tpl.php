@@ -11,7 +11,3 @@ if(isset($row->field_field_title_image[0]['raw']['field_foto_kilde_']['und'][0][
 {
     echo "<span class='oc_photo_kilde'>Foto: ".$row->field_field_title_image[0]['raw']['field_foto_kilde_']['und'][0]['value']."</span>";
 }
-else
-{
-   echo "<span class='oc_photo_kilde'>Foto:</span>"; 
-}
