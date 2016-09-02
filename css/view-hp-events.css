@@ -119,6 +119,11 @@ img {
 {
     padding-top: 10px;
 }
+.view-event-termer .view-header a {
+    float: right;
+    padding-right: 10px;
+    padding-top: 10px;
+}
 .view-display-id-hp_events_my_program .view-content
 {
     padding-left: 5%;
