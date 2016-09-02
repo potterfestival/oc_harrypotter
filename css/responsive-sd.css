@@ -85,6 +85,10 @@
     {
         color: grey;
     }
+    .view-hp-events-glokationer .view-header a
+    {
+        float:right;
+    }
 }
 @media (min-width: 450px) and (max-width: 768px) { 
     .node-frontpage-slide
