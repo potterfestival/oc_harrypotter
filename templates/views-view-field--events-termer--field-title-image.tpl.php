@@ -7,4 +7,4 @@
  */
 
 echo $output;
-echo "Foto:";
+echo "<span class='oc_photo_kilde'>Foto:</span>";

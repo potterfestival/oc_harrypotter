@@ -14,8 +14,16 @@
     margin: auto;  
     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png'); 
 }
+.view .views-field-field-title-image
+{
+    float:left;
+}
+.view .views-field-field-title-image .oc_photo_kilde
+{
+    float:left;
+}
 .view .field-content img {
-    float: left;
+    float:left;
 }
 .view .field-content img {
     padding-right: 1em;
