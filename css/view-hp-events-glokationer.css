@@ -123,3 +123,7 @@
  float:right; 
  padding-right: 5px;
 }
+.view-empty
+{
+    color: #B4A486;
+}
