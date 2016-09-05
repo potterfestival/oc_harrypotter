@@ -36,21 +36,22 @@ jQuery(document).ready(function(){
     var isWP = navigator.userAgent.match('Windows Phone') || navigator.userAgent.match('IEMobile');
     var map = $('#map_data').html();
     var map_display = $('#map').html();
-    $('#map').remove();
-    $('#map_data').remove();
+
     if (isiOS) {
 
-        $('.icon-margin.fa.fa-map-marker').after('<a href="http://maps.apple.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map_display + '</a> ');
+        $('#map').after('<a href="http://maps.apple.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map_display + '</a> ');
 
     } else if (isAndroid) {
-        $('.icon-margin.fa.fa-map-marker').after('<a href="http://maps.google.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map_display + '</a> '); 
+        $('#map').after('<a href="http://maps.google.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map_display + '</a> '); 
 
     } else if (isWP) {
-        $('.icon-margin.fa.fa-map-marker').after('<a href="maps:' + $.trim(map) + '">' + map + '</a> ');
+        $('#map').after('<a href="maps:' + $.trim(map) + '">' + map + '</a> ');
     }
     else {    // if (isOtherPlatform)
-        $('.icon-margin.fa.fa-map-marker').after('<a href="http://maps.google.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map_display + '</a> ');
+        $('#map').after('<a href="http://maps.google.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map_display + '</a> ');
     }
+    $('#map').remove();
+    $('#map_data').remove();
     /*
      * Make translation dialog close on selection
      */
