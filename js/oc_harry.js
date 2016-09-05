@@ -40,16 +40,16 @@ jQuery(document).ready(function(){
     $('#map_data').remove();
     if (isiOS) {
 
-        $('.icon-margin.fa.fa-map-marker.fa-2x').after('<a href="http://maps.apple.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map_display + '</a> ');
+        $('.icon-margin.fa.fa-map-marker').after('<a href="http://maps.apple.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map_display + '</a> ');
 
     } else if (isAndroid) {
-        $('.icon-margin.fa.fa-map-marker.fa-2x').after('<a href="http://maps.google.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map_display + '</a> '); 
+        $('.icon-margin.fa.fa-map-marker').after('<a href="http://maps.google.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map_display + '</a> '); 
 
     } else if (isWP) {
-        $('.icon-margin.fa.fa-map-marker.fa-2x').after('<a href="maps:' + $.trim(map) + '">' + map + '</a> ');
+        $('.icon-margin.fa.fa-map-marker').after('<a href="maps:' + $.trim(map) + '">' + map + '</a> ');
     }
     else {    // if (isOtherPlatform)
-        $('.icon-margin.fa.fa-map-marker.fa-2x').after('<a href="http://maps.google.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map_display + '</a> ');
+        $('.icon-margin.fa.fa-map-marker').after('<a href="http://maps.google.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map_display + '</a> ');
     }
     /*
      * Make translation dialog close on selection
