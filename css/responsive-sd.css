@@ -89,7 +89,7 @@
     {
         float:left !important;
     }
-    .search_input_wrapper
+    #search_input_wrapper
     {
         width: 90% !important;
     }
@@ -146,7 +146,7 @@
     {
         color: grey;
     }
-    .search_input_wrapper
+    #search_input_wrapper
     {
         width: 90% !important;
     }

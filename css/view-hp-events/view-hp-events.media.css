@@ -11,9 +11,6 @@
         font-size: 20px;
         word-wrap: break-word;
     }
-    #search_input_wrapper {
-        width: 100%;
-    }
     .view-event-termer div div .views-field-title , 
     .view-nyheds-termer div div .views-field-title
     {
