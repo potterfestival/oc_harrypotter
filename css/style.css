@@ -433,6 +433,7 @@ li.expanded.active-trail.dropdown
 .oc-my-hp-program-wrap 
 {
     float:right;
+    padding-top: 5px;
     
 }
 .oc-my-hp-program-wrap a.oc-my-hp-program-button:hover
