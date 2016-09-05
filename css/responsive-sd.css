@@ -94,7 +94,7 @@
         width: 90% !important;
     }
 }
-@media (min-width: 450px) and (max-width: 768px) { 
+@media (min-width: 450px) and (max-width: 767px) { 
     .node-frontpage-slide
     {
         margin-left: 28px !important;
