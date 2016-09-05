@@ -348,8 +348,6 @@ li.expanded.active-trail.dropdown
 }
 .owl-controls{
     text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
     bottom: 25px;
     position: relative;
 }
@@ -379,6 +377,8 @@ li.expanded.active-trail.dropdown
 }
 .owl-controls .owl-dots {
     display: inline-block;
+    margin-left: 20%;
+    margin-right: 20%;
     
 }
  .owl-controls .owl-dots span {
