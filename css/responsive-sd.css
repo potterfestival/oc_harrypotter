@@ -91,7 +91,7 @@
     }
     .search_input_wrapper
     {
-        width: 90%;
+        width: 90% !important;
     }
 }
 @media (min-width: 450px) and (max-width: 768px) { 
@@ -148,6 +148,10 @@
     }
     .search_input_wrapper
     {
-        width: 90%;
+        width: 90% !important;
+    }
+    .views-field-field-event-category
+    {
+        width: 100%;
     }
 }
