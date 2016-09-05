@@ -56,7 +56,9 @@ jQuery(document).ready(function(){
     }
     else
     {
-        debugger;
+        /*
+         * Look for list map-data
+         */
         $('.List-map-link').each(function()
         {
             var isiOS = (navigator.userAgent.match('iPad') || navigator.userAgent.match('iPhone'));
