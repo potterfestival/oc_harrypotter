@@ -27,10 +27,14 @@
 }
 .view .field-content img {
     padding-right: 1em;
-    padding-top: 0.5em;
+    //padding-top: 0.5em;
 }
 img {
     border: 0 none;
+}
+.view .views-row
+{
+    padding: 5px;
 }
 .view .views-row, .view-Nyheder .views-row {
     height: auto;
@@ -58,6 +62,7 @@ img {
     height: 135px;
 }
 .view .views-row, .view-Nyheder .views-row {
+    padding: 0px 5px 5px 5px;
     height: auto;
     min-height: 174px;
 }
@@ -99,7 +104,7 @@ img {
 }
 .view div div .views-field-title h2
 {
-    
+    padding-bottom: 5px;
     margin: 0px;
     font-size: 25px;
     font-weight: bold;
