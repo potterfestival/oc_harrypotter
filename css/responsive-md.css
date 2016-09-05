@@ -8,4 +8,11 @@
     }
 }
 @media (min-width: 1024px) and (max-width: 1024px) { 
+    .node-frontpage-slide
+    {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        font-size: 33px !important;
+       
+    }
 }
