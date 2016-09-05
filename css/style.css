@@ -336,6 +336,8 @@ li.expanded.active-trail.dropdown
     font-size: 70px;
     font-weight: bold;
     font-family: Caslon Antique Regular;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .node-frontpage-slide{
     color: #B4A486 !important;
