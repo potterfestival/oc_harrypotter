@@ -299,6 +299,7 @@ li.expanded.active-trail.dropdown
   transform: translateX(-50%);
   left: 50%;
   position: absolute;
+  z-index: 1000;
 }
 
 .navbar-toggle {
