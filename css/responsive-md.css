@@ -10,6 +10,11 @@
     {
         width: 42%;
     }
+    .owl-nav
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 @media (min-width: 1024px) and (max-width: 1024px) { 
     .node-frontpage-slide
@@ -22,5 +27,10 @@
     nav .menu
     {
         width: 42%;
+    }
+    .owl-nav
+    {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
