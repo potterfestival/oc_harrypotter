@@ -6,6 +6,10 @@
         font-size: 68px !important;
        
     }
+    nav .menu
+    {
+        width: 45%;
+    }
 }
 @media (min-width: 1024px) and (max-width: 1024px) { 
     .node-frontpage-slide

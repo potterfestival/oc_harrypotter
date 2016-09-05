@@ -79,14 +79,14 @@
 
     <nav id="top-nav" class="navbar navbar-inverse hidden-print" role="navigation">
         <div id="nav-info-header" class="hidden-xs">
-            <div class="col-md-6" style="padding-top:10px;font-size:15px;">
+            <div class="col-xs-6 col-sm-6 col-md-6" style="padding-top:10px;font-size:15px;">
                 <?php
              if (!empty($page['top-left'])):
              echo render($page['top-left']); 
              endif;
              ?>
             </div>
-            <div class="col-md-6 text-right" style="padding-top:10px;">
+            <div class="col-xs-6 col-sm-6 col-md-6 text-right" style="padding-top:10px;">
              <?php
              if (!empty($page['top-right'])):
              echo render($page['top-right']); 
