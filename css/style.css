@@ -371,7 +371,7 @@ li.expanded.active-trail.dropdown
 }
 .owl-next {
     float: right;
-    padding-left: 10px;
+    padding-right: 10px;
 }
 .owl-next:hover
 {
