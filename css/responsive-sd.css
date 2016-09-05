@@ -152,6 +152,6 @@
     }
     .views-field-field-event-category
     {
-        width: 100%;
+        margin-right: 100% !important;
     }
 }
