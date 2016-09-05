@@ -1,3 +1,3 @@
 <?php
-echo $row->fiel_field_location["#address"];
+echo $row->field_field_location[0]['raw']['name_line'] . ", " . $row->field_field_location[0]['raw']['thoroughfare'];
 
