@@ -62,19 +62,23 @@ jQuery(document).ready(function(){
             var isiOS = (navigator.userAgent.match('iPad') || navigator.userAgent.match('iPhone'));
             var isAndroid = navigator.userAgent.match('Android');
             var isWP = navigator.userAgent.match('Windows Phone') || navigator.userAgent.match('IEMobile');
-            var map = $(this).find('#map').html();
+            
+            var map = $(this).find('#map_data').html();
+            var map_display = $(this).find('#map').html();
+            
+
             if (isiOS) {
 
-            $(this).after('<a href="http://maps.apple.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map + '</a> ');
+            $(this).after('<a href="http://maps.apple.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map_display + '</a> ');
 
             } else if (isAndroid) {
-                $(this).after('<a href="http://maps.google.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map + '</a> '); 
+                $(this).after('<a href="http://maps.google.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map_display + '</a> '); 
 
             } else if (isWP) {
                 $(this).after('<a href="maps:' + $.trim(map) + '">' + map + '</a> ');
             }
             else {    // if (isOtherPlatform)
-                $(this).after('<a href="http://maps.google.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map + '</a> ');
+                $(this).after('<a href="http://maps.google.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map_display + '</a> ');
             }
             $(this).find('#map').remove();
         });
