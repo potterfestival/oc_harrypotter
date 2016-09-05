@@ -12,7 +12,6 @@ elseif(strpos($user_agent, 'Android') != false && strpos($user_agent, 'Windows P
 }
 elseif(strpos($user_agent, 'Windows Phone') != false || strpos($user_agent, 'IEMobile') != false)
 {
-    adr.
     $link = "bingmaps:?q=" . $gmapAddr;
 }
 else
