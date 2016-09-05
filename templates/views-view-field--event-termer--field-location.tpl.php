@@ -6,7 +6,7 @@ if(strpos($user_agent, 'iPad') != false || strpos($user_agent, 'iPhone') != fals
 {
     $link = "http://maps.apple.com/?saddr=Current%20Location&daddr=" . $gmapAddr;
 }
-elseif(strpos($user_agent, 'Android') != false)
+elseif(strpos($user_agent, 'Android') != false && strpos($user_agent, 'Windows Phone') == false)
 {
     $link = "http://maps.google.com/?saddr=Current%20Location&daddr=" . $gmapAddr;
 }
