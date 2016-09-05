@@ -353,6 +353,10 @@ li.expanded.active-trail.dropdown
     bottom: 25px;
     position: relative;
 }
+.owl-nav
+{
+    color:#b4a486;
+}
 .owl-controls .owl-dots {
     display: inline-block;
     
