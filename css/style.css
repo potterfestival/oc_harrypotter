@@ -363,11 +363,19 @@ li.expanded.active-trail.dropdown
 }
 .owl-prev {
     float: left;
-    padding-left: 5px;
+    padding-left: 10px;
+}
+.owl-prev:hover
+{
+    color: #be1e2d;
 }
 .owl-next {
     float: right;
-    padding-left: 5px;
+    padding-left: 10px;
+}
+.owl-next:hover
+{
+    color: #be1e2d;
 }
 .owl-controls .owl-dots {
     display: inline-block;
