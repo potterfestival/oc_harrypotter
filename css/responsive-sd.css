@@ -89,6 +89,10 @@
     {
         float:left !important;
     }
+    .search_input_wrapper
+    {
+        width: 90%;
+    }
 }
 @media (min-width: 450px) and (max-width: 768px) { 
     .node-frontpage-slide
@@ -141,5 +145,9 @@
    .oc-my-hp-program-wrap a.oc-my-hp-program-button:hover
     {
         color: grey;
+    }
+    .search_input_wrapper
+    {
+        width: 90%;
     }
 }
