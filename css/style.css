@@ -363,9 +363,11 @@ li.expanded.active-trail.dropdown
 }
 .owl-prev {
     float: left;
+    padding-left: 5px;
 }
 .owl-next {
     float: right;
+    padding-left: 5px;
 }
 .owl-controls .owl-dots {
     display: inline-block;
