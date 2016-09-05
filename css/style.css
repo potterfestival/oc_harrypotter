@@ -356,6 +356,16 @@ li.expanded.active-trail.dropdown
 .owl-nav
 {
     color:#b4a486;
+    float: left;
+    bottom: 200px;
+    width: 100%;
+    position: absolute;
+}
+.owl-prev {
+    float: left;
+}
+.owl-next {
+    float: right;
 }
 .owl-controls .owl-dots {
     display: inline-block;
