@@ -1,4 +1,3 @@
- <i class="icon-margin fa fa-map-marker"></i>
 <span id="map" >
   <?php print $row->field_field_location[0]['raw']['thoroughfare']; ?>
 </span>
