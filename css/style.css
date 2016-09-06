@@ -159,6 +159,7 @@ body {
    border-top: 0px solid black;
    display:inline-block;
    float:left;
+   margin-top: 10px;
 }
 
 .node-unpublished
@@ -595,4 +596,16 @@ li.expanded.active-trail.dropdown
 .node-webform header
 {
     display:none;
+}
+/*
+* Background image credit styling
+*/
+.oc-bg-img-credit
+{
+    color: #B4A486;
+    float:right;
+    background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 5px;
 }

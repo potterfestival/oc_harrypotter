@@ -31,6 +31,7 @@ jQuery(document).scroll(function(e){
  * Main ready
  */
 jQuery(document).ready(function(){
+    backgroundImageSourceCredit();
     var isiOS = (navigator.userAgent.match('iPad') || navigator.userAgent.match('iPhone'));
     var isAndroid = navigator.userAgent.match('Android');
     var isWP = navigator.userAgent.match('Windows Phone') || navigator.userAgent.match('IEMobile');
@@ -136,5 +137,13 @@ jQuery(document).ready(function(){
             $('.panels-flexible-region-node_view-left').prependTo($('.panels-flexible-region-node_view-center').parent());
         }
     };
+    
+    function backgroundImageSourceCredit()
+    {
+        //Insert the source credit from the settings.
+       var image_credit = Drupal.settings.oc_harrypotter.img_src;
+       var html = $('<div class="oc-bg-img-credit" >Foto: '+image_credit+'</div>');
+       $('#footer').before(html);
+    }
 
  }(jQuery);

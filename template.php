@@ -113,7 +113,7 @@ function oc_harrypotter_oc_custom_backgrounds()
   if (!empty($node) && !empty($node->field_min_1600px) && !empty($node->field_min_1200px)) {
     $bg1200 = file_create_url($node->field_min_1200px[LANGUAGE_NONE][0]['uri']);
     $bg1600 = file_create_url($node->field_min_1600px[LANGUAGE_NONE][0]['uri']);
-    drupal_add_js(array('oc_harrypotter' => array('key' => $node->field_min_1200px[LANGUAGE_NONE][0]['field_foto_kilde_'][LANGUAGE_NONE][0]['value'])), 'setting');
+    drupal_add_js(array('oc_harrypotter' => array('img_src' => $node->field_min_1200px[LANGUAGE_NONE][0]['field_foto_kilde_'][LANGUAGE_NONE][0]['value'])), 'setting');
     drupal_add_css(
         '@media screen and (max-width: 1200px) { body { -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover;
   background-size: cover; background-repeat: no-repeat; background-position:center center; background-attachment: fixed; background-image:url(' . $bg1200 . ');} }', 'inline'
@@ -125,7 +125,7 @@ function oc_harrypotter_oc_custom_backgrounds()
   }elseif (!empty($node) && !empty($node->field_title_image) && !empty($node->field_title_image_1200_px_)) {
     $bg1200 = file_create_url($node->field_title_image_1200_px_[LANGUAGE_NONE][0]['uri']);
     $bg1600 = file_create_url($node->field_title_image[LANGUAGE_NONE][0]['uri']);
-    drupal_add_js(array('oc_harrypotter' => array('key' => $node->field_title_image_1200_px_[LANGUAGE_NONE][0]['field_foto_kilde_'][LANGUAGE_NONE][0]['value'])), 'setting');
+    drupal_add_js(array('oc_harrypotter' => array('img_src' => $node->field_title_image_1200_px_[LANGUAGE_NONE][0]['field_foto_kilde_'][LANGUAGE_NONE][0]['value'])), 'setting');
     drupal_add_css(
         '@media screen and (max-width: 1200px) { body { -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover;
   background-size: cover; background-repeat: no-repeat; background-position:center center; background-attachment: fixed; background-image:url(' . $bg1200 . ');} }', 'inline'
@@ -138,7 +138,7 @@ function oc_harrypotter_oc_custom_backgrounds()
   {
         $bg1200 = file_create_url($node->field_min_1200px[LANGUAGE_NONE][0]['uri']);
         $bg1600 = file_create_url($node->field_location_min_1600px[LANGUAGE_NONE][0]['uri']);
-        drupal_add_js(array('oc_harrypotter' => array('key' => $node->field_min_1200px[LANGUAGE_NONE][0]['field_foto_kilde_'][LANGUAGE_NONE][0]['value'])), 'setting');
+        drupal_add_js(array('oc_harrypotter' => array('img_src' => $node->field_min_1200px[LANGUAGE_NONE][0]['field_foto_kilde_'][LANGUAGE_NONE][0]['value'])), 'setting');
         drupal_add_css(
             '@media screen and (max-width: 1200px) { body { -webkit-background-size: cover; -moz-background-size: cover;-o-background-size: cover;
       background-size: cover; background-repeat: no-repeat; background-position:center center; background-attachment: fixed; background-image:url(' . $bg1200 . ');} }', 'inline'
