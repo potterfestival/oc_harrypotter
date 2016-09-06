@@ -142,7 +142,7 @@ jQuery(document).ready(function(){
     {
         //Insert the source credit from the settings.
        var image_credit = Drupal.settings.oc_harrypotter.img_src;
-       var html = $('<div class="oc-bg-img-credit" >Foto: '+image_credit+'</div>');
+       var html = $('<div class="oc-bg-img-credit hidden-xs" >Foto: '+image_credit+'</div>');
        $('#footer').before(html);
     }
 
