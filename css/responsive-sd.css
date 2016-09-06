@@ -9,7 +9,7 @@
     {
         margin-left: 20px !important;
         margin-right: 20px !important;
-        font-size: 27px !important;
+        font-size: 28px !important;
        
     }
     .view-hp-events-glokationer .view-content .views-row .views-field
@@ -97,6 +97,10 @@
     {
         padding-left: 5px !important;
         padding-right: 5px !important;
+    }
+    .p2b_event_list_btn_wrap
+    {
+        margin-top:10px;
     }
 }
 @media (min-width: 450px) and (max-width: 767px) { 
