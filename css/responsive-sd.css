@@ -102,6 +102,10 @@
     {
         margin-top:5px !important;
     }
+    .pane-better-jump-menu
+    {
+        margin-bottom: 5px;
+    }
 }
 @media (min-width: 450px) and (max-width: 767px) { 
     .node-frontpage-slide
@@ -162,5 +166,9 @@
     .views-field-field-event-category
     {
         margin-right: 100% !important;
+    }
+    .pane-better-jump-menu
+    {
+        margin-bottom: 5px;
     }
 }
