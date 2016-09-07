@@ -92,6 +92,7 @@
     #search_input_wrapper
     {
         width: 90% !important;
+        margin-top: 5px !important;
     }
     .node-frontpage-slide
     {
@@ -105,10 +106,6 @@
     .pane-better-jump-menu
     {
         margin-bottom: 5px;
-    }
-    #search_input_wrapper
-    {
-        margin-top: 5px;
     }
 }
 @media (min-width: 450px) and (max-width: 767px) { 
@@ -166,6 +163,7 @@
     #search_input_wrapper
     {
         width: 90% !important;
+        margin-top: 5px !important;
     }
     .views-field-field-event-category
     {
@@ -174,9 +172,5 @@
     .pane-better-jump-menu
     {
         margin-bottom: 5px;
-    }
-    #search_input_wrapper
-    {
-        margin-top: 5px;
     }
 }
