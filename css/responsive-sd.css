@@ -106,6 +106,10 @@
     {
         margin-bottom: 5px;
     }
+    #search_input_wrapper
+    {
+        margin-top: 5px;
+    }
 }
 @media (min-width: 450px) and (max-width: 767px) { 
     .node-frontpage-slide
@@ -170,5 +174,9 @@
     .pane-better-jump-menu
     {
         margin-bottom: 5px;
+    }
+    #search_input_wrapper
+    {
+        margin-top: 5px;
     }
 }
