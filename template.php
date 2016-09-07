@@ -288,3 +288,13 @@ function oc_harrypotter_preprocess_image(&$variables) {
    }
   }
  }
+/*
+ * Alter gallery captions
+ */
+ function oc_harrypotter_juicebox_image_data_alter(&$data)
+ {
+     if(!empty($data['caption']))
+     {
+        $data['caption'] = "<p>Foto: " . strip_tags($data['caption']) . "</p>";
+     }     
+ }
