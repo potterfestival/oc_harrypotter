@@ -497,6 +497,10 @@ li.expanded.active-trail.dropdown
 {
     float:right;
 }
+.node-events .p2b_preloader
+{
+    float:left !important;
+}
 .hp-clear-my-program-btn
 {
     margin-bottom: 10px;
