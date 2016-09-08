@@ -497,7 +497,7 @@ li.expanded.active-trail.dropdown
 {
     float:right;
 }
-.node-events .p2b_preloader
+.pane-node .p2b_preloader
 {
     float:left !important;
 }
