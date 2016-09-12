@@ -51,12 +51,8 @@ function oc_harrypotter_preprocess_html(&$vars) {
     /*
      * Make js mobile aware
      */
-    if(isset($vars['is_mobile']))
-    {
         drupal_add_js(array('oc_harrypotter' => array('is_mobile' => $vars['is_mobile']), 'setting'));
-        drupal_add_js(array('oc_harrypotter' => array('is_tablet' => $vars['is_tablet']), 'setting'));
-    }
-    
+        drupal_add_js(array('oc_harrypotter' => array('is_tablet' => $vars['is_tablet']), 'setting'));    
 }
 /*
  * Modify page variables
