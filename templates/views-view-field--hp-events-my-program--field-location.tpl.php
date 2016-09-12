@@ -6,4 +6,3 @@
       <?php print $row->field_field_location[0]['raw']['thoroughfare'] . ", " . $row->field_field_location[0]['raw']['postal_code'] . " " . $row->field_field_location[0]['raw']['locality']; ?>
     </span>
 </div>
-<?php
