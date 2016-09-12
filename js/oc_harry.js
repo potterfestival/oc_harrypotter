@@ -86,7 +86,14 @@ jQuery(document).ready(function(){
             $(this).find('#map').remove();
         });
     }
-   
+    /*
+     * Some Mobile adaptations
+     */
+    if(Drupal.settings.oc_harrypotter.is_mobile)
+    {
+       $(".pane-better-jump-menu").toggleClass('js-hide');
+       $(".pane-menu-arrangement-menu").toggleClass('js-hide');
+    }
     /*
      * Make translation dialog close on selection
      */
@@ -145,5 +152,5 @@ jQuery(document).ready(function(){
        var html = $('<div class="oc-bg-img-credit hidden-xs" >Foto: '+image_credit+'</div>');
        $('#footer').before(html);
     }
-
+    
  }(jQuery);
