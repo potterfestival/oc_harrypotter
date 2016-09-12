@@ -89,7 +89,7 @@ jQuery(document).ready(function(){
     /*
      * Some Mobile adaptations
      */
-    if(Drupal.settings.oc_harrypotter.is_mobile)
+    if(Drupal.settings.oc_detect.is_mobile)
     {
        $(".pane-better-jump-menu").toggleClass('js-hide');
        $(".pane-menu-arrangement-menu").toggleClass('js-hide');
