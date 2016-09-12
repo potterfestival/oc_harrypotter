@@ -10,6 +10,11 @@ function oc_harrypotter_preprocess_print(&$variables) {
  * In here we will handle custom backgrounds.
  */
 function oc_harrypotter_preprocess_html(&$vars) {
+    /*
+    * Make js mobile aware
+    */
+    drupal_add_js(array('oc_harrypotter' => array('is_mobile' => $vars['is_mobile'],'is_tablet' => $vars['is_tablet']), 'setting'));
+    
  oc_harrypotter_oc_custom_backgrounds();
  $path = drupal_get_path_alias();
  $path_parts = explode('/', $path);
@@ -48,11 +53,7 @@ function oc_harrypotter_preprocess_html(&$vars) {
     }
     drupal_add_js(drupal_get_path('theme', 'oc_harrypotter') . '/js/p2b_ticket_status_ajax.js');
     
-    /*
-     * Make js mobile aware
-     */
-        drupal_add_js(array('oc_harrypotter' => array('is_mobile' => $vars['is_mobile']), 'setting'));
-        drupal_add_js(array('oc_harrypotter' => array('is_tablet' => $vars['is_tablet']), 'setting'));    
+
 }
 /*
  * Modify page variables
