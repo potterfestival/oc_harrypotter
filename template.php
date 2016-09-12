@@ -13,7 +13,8 @@ function oc_harrypotter_preprocess_html(&$vars) {
     /*
     * Make js mobile aware
     */
-    drupal_add_js(array('mobileDetect' => array('is_mobile' => $vars['is_mobile'],'is_tablet' => $vars['is_tablet']), 'setting'));
+    drupal_add_js(array('oc_detect' => array('is_mobile' => $vars['is_mobile'],'is_tablet' => $vars['is_tablet'])), 'setting');
+    
     
  oc_harrypotter_oc_custom_backgrounds();
  $path = drupal_get_path_alias();
@@ -53,7 +54,7 @@ function oc_harrypotter_preprocess_html(&$vars) {
     }
     drupal_add_js(drupal_get_path('theme', 'oc_harrypotter') . '/js/p2b_ticket_status_ajax.js');
     
-
+    
 }
 /*
  * Modify page variables
