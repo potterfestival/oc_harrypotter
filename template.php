@@ -47,6 +47,16 @@ function oc_harrypotter_preprocess_html(&$vars) {
         drupal_add_css('.bootstrap-twocol-stacked .row:nth-child(1) {height: 90vh !important;} .bootstrap-twocol-stacked .row:nth-child(2) {background-color: url("/sites/all/themes/oc_harrypotter/images/transparent_black.png"");}', 'inline');
     }
     drupal_add_js(drupal_get_path('theme', 'oc_harrypotter') . '/js/p2b_ticket_status_ajax.js');
+    
+    /*
+     * Make js mobile aware
+     */
+    if(isset($vars['is_mobile']))
+    {
+        drupal_add_js(array('oc_harrypotter' => array('is_mobile' => $vars['is_mobile']), 'setting'));
+        drupal_add_js(array('oc_harrypotter' => array('is_tablet' => $vars['is_tablet']), 'setting'));
+    }
+    
 }
 /*
  * Modify page variables
