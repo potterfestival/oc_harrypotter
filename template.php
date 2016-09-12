@@ -13,7 +13,7 @@ function oc_harrypotter_preprocess_html(&$vars) {
     /*
     * Make js mobile aware
     */
-    drupal_add_js(array('oc_detect' => array('is_mobile' => json_decode($vars))), 'setting');
+    drupal_add_js(array('oc_detect' => array('is_mobile' => $vars,'is_tablet' => $vars['is_tablet'])), 'setting');
     
     
  oc_harrypotter_oc_custom_backgrounds();
