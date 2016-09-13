@@ -9,13 +9,7 @@ function oc_harrypotter_preprocess_print(&$variables) {
 /*
  * In here we will handle custom backgrounds.
  */
-function oc_harrypotter_preprocess_html(&$vars) {
-    /*
-    * Make js mobile aware
-    */
-    drupal_add_js(array('oc_detect' => array('is_mobile' => mobile_detect_check_type('isMobile'),'is_tablet' => mobile_detect_check_type('isTablet'))), 'setting');
-    
-    
+function oc_harrypotter_preprocess_html(&$vars) {   
  oc_harrypotter_oc_custom_backgrounds();
  $path = drupal_get_path_alias();
  $path_parts = explode('/', $path);
