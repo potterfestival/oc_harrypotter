@@ -89,7 +89,7 @@ jQuery(document).ready(function(){
     /*
      * Some Mobile adaptations
      */
-    if(Drupal.settings.mobile_detect.is_mobile)
+    if(isiOS || isAndroid || isWP)
     {
        $(".pane-better-jump-menu").toggleClass('js-hide');
        $(".pane-menu-arrangement-menu").toggleClass('js-hide');
