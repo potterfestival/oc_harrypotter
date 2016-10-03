@@ -35,7 +35,7 @@ function oc_harrypotter_preprocess_html(&$vars) {
     '#type' => 'html_tag',
     '#tag' => 'meta',
     '#attributes' => array(
-      'content' => 'Harry potter festival er byens kulturelle legeplads, med fantastiske muligheder for kulturelle arrangementer indendørs og udendørs", der er specialindrettet til udendørs kulturbegivenheder.',
+      'content' => 'Ingen efterårsferie i Odense uden Harry Potter Festival! I efterårsferiens sidste dage fyldes Odense af oplevelser for alle med hang til magi og trylleri - uanset alder.',
       'name' =>  'description',
     )
   );
