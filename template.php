@@ -39,7 +39,7 @@ function oc_harrypotter_preprocess_html(&$vars) {
       'name' =>  'description',
     )
   );
-      drupal_add_html_head($meta_description, 'meta_description');
+      //drupal_add_html_head($meta_description, 'meta_description');
 
     /*
     * Frontpage full page slide hacks.
