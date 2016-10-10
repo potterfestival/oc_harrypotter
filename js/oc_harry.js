@@ -43,16 +43,16 @@ jQuery(document).ready(function(){
         $('#map_data').remove();
         if (isiOS) {
 
-            $('.icon-margin.fa.fa-map-marker.fa-2x').after('<a href="http://maps.apple.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map_display + '(Vis vej)</a> ');
+            $('.icon-margin.fa.fa-map-marker.fa-2x').after('<a href="http://maps.apple.com/?saddr=Current%20Location&daddr=Odense,' + $.trim(map) + '">' + map_display + '(Vis vej)</a> ');
 
         } else if (isAndroid) {
-            $('.icon-margin.fa.fa-map-marker.fa-2x').after('<a href="http://maps.google.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map_display + '(Vis vej)</a> '); 
+            $('.icon-margin.fa.fa-map-marker.fa-2x').after('<a href="http://maps.google.com/?saddr=Current%20Location&daddr=Odense,' + $.trim(map) + '">' + map_display + '(Vis vej)</a> '); 
 
         } else if (isWP) {
-            $('.icon-margin.fa.fa-map-marker.fa-2x').after('<a href="maps:' + $.trim(map) + '">' + map + '</a> ');
+            $('.icon-margin.fa.fa-map-marker.fa-2x').after('<a href="maps:' + $.trim(map) + '">' + map + '(Vis vej)</a> ');
         }
         else {    // if (isOtherPlatform)
-            $('.icon-margin.fa.fa-map-marker.fa-2x').after('<a href="http://maps.google.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map_display + '(Vis vej)</a> ');
+            $('.icon-margin.fa.fa-map-marker.fa-2x').after('<a href="http://maps.google.com/?saddr=Current%20Location&daddr=Odense,' + $.trim(map) + '">' + map_display + '(Vis vej)</a> ');
         }
     }
     else
@@ -72,16 +72,16 @@ jQuery(document).ready(function(){
 
             if (isiOS) {
 
-            $(this).after('<a href="http://maps.apple.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map_display + '</a> ');
+            $(this).after('<a href="http://maps.apple.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map_display + '(Vis vej)</a> ');
 
             } else if (isAndroid) {
-                $(this).after('<a href="http://maps.google.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map_display + '</a> '); 
+                $(this).after('<a href="http://maps.google.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map_display + '(Vis vej)</a> '); 
 
             } else if (isWP) {
                 $(this).after('<a href="maps:' + $.trim(map) + '">' + map + '</a> ');
             }
             else {    // if (isOtherPlatform)
-                $(this).after('<a href="http://maps.google.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map_display + '</a> ');
+                $(this).after('<a href="http://maps.google.com/?saddr=Current%20Location&daddr=' + $.trim(map) + '">' + map_display + '(Vis vej)</a> ');
             }
             $(this).find('#map').remove();
         });
