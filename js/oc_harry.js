@@ -148,9 +148,12 @@ jQuery(document).ready(function(){
     function backgroundImageSourceCredit()
     {
         //Insert the source credit from the settings.
-       var image_credit = Drupal.settings.oc_harrypotter.img_src;
-       var html = $('<div class="oc-bg-img-credit hidden-xs" >Foto: '+image_credit+'</div>');
-       $('#footer').before(html);
+        if(Drupal.settings.oc_harrypotter != undefined && Drupal.settings.oc_harrypotter.img_src != undefined)
+        {
+            var image_credit = Drupal.settings.oc_harrypotter.img_src;
+            var html = $('<div class="oc-bg-img-credit hidden-xs" >Foto: '+image_credit+'</div>');
+            $('#footer').before(html);
+        }
     }
     
  }(jQuery);
