@@ -229,6 +229,12 @@ body {
 {
     background-image: url('/sites/all/themes/oc_harrypotter/images/transparent_black.png');
 }
+.panel-pane.pane-views.pane-hp-events {
+    margin-top: 28px;
+}
+.panel-pane.pane-views.pane-hp-events .pane-title {
+    padding-top: 22px;
+}
 .pane-view-galleries
 {
     
