@@ -463,6 +463,7 @@ li.expanded.active-trail.dropdown
     float: left;
     margin-bottom: 1em;
     margin-top: 1.8em;
+    color: #B4A486  !important;
 }
 /*
 * Styling for the hp program btn
