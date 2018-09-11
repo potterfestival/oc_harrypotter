@@ -168,7 +168,7 @@ body {
 }
 .footer_social_logos , footer_logos
 {
-   heigth: 152px;
+   height: 152px;
 }
 .footer_social_logos .fa
 {
@@ -456,7 +456,7 @@ li.expanded.active-trail.dropdown
 }
 #search_input_wrapper {
     display: inline-block;
-    margin-top: 2.3em;
+    margin-top: 3em;
     width: 50%;
 }
 .views-exposed-widgets {
