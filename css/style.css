@@ -458,11 +458,14 @@ li.expanded.active-trail.dropdown
     width: 50%;
     float: left;
     position: absolute;
+    margin-left: 5px;
+    margin-top: 8px;
 }
 .views-exposed-widgets {
     float: left;
     margin-bottom: 1em;
     margin-top: 2.8em;
+    margin-left: 5px;
     color: #B4A486  !important;
 }
 /*
