@@ -18,13 +18,13 @@ function oc_harrypotter_preprocess_html(&$vars) {
  drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/responsive-md.css');
  //drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-news-frontpage.css');
   /* @var $path_parts type */
-  if (isset($path_parts[0]) && $path_parts[0] == 'hp-lokationer' || $path_parts[0] == 'mit' || $path_parts[0] == 'nyheder') {
+  if (isset($path_parts[0]) && $path_parts[0] == "event-dag" || $path_parts[0] == 'hp-lokationer' || $path_parts[0] == 'mit' || $path_parts[0] == 'nyheder') {
      drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-events.css');
   } elseif ($path_parts[0] == 'events' && $path_parts[1] == 'aktiviteter') {
     drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-events-glokationer.css');
 }
 
- if (isset($path_parts[0]) && $path_parts[0] == 'hp-lokationer') {
+ if (isset($path_parts[0]) && $path_parts[0] == 'hp-lokationer' || $path_parts[0] == "event-dag") {
     drupal_add_js(drupal_get_path('theme', 'oc_harrypotter') . '/js/jquery.fastLiveFilter.min.js', array('weight' => 999));
   }
 
