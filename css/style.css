@@ -623,3 +623,31 @@ li.expanded.active-trail.dropdown
     padding-right: 5px;
     margin: 5px;
 }
+/*
+* Ding campaign plus styles
+*/
+.panel-pane.pane-ding-campaign-plus {
+    float:left;
+    width: 250px;
+        margin-top: 11px;
+    padding:3px;
+    border: solid 5px black;
+    border-radius: 15px;
+    background-color:black;
+    margin-left: 15px;
+}
+.ding-campaign--content
+{
+    height: 150px;
+    text-align:center;
+}
+.ding-campaign--content h2{
+    margin-top:0px;
+}
+.ding-campaign--content a
+{
+    color: #B4A486  !important;
+}
+.first-campaign{
+    margin-left: 36% !important;
+}
