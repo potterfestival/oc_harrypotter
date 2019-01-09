@@ -9,7 +9,7 @@ foreach($row->field_field_hold_tider as $inline_obj)
     <b><?php echo $entity->title; ?></b><br/>
     Dato: <b><?php echo date('d-m-Y', strtotime($entity->field_dato["und"][0]['value']))  ?></b><br/>
     Start: <?php echo date('H:i', strtotime($entity->field_dato["und"][0]['value'])) ?> - 
-    Slut: <?php echo date('H:i', strtotime($entity->field_dato["und"][0]['value'])) ?>
+    Slut: <?php echo date('H:i', strtotime($entity->field_dato["und"][0]['value'])) ?><br/><br/>
     <?php echo '<input type="hidden" class="inline-place2book-ticketinfo" value="' . $entity->nid . '"/>'; ?>
 </div>
     
