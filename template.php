@@ -177,7 +177,10 @@ function oc_harrypotter_preprocess_node(&$variables, $hook) {
      */
     $variables['oc_harrypotter_event_location_no_name'] = $event_location_no_name;
     // Set a flag for existence of field_place2book_tickets
-    $variables['oc_harrypotter_place2book_tickets'] = (isset($variables['content']['field_place2book_tickets'])) ? 1 : 0;
+    if($variables['content']['field_place2book_tickets']['#access'])
+    {
+        $variables['oc_harrypotter_place2book_tickets'] = (isset($variables['content']['field_place2book_tickets'])) ? 1 : 0;
+    }
     
   }
 
