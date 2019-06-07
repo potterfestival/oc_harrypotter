@@ -101,11 +101,11 @@
             <br>
             <div class="info-field">
                 <p>
-                    <i class="icon-margin fa fa-clock-o fa-2x"></i> <?php print render($content['field_dato'][0]); ?>
+                    <i class="icon-margin fa fa-clock-o fa-2x"></i> <?php print sizeof($content['field_hold_tider']) == 0 ? render($content['field_dato'][0]) : t('Flere tider'); ?>
                 </p>
                 <p>
                     <i class="icon-margin fa fa-map-marker fa-2x"></i>
-                    <?php if ($oc_harrypotter_event_location): ?>
+                    <?php if (isset($oc_harrypotter_event_location) && $oc_harrypotter_event_location): ?>
                     <span id="map" >
                       <?php print $oc_harrypotter_event_location; ?>
                     </span>
@@ -138,8 +138,8 @@
                 <p><?php print render($content['field_attachments']); ?></p>
                 <p><?php print render($content['field_info']); ?></p>
 
-                <?php if ($oc_harrypotter_place2book_tickets): ?>
-                  <p><?php print render($content['field_place2book_tickets'][0]); ?><p>
+                <?php if (isset($oc_harrypotter_place2book_tickets) && $oc_harrypotter_place2book_tickets): ?>
+                  <p><?php print isset($content['field_place2book_tickets']) ? render($content['field_place2book_tickets'][0]) : ""; ?><p>
                     <?php endif; ?>
             </div>
 
@@ -157,7 +157,10 @@
                 <div class="content"<?php print $content_attributes; ?>>
                     <?php
 // We hide the comments and links now so that we can render them later.
-                    hide($content['field_place2book_tickets']); //<-- field provided by optional module ding_place2book
+                    if(isset($content['field_place2book_tickets']))
+                    {
+                     hide($content['field_place2book_tickets']); //<-- field provided by optional module ding_place2book
+                    }
                     hide($content['field_category']);
                     hide($content['field_lead']);
                     hide($content['comments']);
