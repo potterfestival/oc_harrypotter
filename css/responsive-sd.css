@@ -1,5 +1,13 @@
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 450px) { 
+    .hp-joined-event-wrapper .btn
+    {
+        float:left !important;
+        position:relative !important;
+        top: initial !important;
+        right: initial !important;
+        margin-bottom: 10px;
+    }
     #site-content
     {
         padding-left: 5px;

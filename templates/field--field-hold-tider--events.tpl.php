@@ -5,7 +5,7 @@ foreach($element["#object"]->field_hold_tider['und'] as $inline_obj)
     $p2b_id = $entity->field_place2book_tickets['und'][0]['value'];
 ?>
 
-<div class="card" style="with:55px;border:2px solid black;padding:5px;display:inline-block;border:10%;margin-right: 5px;">
+<div class="card hp-joined-event-wrapper" style="">
     <b><?php echo $entity->title; ?></b><br/>
     Dato: <b><?php echo date('d-m-Y', strtotime($entity->field_dato["und"][0]['value']))  ?></b><br/>
     Start: <?php echo date('H:i', strtotime($entity->field_dato["und"][0]['value'])) ?> - 

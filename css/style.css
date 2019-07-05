@@ -651,3 +651,18 @@ li.expanded.active-trail.dropdown
 .first-campaign{
     margin-left: 36% !important;
 }
+
+.hp-joined-event-wrapper
+{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid black;
+    padding-top:10px;
+}
+.hp-joined-event-wrapper .btn{
+    float: right;
+    position: absolute;
+    right: 27px;
+    top: 23px;
+}
