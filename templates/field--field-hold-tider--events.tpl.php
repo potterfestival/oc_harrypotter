@@ -1,15 +1,23 @@
 <?php
+//date_default_timezone_set ("UTC");
 foreach($element["#object"]->field_hold_tider['und'] as $inline_obj)
 {
     $entity = $inline_obj['entity'];
     $p2b_id = $entity->field_place2book_tickets['und'][0]['value'];
+    $dt_start = new DateTime();
+    $dt_start->setTimestamp(strtotime($entity->field_dato["und"][0]['value'] . " " ."UTC"));
+    $dt_start->setTimezone(new DateTimeZone('Europe/Copenhagen'));
+    
+    $dt_end = new DateTime();
+    $dt_end->setTimestamp(strtotime($entity->field_dato["und"][0]['value2'] . " " ."UTC"));
+    $dt_end->setTimezone(new DateTimeZone('Europe/Copenhagen'));
 ?>
 
 <div class="card hp-joined-event-wrapper" style="">
     <b><?php echo $entity->title; ?></b><br/>
     Dato: <b><?php echo date('d-m-Y', strtotime($entity->field_dato["und"][0]['value']))  ?></b><br/>
-    Start: <?php echo date('H:i', strtotime($entity->field_dato["und"][0]['value'])) ?> - 
-    Slut: <?php echo date('H:i', strtotime($entity->field_dato["und"][0]['value'])) ?><br/><br/>
+    Start: <?php echo $dt_start->format('H:i') ?> - 
+    Slut: <?php echo $dt_end->format('H:i'); ?><br/><br/>
     <?php echo '<input type="hidden" class="inline-place2book-ticketinfo" value="' . $entity->nid . '"/>'; ?>
 </div> 
 <?php
