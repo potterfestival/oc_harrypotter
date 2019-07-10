@@ -136,10 +136,7 @@ body {
     margin-right: 1em;
 }
 .date-display-single {
-    color: black;
-    display: inline-block;
-    margin-top: 0.5em;
-    color: black;
+    display: none;
 }
 .views-field.views-field-field-dato {
     display: inline-block;
