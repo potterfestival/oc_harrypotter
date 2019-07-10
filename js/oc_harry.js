@@ -30,7 +30,7 @@ jQuery(document).scroll(function(e){
     Drupal.behaviors.sale_date = {
         attach: function (context) {
             $(document).ajaxComplete(function (e, xhr, settings) {
-                $('.hp-joined-event-wrapper div:contains(Ikke åben for billetbestilling)').text("Salgsdato: " + $('.date-display-single').text());
+                $('.btn-warning:contains(Ikke åben for billetbestilling)').text("Salgsdato: " + $('.field-item .date-display-single').text());
             });
         }
     };
