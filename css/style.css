@@ -135,7 +135,7 @@ body {
 .views-field.views-field-field-event-category.btn.btn-event {
     margin-right: 1em;
 }
-.date-display-single {
+.field-item .date-display-single {
     display: none;
 }
 .views-field.views-field-field-dato {
