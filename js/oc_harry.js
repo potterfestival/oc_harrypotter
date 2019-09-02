@@ -39,6 +39,17 @@ jQuery(document).scroll(function(e){
  * Main ready
  */
 jQuery(document).ready(function(){
+        if ($('.views-row').length) {
+            $('.btn-warning:contains(Ikke åben for billetbestilling)').text("Salgsdato: " + $('.date-display-single').text());
+        }
+        if ($('.views-row').length > 0) {
+            $('.views-row').each(function ()
+            {
+
+                $(this).find('.btn-warning:contains(Ikke åben for billetbestilling)').text("Salgsdato: " + $(this).find('.date-display-single').text());
+            });
+        }
+    });
     backgroundImageSourceCredit();
     var isiOS = (navigator.userAgent.match('iPad') || navigator.userAgent.match('iPhone'));
     var isAndroid = navigator.userAgent.match('Android');
