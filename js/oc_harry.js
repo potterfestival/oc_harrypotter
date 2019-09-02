@@ -39,13 +39,13 @@ jQuery(document).scroll(function(e){
  * Main ready
  */
 jQuery(document).ready(function(){
+    $(document).ajaxComplete(function (e, xhr, settings) {
         if ($('.views-row').length === 0) {
             $('.btn-warning:contains(Ikke åben for billetbestilling)').text("Salgsdato: " + $('.date-display-single').text());
         }
         if ($('.views-row').length > 0) {
             $('.views-row').each(function ()
             {
-
                 $(this).find('.btn-warning:contains(Ikke åben for billetbestilling)').text("Salgsdato: " + $(this).find('.date-display-single').text());
             });
         }
