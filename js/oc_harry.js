@@ -30,8 +30,17 @@ jQuery(document).scroll(function(e){
     Drupal.behaviors.sale_date = {
         attach: function (context) {
             $(document).ajaxComplete(function (e, xhr, settings) {
+                if ($('.views-row').length > 0) {
+                    $('.views-row').each(function ()
+                    {
+                        var dato = $(this).find('.views-field-field-sale-date .date-display-single').text();
+                        $(this).find('.btn-warning:contains(Ikke åben for billetbestilling)').text("Salgsdato: " + dato);
+                    });
+
+                }
                 $('.btn-warning:contains(Ikke åben for billetbestilling)').text("Salgsdato: " + $('.field-item .date-display-single').text());
             });
+
         }
     };
 
@@ -39,17 +48,6 @@ jQuery(document).scroll(function(e){
  * Main ready
  */
 jQuery(document).ready(function(){
-    $(document).ajaxComplete(function (e, xhr, settings) {
-        if ($('.views-row').length === 0) {
-            $('.btn-warning:contains(Ikke åben for billetbestilling)').text("Salgsdato: " + $('.date-display-single').text());
-        }
-        if ($('.views-row').length > 0) {
-            $('.views-row').each(function ()
-            {
-                $(this).find('.btn-warning:contains(Ikke åben for billetbestilling)').text("Salgsdato: " + $(this).find('.date-display-single').text());
-            });
-        }
-    });
     backgroundImageSourceCredit();
     var isiOS = (navigator.userAgent.match('iPad') || navigator.userAgent.match('iPhone'));
     var isAndroid = navigator.userAgent.match('Android');
