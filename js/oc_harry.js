@@ -39,7 +39,7 @@ jQuery(document).scroll(function(e){
  * Main ready
  */
 jQuery(document).ready(function(){
-        if ($('.views-row').length) {
+        if ($('.views-row').length === 0) {
             $('.btn-warning:contains(Ikke åben for billetbestilling)').text("Salgsdato: " + $('.date-display-single').text());
         }
         if ($('.views-row').length > 0) {
