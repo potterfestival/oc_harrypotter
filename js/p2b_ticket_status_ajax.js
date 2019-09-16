@@ -43,7 +43,7 @@ function UpdatePlace2bookEventStatus(event, xhr, settings)
      * Setup he spinner , while we retrive the status for the events.
      */
     $.each(Place2BookEvents,function(index,val){
-        $(val.parentNode.parentNode).append("<div class='p2b_preloader'><a href='https://place2book.com/da/14540/list/EM3892'>Henter billetstatus – gå evt. til arrangementsoversigt hos billetudbyder</a><i class='fa fa-cog fa-spin fa-2x fa-fw'></i><div>");
+        $(val.parentNode.parentNode).append("<div class='p2b_preloader'><a href='https://place2book.com/da/14540/list/EM3892'>Henter billetstatus – klik for at gå til arrangementsoversigt hos billetudbyder</a><i class='fa fa-cog fa-spin fa-2x fa-fw'></i><div>");
         $(val.parentNode.parentNode).removeClass('js-hide');
     });
     /*
