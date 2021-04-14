@@ -745,14 +745,6 @@ li.expanded.active-trail.dropdown
     border-width: 0 !important;
     border-radius: 0 !important;
   }
-  .eu-cookie-withdraw-tab:before {
-    font-size: 17px;
-    content: "\f564";
-  }
-  .eu-cookie-withdraw-tab-close:before {
-    font-size: 17px;
-    content: "\f410";
-  }
   #sliding-popup.eu-cookie-withdraw-wrapper
     .eu-cookie-withdraw-banner
     .popup-content {

@@ -48,11 +48,6 @@ jQuery(document).scroll(function(e){
  * Main ready
  */
 jQuery(document).ready(function(){
-    $('.eu-cookie-withdraw-tab').toggle(function () {
-        $(".eu-cookie-withdraw-tab").addClass("eu-cookie-withdraw-tab-close");
-    }, function () {
-        $(".eu-cookie-withdraw-tab").removeClass("eu-cookie-withdraw-tab-close");
-    });
     backgroundImageSourceCredit();
     var isiOS = (navigator.userAgent.match('iPad') || navigator.userAgent.match('iPhone'));
     var isAndroid = navigator.userAgent.match('Android');
@@ -133,7 +128,6 @@ jQuery(document).ready(function(){
     checkSize();
     // run test on resize of the window
     $(window).resize(checkSize);
-        
 });
 
 
