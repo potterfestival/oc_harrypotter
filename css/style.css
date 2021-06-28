@@ -696,7 +696,7 @@ li.expanded.active-trail.dropdown
   #sliding-popup .popup-content #popup-buttons {
     display: flex;
     flex-direction: row-reverse;
-    max-width: 25%;
+    max-width: 60%;
     justify-content: space-around;
   }
   
