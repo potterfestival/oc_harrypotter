@@ -9,7 +9,14 @@ function oc_harrypotter_preprocess_print(&$variables) {
 /*
  * In here we will handle custom backgrounds.
  */
-function oc_harrypotter_preprocess_html(&$vars) {   
+function oc_harrypotter_preprocess_html(&$vars) {
+  $fb_element = array(
+    '#type' => 'markup',
+    '#markup' => '<meta name="facebook-domain-verification" content="2qiu6xq43mzxzzztblj8rmcbx1cz1d" />',
+  );
+
+  drupal_add_html_head($fb_element, "facebook domain verification");
+
  oc_harrypotter_oc_custom_backgrounds();
  $path = drupal_get_path_alias();
  $path_parts = explode('/', $path);
