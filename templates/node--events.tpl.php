@@ -104,6 +104,11 @@
                     <i class="icon-margin fa fa-clock-o fa-2x"></i> <?php print sizeof($content['field_hold_tider']) == 0 ? render($content['field_dato'][0]) : t('Flere tider'); ?>
                 </p>
                 <p>
+                <?php if (isset($content['field_target'][0])): ?>
+                  <p>
+                      <i class="icon-margin fa fa-users fa-2x"></i> <?php print render($content['field_target'][0]); ?>
+                  </p>
+                <?php endif; ?>
                     <i class="icon-margin fa fa-map-marker fa-2x"></i>
                     <?php if (isset($oc_harrypotter_event_location) && $oc_harrypotter_event_location): ?>
                     <span id="map" >
@@ -117,9 +122,9 @@
                       <?php print t('See event info'); ?>
                     <?php endif; ?>
                 </p>
-                <?php if (isset($content['field_target'][0])): ?>
+                <?php if (isset($content['field_zone'][0])): ?>
                   <p>
-                      <i class="icon-margin fa fa-users fa-2x"></i> <?php print render($content['field_target'][0]); ?>
+                      <i class="fa-solid fa fa-map-location-dot fa-2x"></i> <a href="/sites/magiskedageodense.dk/files/A4_Kort_samlet%20og%20enkelt.pdf"><?php print render($content['field_zone'][0]['#title']); ?> </a>
                   </p>
                 <?php endif; ?>
                 <p>
@@ -134,7 +139,11 @@
                       <?php endif; ?>
                   </p>
                 <?php endif; ?>
-
+                <?php if (isset($content['field_obs'][0])): ?>
+                  <p>
+                      <i class="fa-solid fa fa-circle-exclamation fa-2x"></i>  <?php print render($content['field_obs'][0]); ?>
+                  </p>
+                <?php endif; ?>
                 <p><?php print render($content['field_attachments']); ?></p>
                 <p><?php print render($content['field_info']); ?></p>
 
@@ -165,6 +174,8 @@
                     hide($content['field_lead']);
                     hide($content['comments']);
                     hide($content['links']);
+                    hide($content['field_zone']);
+                    hide($content['field_obs']);
                     hide($content['field_title_image']);
                     hide($content['field_attachments']);
                     hide($content['field_tags']);

@@ -14,7 +14,12 @@ function oc_harrypotter_preprocess_html(&$vars) {
     '#type' => 'markup',
     '#markup' => '<meta name="facebook-domain-verification" content="2qiu6xq43mzxzzztblj8rmcbx1cz1d" />',
   );
-
+  $fontawesome = array(
+    '#type' => 'markup',
+    '#markup' => '<link href="/sites/all/libraries/fontawesome/css/all.css" rel="stylesheet" />',
+  );
+  
+  drupal_add_html_head($fontawesome, "fontawesome");
   drupal_add_html_head($fb_element, "facebook domain verification");
 
  oc_harrypotter_oc_custom_backgrounds();
