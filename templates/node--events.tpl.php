@@ -124,7 +124,7 @@
                 </p>
                 <?php if (isset($content['field_zone'][0])): ?>
                   <p>
-                      <i class="fa-solid fa fa-map-location-dot fa-2x"></i> <a href="/sites/magiskedageodense.dk/files/A4_Kort_samlet%20og%20enkelt.pdf"><?php print render($content['field_zone'][0]['#title']); ?> </a>
+                      <i class="fa-solid fa fa-map-location-dot fa-2x"></i><?php print render($content['field_zone'][0]); ?>
                   </p>
                 <?php endif; ?>
                 <p>
