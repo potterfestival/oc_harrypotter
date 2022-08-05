@@ -44,6 +44,23 @@ jQuery(document).scroll(function(e){
         }
     };
 
+    Drupal.behaviors.selectpicker = {
+        attach: function (context) {
+            var pat = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i;
+            var is_mobile = pat.test(navigator.userAgent) ? true : false;
+            $("#edit-field-target-tid").selectpicker({
+                countSelectedText: function (num) {
+                  if (num === 1) {
+                    return "Målgruppe [{0}]";
+                  } else {
+                    return "Målgruppe [{0}]";
+                  }
+                },
+                noneSelectedText: "Målgruppe",
+                mobile: is_mobile,
+              });
+            }
+        };
 /*
  * Main ready
  */

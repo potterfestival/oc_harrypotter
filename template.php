@@ -37,7 +37,10 @@ function oc_harrypotter_preprocess_html(&$vars) {
 }
 
  if (isset($path_parts[0]) && $path_parts[0] == 'hp-lokationer' || $path_parts[0] == "event-dag") {
-    drupal_add_js(drupal_get_path('theme', 'oc_harrypotter') . '/js/jquery.fastLiveFilter.min.js', array('weight' => 999));
+    $theme_path = drupal_get_path('theme', 'oc_harrypotter');
+    drupal_add_js($theme_path . '/js/jquery.fastLiveFilter.min.js', array('weight' => 999));
+    drupal_add_js($theme_path . '/js/bootstrap-select.min.js', array('weight' => 99));
+    drupal_add_css($theme_path . '/css/bootstrap-select.min.css', array('weight' => 999));
   }
 
   drupal_add_css(drupal_get_path('theme', 'oc_harrypotter') . '/css/view-hp-events/view-hp-events.media.css');

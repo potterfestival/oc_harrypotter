@@ -4,7 +4,15 @@
 a {
   color: #be1e2d;
 }
-
+#edit-field-target-tid {
+  display: none;
+}
+.dropdown-menu > li > a{
+  background-color: #FFF;
+}
+.dropdown-menu > li > a:hover{
+  background-color: #b4a486 !important;
+}
 /**
  * Place your custom styles here.
  */
