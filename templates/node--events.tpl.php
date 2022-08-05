@@ -104,9 +104,9 @@
                     <i class="icon-margin fa fa-clock-o fa-2x"></i> <?php print sizeof($content['field_hold_tider']) == 0 ? render($content['field_dato'][0]) : t('Flere tider'); ?>
                 </p>
                 <p>
-                <?php if (isset($content['field_target'][0])): ?>
+                <?php if (isset($content['field_alder'][0])): ?>
                   <p>
-                      <i class="icon-margin fa fa-users fa-2x"></i> <?php print render($content['field_target'][0]); ?>
+                      <i class="icon-margin fa fa-users fa-2x"></i> <?php print render($content['field_alder'][0]); ?>
                   </p>
                 <?php endif; ?>
                     <i class="icon-margin fa fa-map-marker fa-2x"></i>
