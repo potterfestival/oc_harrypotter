@@ -58,6 +58,9 @@ jQuery(document).scroll(function(e){
                 },
                 noneSelectedText: "Målgruppe",
                 mobile: is_mobile,
+                actionsBox: true,
+                deselectAllText: "Fjern alle",
+                selectAllText: "Vælg alle",
               });
             }
         };

@@ -7,11 +7,43 @@ a {
 #edit-field-target-tid {
   display: none;
 }
-.dropdown-menu > li > a{
-  background-color: #FFF;
+
+/** Exposed filter */
+ul.inner a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.dropdown-menu > li > a:hover{
-  background-color: #b4a486 !important;
+
+.bootstrap-select.btn-group.show-tick .dropdown-menu li a {
+  padding: 0.5em 0.75em;
+}
+
+.bootstrap-select.btn-group.show-tick .dropdown-menu li a[aria-selected="false"] span.glyphicon {
+  color: white;
+}
+
+.bootstrap-select.btn-group.show-tick .dropdown-menu li a span.text {
+  margin-left: 1em;
+  margin-right: 0px;
+  order: 2;
+}
+
+
+.bootstrap-select.btn-group.show-tick .dropdown-menu li a span.glyphicon {
+  display: block;
+  position: relative;
+  border: 1px solid #404040;
+  border-radius: 2px;
+  padding: 3px;
+  margin-right: 3px;
+  order: 1;
+  top: 0;
+}
+
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark {
+  right: 0px;
+  margin-top: 0px;
 }
 /**
  * Place your custom styles here.
@@ -312,13 +344,6 @@ li.expanded.active-trail.dropdown {
 #nav_menu_right {
   float: right;
   text-align: right;
-}
-.dropdown-menu {
-  background-color: #000000 !important;
-}
-.dropdown-menu > li > a:hover {
-  background-color: #000000;
-  background-image: none;
 }
 /*
 * Owl carousel styling
