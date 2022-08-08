@@ -42,6 +42,7 @@ ul.inner a {
 }
 
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark {
+  position: initial;
   right: 0px;
   margin-top: 0px;
 }
