@@ -34,6 +34,9 @@ ul.inner a {
 .bootstrap-select.form-control:not([class*="col-"]) {
   min-width: 160px;
 }
+.form-item.form-item-field-target-tid.form-type-select.form-group {
+  max-width: 205px;
+}
 .bootstrap-select.btn-group.show-tick .dropdown-menu li a span.glyphicon {
   display: block;
   position: relative;
