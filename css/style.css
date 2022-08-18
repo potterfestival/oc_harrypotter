@@ -47,7 +47,23 @@ ul.inner a {
   order: 1;
   top: 0;
 }
-
+#exampleModalCenter img {
+  width: 100%;
+}
+#exampleModalCenter .modal-header .close {
+  margin-top: -28px;
+  font-size: 28px;
+}
+#exampleModalCenter .modal-header {
+  border-bottom: 1px solid #b4a486;
+  padding-bottom: 0px;
+}
+#exampleModalCenter .modal-footer {
+  border-top: 1px solid #b4a486;
+}
+.kortknap {
+  cursor: pointer;
+}
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark {
   position: initial;
   right: 0px;
