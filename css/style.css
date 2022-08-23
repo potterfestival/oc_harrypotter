@@ -64,6 +64,10 @@ ul.inner a {
 .kortknap {
   cursor: pointer;
 }
+.fa-calendar {
+  margin-right: 1em;
+  color: #be1e2d;
+}
 .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark {
   position: initial;
   right: 0px;

@@ -86,7 +86,13 @@
 
     <div>
       <?php print $user_picture; ?>
-
+      <?php if (isset($content['field_zone'][0])) : ?>
+        <div style="float:right;">
+          <a class="kortknap" data-toggle="modal" data-target="#exampleModalCenter">
+            Zonekort
+          </a>
+        </div>
+      <?php endif; ?>
       <h2><?php print $title ?></h2>
 
       <?php if (!$page) : ?>
@@ -102,14 +108,9 @@
         <br>
         <div class="info-field">
           <p>
-            <i class="icon-margin fa fa-clock-o fa-2x"></i> <?php print sizeof($content['field_hold_tider']) == 0 ? render($content['field_dato'][0]) : t('Flere tider'); ?>
+            <i class="fa-solid fa fa-calendar fa-2x"></i> <?php print sizeof($content['field_hold_tider']) == 0 ? render($content['field_dato'][0]) : t('Flere tider'); ?>
           </p>
           <p>
-            <?php if (isset($content['field_alder'][0])) : ?>
-              <p>
-                <i class="icon-margin fa fa-users fa-2x"></i> <?php print render($content['field_alder'][0]); ?>
-              </p>
-            <?php endif; ?>
             <i class="icon-margin fa fa-map-marker fa-2x"></i>
             <?php if (isset($oc_harrypotter_event_location) && $oc_harrypotter_event_location) : ?>
               <span id="map">
@@ -151,6 +152,11 @@
             </div>
           </div>
           <p>
+            <?php if (isset($content['field_alder'][0])) : ?>
+              <p>
+                <i class="icon-margin fa fa-users fa-2x"></i> <?php print render($content['field_alder'][0]); ?>
+              </p>
+            <?php endif; ?>
             <?php if ($content['field_price']['#items'][0]['value'] != -10) : ?>
               <i class="icon-margin fa fa-shopping-cart fa-2x"></i>
               <?php if ($content['field_price']['#items'][0]['value'] == -1 || $content['field_price']['#items'][0]['value'] === "0") : ?>
