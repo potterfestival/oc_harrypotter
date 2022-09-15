@@ -39,7 +39,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <img src="/sites/magiskedageodense.dk/files/Oversigtskort-MDO1024_1.png" />
+                <img src="/sites/magiskedageodense.dk/files/Oversigtskort-MDO1024_3.png" />
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Luk</button>
