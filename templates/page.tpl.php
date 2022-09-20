@@ -102,7 +102,9 @@
       <a class="logo navbar-btn " href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
         <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
       </a>
-            </div>
+ </div>
+ <img style="transform: rotate(10deg);left: 64%;position: absolute;z-index: 1000;top: 24px;" width="5%" height="100%" src="https://magiskedageodense.dk/sites/magiskedageodense.dk/files/Logo_BestOfOdense2022.png" alt="<?php print "Best i odense"; ?>" />
+           
       <?php endif; ?>
 
       <?php if (!empty($site_name)): ?>
