@@ -1,5 +1,9 @@
 /* Small devices (tablets, 768px and up) */
 @media (max-width: 450px) { 
+    .best_i_odense {
+        left: 67%!important;
+        width:15%!important;
+      }
     .hp-joined-event-wrapper .btn
     {
         float:left !important;
@@ -117,6 +121,10 @@
     }
 }
 @media (min-width: 450px) and (max-width: 767px) { 
+    .best_i_odense {
+        left: 67%!important;
+        width:15%!important;
+      }
     .node-frontpage-slide
     {
         margin-left: 28px !important;
