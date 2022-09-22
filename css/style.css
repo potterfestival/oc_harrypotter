@@ -245,11 +245,11 @@ footer_logos {
 }
 .best_i_odense {
   transform: rotate(10deg);
-  left: 64%;
+  left: 56%;
   position: absolute;
   z-index: 1000;
   top: 24px;
-  width:5%; 
+  width:6%; 
   height:100%;
 }
 .region.region-top-left,
