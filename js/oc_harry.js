@@ -47,7 +47,7 @@ jQuery(document).scroll(function(e){
     Drupal.behaviors.selectpicker = {
         attach: function (context) {
             var url = window.location.pathname;
-            if (url.indexOf("/hp-lokationer") === 0) {
+            if (url.indexOf("/hp-lokationer") === 0 || url.indexOf("/event-dag") === 0) {
                 var pat = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i;
                 var is_mobile = pat.test(navigator.userAgent) ? true : false;
                 $("#edit-field-target-tid").selectpicker({
