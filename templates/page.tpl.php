@@ -103,7 +103,7 @@
         <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
       </a>
  </div>
- <img class="best_i_odense" src="https://magiskedageodense.dk/sites/magiskedageodense.dk/files/Logo_BestOfOdense2022.png" alt="<?php print "Best i odense"; ?>" />
+ <a target="_blank" href="https://ugeavisen.dk/ugeavisenodense/artikel/stem-nu-hvem-skal-vinde-best-of-odense-2022"><img class="best_i_odense" src="https://magiskedageodense.dk/sites/magiskedageodense.dk/files/Logo_BestOfOdense2022.png" alt="<?php print "Best i odense"; ?>" /></a>
            
       <?php endif; ?>
 
