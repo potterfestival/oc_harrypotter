@@ -243,6 +243,15 @@ footer_logos {
   max-height: 80px;
   margin-left: 15px;
 }
+.best_i_odense {
+  transform: rotate(10deg);
+  left: 56%;
+  position: absolute;
+  z-index: 1000;
+  top: 24px;
+  width:6%; 
+  height:100%;
+}
 .region.region-top-left,
 .region.region-top-right {
   padding-top: 10px;

@@ -28,7 +28,25 @@
  */
 ?>
 
-
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" style="max-width:757px;" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalCenterTitle">Zonekort</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="/sites/magiskedageodense.dk/files/Oversigtskort-MDO1024_4.png" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Luk</button>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="<?php print $classes; ?>">
   <?php if (!$is_front) : ?>    
   <?php endif; ?>    
